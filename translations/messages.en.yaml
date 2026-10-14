@@ -57,6 +57,7 @@ quiz:
     no_questions: "No new questions left here – you have answered them all. 🏆"
     level_locked: "This level is still locked."
     no_mistakes: You have no mistakes to fix. 👍
+    stale: "That question was already answered – here is the current one."
     empty_answer: Type an answer first.
 stats:
     passed: "Questions done"

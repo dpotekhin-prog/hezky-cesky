@@ -14,9 +14,11 @@ use App\Service\PlayerRoster;
 use App\Service\QuizFactory;
 use App\Service\StatsProvider;
 use Doctrine\ORM\EntityManagerInterface;
+use Psr\Log\LoggerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\EventListener\AbstractSessionListener;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\Security\Http\Attribute\CurrentUser;
 
@@ -27,6 +29,7 @@ final class QuizController extends AbstractController
         private readonly QuestionRepository $questions,
         private readonly AnswerRepository $answers,
         private readonly EntityManagerInterface $em,
+        private readonly LoggerInterface $logger,
     ) {
     }
 
@@ -84,11 +87,11 @@ final class QuizController extends AbstractController
         $options = $question->getOptions();
         shuffle($options);
 
-        return $this->render('quiz/question.html.twig', [
+        return $this->noStore($this->render('quiz/question.html.twig', [
             'session' => $session,
             'question' => $question,
             'options' => $options,
-        ]);
+        ]));
     }
 
     #[Route('/{id}/answer', name: 'quiz_answer', requirements: ['id' => '\d+'], methods: ['POST'])]
@@ -97,14 +100,24 @@ final class QuizController extends AbstractController
         $this->assertOwner($session);
         $this->assertCsrf($request, 'quiz'.$session->getId());
 
-        // Stale form (back button, double click): just show where the quiz really is.
-        if ($session->isFinished() || $request->request->getInt('question') !== $session->getCurrentQuestionId()) {
+        // Stale form: a repeated submit of the question just answered (double click, network retry)
+        // shows that answer's result; anything older returns to the current question with a note.
+        $postedQuestion = $request->request->getInt('question');
+        if ($session->isFinished() || $postedQuestion !== $session->getCurrentQuestionId()) {
+            $last = $this->answers->findLastAnswerInSession((int) $session->getId());
+            $this->logger->info('Stale quiz answer', ['session' => $session->getId(), 'posted' => $postedQuestion, 'current' => $session->getCurrentQuestionId()]);
+            if (null !== $last && $last->getQuestion()->getId() === $postedQuestion) {
+                return $this->redirectToRoute('quiz_feedback', ['id' => $session->getId()]);
+            }
+            $this->addFlash('info', 'quiz.stale');
+
             return $this->redirectToRoute('quiz_show', ['id' => $session->getId()]);
         }
 
         $question = $this->currentQuestion($session);
         $given = trim($request->request->getString('answer'));
         if ('' === $given) {
+            $this->logger->info('Empty quiz answer', ['session' => $session->getId(), 'question' => $postedQuestion]);
             $this->addFlash('info', 'quiz.empty_answer');
 
             return $this->redirectToRoute('quiz_show', ['id' => $session->getId()]);
@@ -127,7 +140,7 @@ final class QuizController extends AbstractController
             return $this->redirectToRoute('quiz_show', ['id' => $session->getId()]);
         }
 
-        return $this->render('quiz/feedback.html.twig', ['session' => $session, 'answer' => $answer]);
+        return $this->noStore($this->render('quiz/feedback.html.twig', ['session' => $session, 'answer' => $answer]));
     }
 
     #[Route('/{id}/summary', name: 'quiz_summary', requirements: ['id' => '\d+'], methods: ['GET'])]
@@ -163,6 +176,18 @@ final class QuizController extends AbstractController
             'answers' => $answers,
             'rank_changes' => $rankChanges,
         ]);
+    }
+
+    /**
+     * Quiz pages must never come back from the browser's back/forward cache: an old question form
+     * submitted from there is stale and would look like a click that "did nothing".
+     */
+    private function noStore(Response $response): Response
+    {
+        $response->headers->set(AbstractSessionListener::NO_AUTO_CACHE_CONTROL_HEADER, 'true');
+        $response->headers->set('Cache-Control', 'no-store, private');
+
+        return $response;
     }
 
     private function currentQuestion(QuizSession $session): Question

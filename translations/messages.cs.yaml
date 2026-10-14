@@ -57,6 +57,7 @@ quiz:
     no_questions: "V tomto výběru už nejsou žádné nové otázky – všechny máš za sebou. 🏆"
     level_locked: "Tahle úroveň je ještě zamčená."
     no_mistakes: Nemáš žádné chyby k opravě. 👍
+    stale: "Tahle otázka už byla zodpovězená – tady je aktuální otázka."
     empty_answer: Nejdřív napiš odpověď.
 stats:
     passed: "Prošlé otázky"
