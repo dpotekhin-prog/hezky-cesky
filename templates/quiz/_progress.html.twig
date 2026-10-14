@@ -1,0 +1,10 @@
+<div class="progress-wrap">
+    <div class="progress-meta">
+        <span>
+            {% if session.mode == 'mistakes' %}{{ 'quiz.mistakes_mode'|trans }}{% else %}{{ ('level.' ~ session.level)|trans }}{% endif %}
+            {% if session.topic %} · {{ session.topic.title(app.request.locale) }}{% endif %}
+        </span>
+        <span>{{ 'quiz.progress'|trans({'%current%': min(current, session.total), '%total%': session.total}) }} · ✔ {{ session.correctCount }}</span>
+    </div>
+    <div class="progress"><div style="width: {{ (100 * done / session.total)|round }}%"></div></div>
+</div>

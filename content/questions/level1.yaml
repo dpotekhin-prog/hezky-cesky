@@ -1,0 +1,571 @@
+# ČJ 3. třída — úroveň 1 (snadné otázky)
+questions:
+  # ---------- abeceda ----------
+  - id: l1-abc-001
+    topic: abeceda
+    level: 1
+    type: choice
+    prompt: "Které písmeno je v abecedě hned za písmenem K?"
+    options: ["J", "L", "M", "Ch"]
+    correct: "L"
+    explanation:
+      cs: "Abeceda: … J, K, L, M …"
+      en: "Alphabet order: … J, K, L, M …"
+  - id: l1-abc-002
+    topic: abeceda
+    level: 1
+    type: choice
+    prompt: "Které písmeno je v abecedě hned před písmenem I?"
+    options: ["H", "Ch", "J", "G"]
+    correct: "Ch"
+    explanation:
+      cs: "V české abecedě je Ch za H a před I: … H, Ch, I …"
+      en: "In the Czech alphabet Ch comes after H and before I: … H, Ch, I …"
+  - id: l1-abc-003
+    topic: abeceda
+    level: 1
+    type: input
+    prompt: "Které písmeno je v abecedě hned za písmenem R? Napiš jen písmeno."
+    answers: ["ř"]
+    explanation:
+      cs: "Abeceda: … Q, R, Ř, S …"
+      en: "Alphabet order: … Q, R, Ř, S …"
+  - id: l1-abc-004
+    topic: abeceda
+    level: 1
+    type: choice
+    prompt: "Které slovo je v abecedě první?"
+    options: ["kolo", "auto", "dům", "míč"]
+    correct: "auto"
+    explanation:
+      cs: "Slovo auto začíná písmenem A, a to je v abecedě první."
+      en: "The word auto starts with A, which is first in the alphabet."
+  - id: l1-abc-005
+    topic: abeceda
+    level: 1
+    type: choice
+    prompt: "Které slovo je v abecedě první?"
+    options: ["chata", "kočka", "hrad"]
+    correct: "hrad"
+    explanation:
+      cs: "Písmeno H je v abecedě před Ch a Ch je před K."
+      en: "The letter H comes before Ch, and Ch comes before K."
+  - id: l1-abc-006
+    topic: abeceda
+    level: 1
+    type: input
+    prompt: "Které písmeno je v abecedě hned před písmenem Š? Napiš jen písmeno."
+    answers: ["s"]
+    explanation:
+      cs: "Abeceda: … R, Ř, S, Š, T …"
+      en: "Alphabet order: … R, Ř, S, Š, T …"
+  - id: l1-abc-007
+    topic: abeceda
+    level: 1
+    type: input
+    prompt: "Které písmeno je v abecedě hned před písmenem H? Napiš jen písmeno."
+    answers: ["g"]
+    explanation:
+      cs: "Abeceda: … F, G, H, Ch …"
+      en: "Alphabet order: … F, G, H, Ch …"
+  - id: l1-abc-008
+    topic: abeceda
+    level: 1
+    type: choice
+    prompt: "Které písmeno je poslední v české abecedě?"
+    options: ["Z", "Ž", "Y", "X"]
+    correct: "Ž"
+    explanation:
+      cs: "Česká abeceda končí: … X, Y, Z, Ž."
+      en: "The Czech alphabet ends: … X, Y, Z, Ž."
+
+  # ---------- tvrdé a měkké souhlásky ----------
+  - id: l1-tm-001
+    topic: tvrde-mekke
+    level: 1
+    type: choice
+    prompt: "Která souhláska je tvrdá?"
+    options: ["č", "k", "ž", "j"]
+    correct: "k"
+    explanation:
+      cs: "Tvrdé souhlásky jsou h, ch, k, r, d, t, n."
+      en: "The hard consonants are h, ch, k, r, d, t, n."
+  - id: l1-tm-002
+    topic: tvrde-mekke
+    level: 1
+    type: choice
+    prompt: "Která souhláska je měkká?"
+    options: ["h", "r", "ř", "d"]
+    correct: "ř"
+    explanation:
+      cs: "Měkké souhlásky jsou ž, š, č, ř, c, j, ď, ť, ň."
+      en: "The soft consonants are ž, š, č, ř, c, j, ď, ť, ň."
+  - id: l1-tm-003
+    topic: tvrde-mekke
+    level: 1
+    type: choice
+    prompt: "Co píšeme po měkkých souhláskách?"
+    options: ["i, í", "y, ý"]
+    correct: "i, í"
+    explanation:
+      cs: "Po měkkých souhláskách píšeme měkké i, í."
+      en: "After soft consonants we write the soft i, í."
+  - id: l1-tm-004
+    topic: tvrde-mekke
+    level: 1
+    type: choice
+    prompt: "Které slovo je napsané správně?"
+    options: ["křída", "křýda"]
+    correct: "křída"
+    explanation:
+      cs: "Ř je měkká souhláska, proto píšeme í: křída."
+      en: "Ř is a soft consonant, so we write í: křída."
+  - id: l1-tm-005
+    topic: tvrde-mekke
+    level: 1
+    type: input
+    prompt: "Doplň i nebo y a napiš celé slovo: ch_trý"
+    answers: ["chytrý"]
+    explanation:
+      cs: "Ch je tvrdá souhláska, proto píšeme y: chytrý."
+      en: "Ch is a hard consonant, so we write y: chytrý."
+  - id: l1-tm-006
+    topic: tvrde-mekke
+    level: 1
+    type: input
+    prompt: "Doplň i nebo y a napiš celé slovo: č_stý"
+    answers: ["čistý"]
+    explanation:
+      cs: "Č je měkká souhláska, proto píšeme i: čistý."
+      en: "Č is a soft consonant, so we write i: čistý."
+  - id: l1-tm-007
+    topic: tvrde-mekke
+    level: 1
+    type: input
+    prompt: "Doplň i nebo y a napiš celé slovo: r_ba"
+    answers: ["ryba"]
+    explanation:
+      cs: "R je tvrdá souhláska, proto píšeme y: ryba."
+      en: "R is a hard consonant, so we write y: ryba."
+  - id: l1-tm-008
+    topic: tvrde-mekke
+    level: 1
+    type: input
+    prompt: "Doplň i nebo y a napiš celé slovo: ž_dle"
+    answers: ["židle"]
+    explanation:
+      cs: "Ž je měkká souhláska, proto píšeme i: židle."
+      en: "Ž is a soft consonant, so we write i: židle."
+
+  # ---------- ú / ů ----------
+  - id: l1-uu-001
+    topic: u-u
+    level: 1
+    type: input
+    prompt: "Doplň ú nebo ů a napiš celé slovo: d_m"
+    answers: ["dům"]
+    explanation:
+      cs: "Uvnitř slova píšeme ů: dům."
+      en: "Inside a word we write ů: dům."
+  - id: l1-uu-002
+    topic: u-u
+    level: 1
+    type: input
+    prompt: "Doplň ú nebo ů a napiš celé slovo: _terý"
+    answers: ["úterý"]
+    explanation:
+      cs: "Na začátku slova píšeme ú: úterý."
+      en: "At the start of a word we write ú: úterý."
+  - id: l1-uu-003
+    topic: u-u
+    level: 1
+    type: input
+    prompt: "Doplň ú nebo ů a napiš celé slovo: k_ň"
+    answers: ["kůň"]
+    explanation:
+      cs: "Uvnitř slova píšeme ů: kůň."
+      en: "Inside a word we write ů: kůň."
+  - id: l1-uu-004
+    topic: u-u
+    level: 1
+    type: input
+    prompt: "Doplň ú nebo ů a napiš celé slovo: _směv"
+    answers: ["úsměv"]
+    explanation:
+      cs: "Na začátku slova píšeme ú: úsměv."
+      en: "At the start of a word we write ú: úsměv."
+  - id: l1-uu-005
+    topic: u-u
+    level: 1
+    type: choice
+    prompt: "Které slovo je napsané správně?"
+    options: ["úkol", "ůkol"]
+    correct: "úkol"
+    explanation:
+      cs: "Na začátku slova píšeme ú: úkol."
+      en: "At the start of a word we write ú: úkol."
+  - id: l1-uu-006
+    topic: u-u
+    level: 1
+    type: choice
+    prompt: "Doplň ú nebo ů: Na zahradě kvetou r_že."
+    options: ["ú", "ů"]
+    correct: "ů"
+    explanation:
+      cs: "Uvnitř slova píšeme ů: růže."
+      en: "Inside a word we write ů: růže."
+  - id: l1-uu-007
+    topic: u-u
+    level: 1
+    type: choice
+    prompt: "Které slovo je napsané správně?"
+    options: ["domů", "domú"]
+    correct: "domů"
+    explanation:
+      cs: "Na konci slova píšeme ů: domů."
+      en: "At the end of a word we write ů: domů."
+  - id: l1-uu-008
+    topic: u-u
+    level: 1
+    type: choice
+    prompt: "Které slovo je napsané správně?"
+    options: ["stúl", "stůl"]
+    correct: "stůl"
+    explanation:
+      cs: "Uvnitř slova píšeme ů: stůl."
+      en: "Inside a word we write ů: stůl."
+
+  # ---------- vyjmenovaná slova (B, L, M) ----------
+  - id: l1-vs-001
+    topic: vyjmenovana-slova
+    level: 1
+    type: input
+    prompt: "Doplň i nebo y a napiš celé slovo: m_š"
+    answers: ["myš"]
+    explanation:
+      cs: "Myš je vyjmenované slovo po M, píšeme y."
+      en: "Myš (mouse) is a listed word after M, so we write y."
+  - id: l1-vs-002
+    topic: vyjmenovana-slova
+    level: 1
+    type: input
+    prompt: "Doplň i nebo y a napiš celé slovo: sl_šet"
+    answers: ["slyšet"]
+    explanation:
+      cs: "Slyšet je vyjmenované slovo po L, píšeme y."
+      en: "Slyšet (to hear) is a listed word after L, so we write y."
+  - id: l1-vs-003
+    topic: vyjmenovana-slova
+    level: 1
+    type: input
+    prompt: "Doplň i nebo y a napiš celé slovo: l_že"
+    answers: ["lyže"]
+    explanation:
+      cs: "Lyže je vyjmenované slovo po L, píšeme y."
+      en: "Lyže (skis) is a listed word after L, so we write y."
+  - id: l1-vs-004
+    topic: vyjmenovana-slova
+    level: 1
+    type: input
+    prompt: "Doplň i nebo y a napiš celé slovo: b_lina"
+    answers: ["bylina"]
+    explanation:
+      cs: "Bylina je vyjmenované slovo po B, píšeme y."
+      en: "Bylina (herb) is a listed word after B, so we write y."
+  - id: l1-vs-005
+    topic: vyjmenovana-slova
+    level: 1
+    type: input
+    prompt: "Doplň i nebo y a napiš celé slovo: hm_z"
+    answers: ["hmyz"]
+    explanation:
+      cs: "Hmyz je vyjmenované slovo po M, píšeme y."
+      en: "Hmyz (insects) is a listed word after M, so we write y."
+  - id: l1-vs-006
+    topic: vyjmenovana-slova
+    level: 1
+    type: choice
+    prompt: "Které slovo je vyjmenované slovo po B?"
+    options: ["býk", "bílý", "bič"]
+    correct: "býk"
+    explanation:
+      cs: "Býk patří mezi vyjmenovaná slova po B."
+      en: "Býk (bull) is one of the listed words after B."
+  - id: l1-vs-007
+    topic: vyjmenovana-slova
+    level: 1
+    type: choice
+    prompt: "Doplň i nebo y: M_ jsme kamarádi."
+    options: ["i", "y"]
+    correct: "y"
+    explanation:
+      cs: "My (já a ty) je vyjmenované slovo po M, píšeme y."
+      en: "My (we) is a listed word after M, so we write y."
+  - id: l1-vs-008
+    topic: vyjmenovana-slova
+    level: 1
+    type: choice
+    prompt: "Které slovo je vyjmenované slovo po L?"
+    options: ["lípa", "mlýn", "list"]
+    correct: "mlýn"
+    explanation:
+      cs: "Mlýn patří mezi vyjmenovaná slova po L."
+      en: "Mlýn (mill) is one of the listed words after L."
+  - id: l1-vs-009
+    topic: vyjmenovana-slova
+    level: 1
+    type: choice
+    prompt: "Doplň i nebo y: Pes b_l včera nemocný."
+    options: ["i", "y"]
+    correct: "y"
+    explanation:
+      cs: "Byl je od slova být (existovat), to je vyjmenované slovo, píšeme y."
+      en: "Byl comes from být (to be), a listed word, so we write y."
+  - id: l1-vs-010
+    topic: vyjmenovana-slova
+    level: 1
+    type: choice
+    prompt: "Které slovo je napsané správně?"
+    options: ["mílit se", "mýlit se"]
+    correct: "mýlit se"
+    explanation:
+      cs: "Mýlit se je vyjmenované slovo po M, píšeme ý."
+      en: "Mýlit se (to be wrong) is a listed word after M, so we write ý."
+
+  # ---------- druhy vět ----------
+  - id: l1-veta-001
+    topic: veta
+    level: 1
+    type: choice
+    prompt: "Jaké znaménko patří na konec věty? Kolik je hodin_"
+    options: [".", "?", "!"]
+    correct: "?"
+    explanation:
+      cs: "Je to otázka (tázací věta), proto píšeme otazník."
+      en: "It is a question, so we write a question mark."
+  - id: l1-veta-002
+    topic: veta
+    level: 1
+    type: choice
+    prompt: "Jaké znaménko patří na konec této oznamovací věty? Venku prší_"
+    options: [".", "?", ","]
+    correct: "."
+    explanation:
+      cs: "Věta něco oznamuje (oznamovací věta), proto píšeme tečku."
+      en: "The sentence tells us something, so we write a full stop."
+  - id: l1-veta-003
+    topic: veta
+    level: 1
+    type: choice
+    prompt: "Jaké znaménko patří na konec věty? Zavři okno_"
+    options: ["?", "!", ","]
+    correct: "!"
+    explanation:
+      cs: "Věta něco přikazuje (rozkazovací věta), proto píšeme vykřičník."
+      en: "The sentence gives an order, so we write an exclamation mark."
+  - id: l1-veta-004
+    topic: veta
+    level: 1
+    type: choice
+    prompt: "Jaký je to druh věty? Půjdeš ven?"
+    options: ["oznamovací", "tázací", "rozkazovací", "přací"]
+    correct: "tázací"
+    explanation:
+      cs: "Věta se ptá, je to věta tázací."
+      en: "The sentence asks something, so it is a question (tázací)."
+  - id: l1-veta-005
+    topic: veta
+    level: 1
+    type: choice
+    prompt: "Jaký je to druh věty? Kéž by už byly prázdniny!"
+    options: ["oznamovací", "tázací", "rozkazovací", "přací"]
+    correct: "přací"
+    explanation:
+      cs: "Věta vyjadřuje přání (kéž by), je to věta přací."
+      en: "The sentence expresses a wish (kéž by = if only), so it is přací."
+  - id: l1-veta-006
+    topic: veta
+    level: 1
+    type: choice
+    prompt: "Jaký je to druh věty? Ukliď si pokoj!"
+    options: ["oznamovací", "tázací", "rozkazovací", "přací"]
+    correct: "rozkazovací"
+    explanation:
+      cs: "Věta někomu přikazuje, je to věta rozkazovací."
+      en: "The sentence tells someone what to do, so it is rozkazovací."
+  - id: l1-veta-007
+    topic: veta
+    level: 1
+    type: input
+    prompt: "Jak se jmenuje znaménko, které patří na konec věty: Kde bydlíš_ Napiš jeho název."
+    answers: ["otazník"]
+    explanation:
+      cs: "Je to otázka, proto na konec píšeme otazník (?)."
+      en: "It is a question, so we write a question mark (otazník, ?)."
+  - id: l1-veta-008
+    topic: veta
+    level: 1
+    type: input
+    prompt: "Jaký je to druh věty? Mám rád zmrzlinu. Napiš jedno slovo."
+    answers: ["oznamovací"]
+    explanation:
+      cs: "Věta nám něco oznamuje, je to věta oznamovací."
+      en: "The sentence tells us something, so it is oznamovací (declarative)."
+
+  # ---------- význam slov ----------
+  - id: l1-vyz-001
+    topic: vyznam-slov
+    level: 1
+    type: choice
+    prompt: "Které slovo má opačný význam než slovo velký?"
+    options: ["malý", "vysoký", "silný"]
+    correct: "malý"
+    explanation:
+      cs: "Opak slova velký je malý."
+      en: "The opposite of velký (big) is malý (small)."
+  - id: l1-vyz-002
+    topic: vyznam-slov
+    level: 1
+    type: input
+    prompt: "Napiš slovo s opačným významem: den"
+    answers: ["noc"]
+    explanation:
+      cs: "Opak slova den je noc."
+      en: "The opposite of den (day) is noc (night)."
+  - id: l1-vyz-003
+    topic: vyznam-slov
+    level: 1
+    type: input
+    prompt: "Napiš slovo s opačným významem: teplý"
+    answers: ["studený", "chladný"]
+    explanation:
+      cs: "Opak slova teplý je studený."
+      en: "The opposite of teplý (warm) is studený (cold)."
+  - id: l1-vyz-004
+    topic: vyznam-slov
+    level: 1
+    type: input
+    prompt: "Napiš slovo s opačným významem: otevřít"
+    answers: ["zavřít", "zavírat"]
+    explanation:
+      cs: "Opak slova otevřít je zavřít."
+      en: "The opposite of otevřít (to open) is zavřít (to close)."
+  - id: l1-vyz-005
+    topic: vyznam-slov
+    level: 1
+    type: choice
+    prompt: "Které slovo znamená totéž jako slovo kluk?"
+    options: ["chlapec", "dívka", "děda"]
+    correct: "chlapec"
+    explanation:
+      cs: "Kluk a chlapec znamenají totéž."
+      en: "Kluk and chlapec both mean boy."
+  - id: l1-vyz-006
+    topic: vyznam-slov
+    level: 1
+    type: choice
+    prompt: "Jak nazveme jedním slovem: jablko, hruška, švestka?"
+    options: ["ovoce", "zelenina", "strom"]
+    correct: "ovoce"
+    explanation:
+      cs: "Jablko, hruška a švestka jsou ovoce."
+      en: "Apple, pear and plum are all fruit (ovoce)."
+  - id: l1-vyz-007
+    topic: vyznam-slov
+    level: 1
+    type: choice
+    prompt: "Které slovo patří do skupiny zelenina?"
+    options: ["banán", "mrkev", "třešeň"]
+    correct: "mrkev"
+    explanation:
+      cs: "Mrkev je zelenina, banán a třešeň jsou ovoce."
+      en: "A carrot is a vegetable; banana and cherry are fruit."
+  - id: l1-vyz-008
+    topic: vyznam-slov
+    level: 1
+    type: input
+    prompt: "Jak nazveme jedním slovem: růže, tulipán, sedmikráska? Napiš jedno slovo."
+    answers: ["květiny", "květina", "kytky", "kytka"]
+    explanation:
+      cs: "Růže, tulipán a sedmikráska jsou květiny."
+      en: "Rose, tulip and daisy are all flowers (květiny)."
+  - id: l1-vyz-009
+    topic: vyznam-slov
+    level: 1
+    type: choice
+    prompt: "Jak nazveme jedním slovem: židle, stůl, skříň, postel?"
+    options: ["nábytek", "nádobí", "oblečení"]
+    correct: "nábytek"
+    explanation:
+      cs: "Židle, stůl, skříň a postel jsou nábytek."
+      en: "Chair, table, wardrobe and bed are furniture (nábytek)."
+
+  # ---------- podstatná jména (velká písmena, číslo) ----------
+  - id: l1-pj-001
+    topic: podstatna-jmena
+    level: 1
+    type: choice
+    prompt: "Jak správně napíšeš název hlavního města České republiky?"
+    options: ["Praha", "praha"]
+    correct: "Praha"
+    explanation:
+      cs: "Názvy měst píšeme s velkým písmenem: Praha."
+      en: "Names of cities start with a capital letter: Praha."
+  - id: l1-pj-002
+    topic: podstatna-jmena
+    level: 1
+    type: choice
+    prompt: "Které slovo musíme psát s velkým písmenem?"
+    options: ["petr", "kluk", "škola"]
+    correct: "petr"
+    explanation:
+      cs: "Jména lidí píšeme s velkým písmenem: Petr."
+      en: "People's names start with a capital letter: Petr."
+  - id: l1-pj-003
+    topic: podstatna-jmena
+    level: 1
+    type: choice
+    prompt: "Které slovo musíme psát s velkým písmenem?"
+    options: ["řeka", "vltava", "voda"]
+    correct: "vltava"
+    explanation:
+      cs: "Názvy řek píšeme s velkým písmenem: Vltava."
+      en: "Names of rivers start with a capital letter: Vltava."
+  - id: l1-pj-004
+    topic: podstatna-jmena
+    level: 1
+    type: choice
+    prompt: "Který zápis je správný?"
+    options: ["Bydlím v Brně.", "bydlím v brně.", "Bydlím v brně."]
+    correct: "Bydlím v Brně."
+    explanation:
+      cs: "Větu začínáme velkým písmenem a název města také: Brno."
+      en: "A sentence starts with a capital letter, and so does a city name: Brno."
+  - id: l1-pj-005
+    topic: podstatna-jmena
+    level: 1
+    type: choice
+    prompt: "Který zápis je správný?"
+    options: ["Můj pes se jmenuje Rex.", "Můj Pes se jmenuje rex.", "můj pes se jmenuje Rex."]
+    correct: "Můj pes se jmenuje Rex."
+    explanation:
+      cs: "Jména zvířat píšeme s velkým písmenem (Rex), slovo pes s malým."
+      en: "Pet names start with a capital letter (Rex), but the word pes (dog) does not."
+  - id: l1-pj-006
+    topic: podstatna-jmena
+    level: 1
+    type: input
+    prompt: "Doplň a napiš jedno slovo: jedna kočka, dvě …"
+    answers: ["kočky"]
+    explanation:
+      cs: "Jedna kočka, dvě kočky."
+      en: "One cat (kočka), two cats (kočky)."
+  - id: l1-pj-007
+    topic: podstatna-jmena
+    level: 1
+    type: input
+    prompt: "Doplň a napiš jedno slovo: jeden dům, dva …"
+    answers: ["domy"]
+    explanation:
+      cs: "Jeden dům, dva domy."
+      en: "One house (dům), two houses (domy)."

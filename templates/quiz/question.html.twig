@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+{% include 'quiz/_progress.html.twig' with {current: session.position + 1, done: session.position} %}
+<div class="card question">
+    <p class="topic-label">{{ question.topic.title(app.request.locale) }}</p>
+    <h1 class="prompt">{{ question.prompt }}</h1>
+    <form method="post" action="{{ path('quiz_answer', {id: session.id}) }}">
+        <input type="hidden" name="_token" value="{{ csrf_token('quiz' ~ session.id) }}">
+        <input type="hidden" name="question" value="{{ question.id }}">
+        {% if question.choice %}
+            <div class="options">
+                {% for option in options %}
+                    <button class="option" type="submit" name="answer" value="{{ option }}">{{ option }}</button>
+                {% endfor %}
+            </div>
+        {% else %}
+            <div class="input-row">
+                <input type="text" name="answer" autocomplete="off" autocapitalize="off" spellcheck="false" autofocus required placeholder="{{ 'quiz.type_here'|trans }}">
+                <button class="btn btn-primary" type="submit">{{ 'quiz.check'|trans }}</button>
+            </div>
+            <div class="letters" aria-label="{{ 'quiz.letters'|trans }}">
+                {% for ch in ['á','é','ě','í','ó','ú','ů','ý','č','ď','ň','ř','š','ť','ž'] %}
+                    <button type="button" class="letter" data-letter="{{ ch }}">{{ ch }}</button>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </form>
+</div>
+{% endblock %}

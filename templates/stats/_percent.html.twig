@@ -1,0 +1,6 @@
+{% if row.total > 0 %}
+    <div class="bar"><div class="bar-ok" style="width: {{ row.percent }}%"></div></div>
+    <span class="nums"><span class="ok">✔ {{ row.correct }}</span> <span class="bad">✘ {{ row.wrong }}</span> <strong>{{ row.percent }} %</strong></span>
+{% else %}
+    <span class="muted">—</span>
+{% endif %}

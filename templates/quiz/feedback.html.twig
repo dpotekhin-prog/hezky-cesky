@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+{% set question = answer.question %}
+{% include 'quiz/_progress.html.twig' with {current: session.position, done: session.position} %}
+<div class="card feedback {{ answer.correct ? 'is-ok' : 'is-bad' }}">
+    <div class="verdict">{{ answer.correct ? ('quiz.correct'|trans) : ('quiz.wrong'|trans) }}</div>
+    <p class="prompt small-prompt">{{ question.prompt }}</p>
+    <p>{{ 'quiz.your_answer'|trans }}: <strong class="{{ answer.correct ? 'ok' : 'bad' }}">{{ answer.givenAnswer }}</strong></p>
+    {% if not answer.correct %}
+        <p>{{ 'quiz.correct_answer'|trans }}: <strong class="ok">{{ question.correctAnswer }}</strong></p>
+    {% endif %}
+    {% set explanation = question.explanation(app.request.locale) %}
+    {% if explanation %}
+        <p class="explanation">💡 {{ explanation }}</p>
+    {% endif %}
+    <a class="btn btn-primary btn-big" autofocus href="{{ session.finished ? path('quiz_summary', {id: session.id}) : path('quiz_show', {id: session.id}) }}">
+        {{ session.finished ? 'quiz.finish'|trans : 'quiz.next'|trans }} →
+    </a>
+</div>
+{% endblock %}

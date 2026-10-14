@@ -1,0 +1,93 @@
+app.name: Čeština pro 3. třídu
+nav:
+    practice: Procvičování
+    stats: Moje výsledky
+    parent: Pro rodiče
+    logout: Odhlásit
+form:
+    username: Přihlašovací jméno
+    password: Heslo
+    password_repeat: Heslo znovu
+login:
+    title: Přihlášení
+    submit: Přihlásit se
+    no_account: Nemáš účet?
+register:
+    title: Registrace
+    submit: Vytvořit účet
+    have_account: Už máš účet?
+home:
+    hello: Ahoj, %name%! 👋
+    first_time: Vyber si úroveň a začni procvičovat.
+    answered: Odpovědí celkem %total%
+    mistakes: "Chyby k opravě: %count%"
+    mistakes_button: Opravit chyby
+    start_mix: "Začít (%count% otázek)"
+    level_progress: "Prošel jsi %done% z %total% otázek"
+    unlock_need: "Odemkne se, až v předchozí úrovni projdeš aspoň %done% otázek s úspěšností %percent% %."
+    unlock_now: "Zatím: %done% otázek, úspěšnost %percent% %."
+    level_done: "Úroveň dokončena! Všechny otázky máš za sebou."
+    by_topic: Procvičit jen jedno téma
+level:
+    1: 1. úroveň – lehká
+    1.desc: Abeceda, tvrdé a měkké souhlásky, ú/ů, první vyjmenovaná slova.
+    2: 2. úroveň – střední
+    2.desc: Všechna vyjmenovaná slova, párové souhlásky, slovní druhy, rod podstatných jmen.
+    3: 3. úroveň – těžká
+    3.desc: Příbuzná slova, mě/mně, slovesa, všechny slovní druhy, souvětí.
+quiz:
+    progress: Otázka %current% z %total%
+    type_here: Napiš odpověď…
+    check: Zkontrolovat
+    letters: Písmena s diakritikou
+    correct: Správně! 🎉
+    wrong: Tohle není správně 🙁
+    your_answer: Tvoje odpověď
+    correct_answer: Správná odpověď
+    next: Další otázka
+    finish: Výsledek
+    result: "Správně %correct% z %total%"
+    praise:
+        great: Výborně! Jsi jednička!
+        good: Dobrá práce! Ještě trochu a bude to perfektní.
+        keep: Nevadí, procvičuj dál – chyby si můžeš opravit.
+    again: Znovu
+    back_home: Zpět na úrovně
+    mistakes_mode: Oprava chyb
+    no_questions: "V tomto výběru už nejsou žádné nové otázky – všechny máš za sebou. 🏆"
+    level_locked: "Tahle úroveň je ještě zamčená."
+    no_mistakes: Nemáš žádné chyby k opravě. 👍
+    empty_answer: Nejdřív napiš odpověď.
+stats:
+    passed: "Prošlé otázky"
+    passed_short: "prošlo %done% z %total%"
+    title: Výsledky
+    total: Odpovědí
+    correct: Správně
+    wrong: Špatně
+    success: Úspěšnost
+    by_level: Podle úrovně
+    by_topic: Podle tématu
+    mistakes: Chyby k opravě
+    no_mistakes: Žádné chyby k opravě.
+    sessions: Poslední cvičení
+    no_sessions: Zatím žádná cvičení.
+    unfinished: nedokončeno
+    when: Kdy
+    what: Co
+    result: Výsledek
+    history: Historie odpovědí (posledních 100)
+    question: Otázka
+    answer: Odpověď
+parent:
+    title: Přehled dětí
+    child: Dítě
+    since: od
+    detail: Podrobnosti
+    no_children: Zatím se nezaregistrovalo žádné dítě.
+rank:
+    label: "Hodnost"
+    to_next: "Do dalšího hráče chybí %points% b. (správně +1, chyba −0,5)"
+    promoted: "Povýšení – %level%!"
+    demoted: "Pozor, hodnost klesla – %level%"
+    by_level: "Hodnost"

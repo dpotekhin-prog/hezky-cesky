@@ -1,0 +1,10 @@
+<div class="rank">
+    <div class="rank-badge"><span>{{ lvl.rank }}</span></div>
+    <div class="rank-info">
+        <div class="rank-title">{{ 'rank.label'|trans }} {{ lvl.rank }}/10 · <strong>{{ lvl.player.name }}</strong></div>
+        <div class="small muted">{{ lvl.player.about[app.request.locale] }}</div>
+        {% if lvl.to_next is not null %}
+            <div class="small">{{ 'rank.to_next'|trans({'%points%': lvl.to_next}) }}</div>
+        {% endif %}
+    </div>
+</div>

@@ -1,0 +1,15 @@
+services:
+  app:
+    build: .
+    ports:
+      - "${APP_PORT:-8080}:80"
+    environment:
+      APP_SECRET: ${APP_SECRET:-local-dev-secret-change-me-0123456789}
+      DEFAULT_URI: http://localhost:${APP_PORT:-8080}
+    volumes:
+      - app_data:/var/www/app/var/data
+      - ./content:/var/www/app/content:ro
+    restart: unless-stopped
+
+volumes:
+  app_data:

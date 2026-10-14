@@ -1,0 +1,71 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<section class="hello">
+    <h1>{{ 'home.hello'|trans({'%name%': app.user.username}) }}</h1>
+    {% if summary.total > 0 %}
+        <p class="stat-line">
+            {{ 'home.answered'|trans({'%total%': summary.total}) }} ·
+            <span class="ok">✔ {{ summary.correct }}</span> ·
+            <span class="bad">✘ {{ summary.wrong }}</span> ·
+            <strong>{{ summary.percent }} %</strong>
+        </p>
+    {% else %}
+        <p class="stat-line">{{ 'home.first_time'|trans }}</p>
+    {% endif %}
+</section>
+
+{% if mistakes_count > 0 %}
+    <form method="post" action="{{ path('quiz_mistakes') }}" class="mistakes-banner">
+        <input type="hidden" name="_token" value="{{ csrf_token('quiz_start') }}">
+        <span>{{ 'home.mistakes'|trans({'%count%': mistakes_count}) }}</span>
+        <button class="btn btn-warn" type="submit">{{ 'home.mistakes_button'|trans }}</button>
+    </form>
+{% endif %}
+
+<div class="levels">
+    {% for level, data in levels %}
+        <div class="card level level-{{ level }}{{ data.unlocked ? '' : ' locked' }}">
+            <h2>{{ data.unlocked ? '' : '🔒 ' }}{{ ('level.' ~ level)|trans }}</h2>
+            <p class="muted">{{ ('level.' ~ level ~ '.desc')|trans }}</p>
+            {% if not data.unlocked %}
+                <p class="unlock-need">{{ 'home.unlock_need'|trans({'%done%': data.unlock_need.done, '%percent%': data.unlock_need.percent}) }}</p>
+                <p class="small muted">{{ 'home.unlock_now'|trans({'%done%': data.unlock_need.done_now, '%percent%': data.unlock_need.percent_now}) }}</p>
+            {% else %}
+            {% include 'home/_rank.html.twig' with {lvl: data} %}
+            {% set left = data.total - data.done %}
+            <p class="small">{{ 'home.level_progress'|trans({'%done%': data.done, '%total%': data.total}) }}</p>
+            <div class="progress"><div style="width: {{ data.total ? (100 * data.done / data.total)|round : 0 }}%"></div></div>
+            <form method="post" action="{{ path('quiz_start') }}">
+                <input type="hidden" name="_token" value="{{ csrf_token('quiz_start') }}">
+                <input type="hidden" name="level" value="{{ level }}">
+                {% if left > 0 %}
+                    <button class="btn btn-primary btn-big" type="submit">▶ {{ 'home.start_mix'|trans({'%count%': min(left, 10)}) }}</button>
+                {% else %}
+                    <p class="level-done">🏆 {{ 'home.level_done'|trans }}</p>
+                {% endif %}
+            </form>
+            {% if left > 0 and data.topics %}
+                <details>
+                    <summary>{{ 'home.by_topic'|trans }}</summary>
+                    <div class="topics">
+                        {% for item in data.topics %}
+                            {% if item.done < item.total %}
+                            <form method="post" action="{{ path('quiz_start') }}">
+                                <input type="hidden" name="_token" value="{{ csrf_token('quiz_start') }}">
+                                <input type="hidden" name="level" value="{{ level }}">
+                                <input type="hidden" name="topic" value="{{ item.topic.code }}">
+                                <button class="chip" type="submit">{{ item.topic.title(app.request.locale) }} <span>{{ item.done }}/{{ item.total }}</span></button>
+                            </form>
+                            {% else %}
+                                <span class="chip chip-done">✔ {{ item.topic.title(app.request.locale) }}</span>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </details>
+            {% endif %}
+            {% endif %}
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

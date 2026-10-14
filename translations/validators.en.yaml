@@ -1,0 +1,3 @@
+user.username_taken: This username is already taken.
+user.username_chars: Username may contain only letters, digits, dot, dash and underscore.
+user.password_mismatch: Passwords do not match.

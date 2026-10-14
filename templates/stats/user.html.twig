@@ -1,0 +1,84 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+{% set locale = app.request.locale %}
+<h1>{{ 'stats.title'|trans }}{% if child != app.user %}: {{ child.username }}{% endif %}</h1>
+
+<div class="tiles">
+    <div class="tile"><div class="tile-num">{{ stats.progress.done }} / {{ stats.progress.total }}</div><div class="tile-label">{{ 'stats.passed'|trans }}</div></div>
+    <div class="tile"><div class="tile-num">{{ stats.summary.total }}</div><div class="tile-label">{{ 'stats.total'|trans }}</div></div>
+    <div class="tile"><div class="tile-num ok">{{ stats.summary.correct }}</div><div class="tile-label">{{ 'stats.correct'|trans }}</div></div>
+    <div class="tile"><div class="tile-num bad">{{ stats.summary.wrong }}</div><div class="tile-label">{{ 'stats.wrong'|trans }}</div></div>
+    <div class="tile"><div class="tile-num">{{ stats.summary.percent is not null ? stats.summary.percent ~ ' %' : '—' }}</div><div class="tile-label">{{ 'stats.success'|trans }}</div></div>
+</div>
+
+<div class="card">
+    <h2>{{ 'stats.by_level'|trans }}</h2>
+    <table class="stats">
+        {% for level, row in stats.levels %}
+            {% set p = stats.progress.levels[level] %}
+            <tr><th>{{ ('level.' ~ level)|trans }}</th><td>⚽ {{ p.rank }}/10 · {{ p.player.name }}</td><td class="nums">{{ 'stats.passed_short'|trans({'%done%': p.done, '%total%': p.total}) }}</td><td>{% include 'stats/_percent.html.twig' %}</td></tr>
+        {% endfor %}
+    </table>
+</div>
+
+<div class="card">
+    <h2>{{ 'stats.by_topic'|trans }}</h2>
+    <table class="stats">
+        {% for row in stats.topics %}
+            <tr><th>{{ row.topic.title(locale) }}</th><td>{% include 'stats/_percent.html.twig' %}</td></tr>
+        {% endfor %}
+    </table>
+</div>
+
+<div class="card">
+    <h2>{{ 'stats.mistakes'|trans }} ({{ stats.mistakes|length }})</h2>
+    {% if stats.mistakes %}
+        <ul class="answer-list">
+            {% for a in stats.mistakes %}
+                <li class="bad">
+                    <span class="mark">✘</span>
+                    <span class="q">{{ a.question.prompt }} <small class="muted">· {{ ('level.' ~ a.question.level)|trans }} · {{ a.question.topic.title(locale) }}</small></span>
+                    <span class="a">{{ a.givenAnswer }} → <strong>{{ a.question.correctAnswer }}</strong></span>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p class="muted">{{ 'stats.no_mistakes'|trans }}</p>
+    {% endif %}
+</div>
+
+<div class="card">
+    <h2>{{ 'stats.sessions'|trans }}</h2>
+    {% if stats.sessions %}
+        <table class="stats">
+            <tr><th>{{ 'stats.when'|trans }}</th><th>{{ 'stats.what'|trans }}</th><th>{{ 'stats.result'|trans }}</th></tr>
+            {% for s in stats.sessions %}
+                <tr>
+                    <td>{{ s.startedAt|date('d.m.Y H:i') }}</td>
+                    <td>{% if s.mode == 'mistakes' %}{{ 'quiz.mistakes_mode'|trans }}{% else %}{{ ('level.' ~ s.level)|trans }}{% if s.topic %} · {{ s.topic.title(locale) }}{% endif %}{% endif %}</td>
+                    <td>{{ s.correctCount }} / {{ s.position }}{% if not s.finished %} <span class="muted">({{ 'stats.unfinished'|trans }}, {{ s.total }})</span>{% endif %}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p class="muted">{{ 'stats.no_sessions'|trans }}</p>
+    {% endif %}
+</div>
+
+{% if history is not null %}
+    <div class="card">
+        <h2>{{ 'stats.history'|trans }}</h2>
+        <table class="stats history">
+            <tr><th>{{ 'stats.when'|trans }}</th><th>{{ 'stats.question'|trans }}</th><th>{{ 'stats.answer'|trans }}</th></tr>
+            {% for a in history %}
+                <tr class="{{ a.correct ? 'ok' : 'bad' }}">
+                    <td>{{ a.answeredAt|date('d.m. H:i') }}</td>
+                    <td>{{ a.question.prompt }}</td>
+                    <td>{{ a.correct ? '✔' : '✘' }} {{ a.givenAnswer }}{% if not a.correct %} → {{ a.question.correctAnswer }}{% endif %}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endif %}
+{% endblock %}

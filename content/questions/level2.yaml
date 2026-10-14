@@ -1,0 +1,620 @@
+questions:
+  # ---------- vyjmenovaná slova ----------
+  - id: l2-vs-001
+    topic: vyjmenovana-slova
+    level: 2
+    type: choice
+    prompt: "Doplň í/ý: Hrdý král byl plný p_chy."
+    options: ["í", "ý"]
+    correct: "ý"
+    explanation:
+      cs: "Pýcha je vyjmenované slovo po P, proto píšeme ý."
+      en: "\"Pýcha\" (pride) is a listed word after P, so we write ý."
+  - id: l2-vs-002
+    topic: vyjmenovana-slova
+    level: 2
+    type: choice
+    prompt: "Doplň i/y: Brambory nosíme v p_tli."
+    options: ["i", "y"]
+    correct: "y"
+    explanation:
+      cs: "Pytel je vyjmenované slovo po P, proto v pytli píšeme y."
+      en: "\"Pytel\" (sack) is a listed word after P, so we write y."
+  - id: l2-vs-003
+    topic: vyjmenovana-slova
+    level: 2
+    type: choice
+    prompt: "Doplň i/y: Babička má dva s_ny."
+    options: ["i", "y"]
+    correct: "y"
+    explanation:
+      cs: "Syn je vyjmenované slovo po S, proto píšeme syny."
+      en: "\"Syn\" (son) is a listed word after S, so we write syny."
+  - id: l2-vs-004
+    topic: vyjmenovana-slova
+    level: 2
+    type: input
+    prompt: "Doplň i nebo y a napiš celé slovo: Had na nás zle s_čel."
+    answers: ["syčel"]
+    explanation:
+      cs: "Syčet je vyjmenované slovo po S, proto píšeme y."
+      en: "\"Syčet\" (to hiss) is a listed word after S, so we write y."
+  - id: l2-vs-005
+    topic: vyjmenovana-slova
+    level: 2
+    type: choice
+    prompt: "Doplň i/y: Po obědě jsem byl s_tý."
+    options: ["i", "y"]
+    correct: "y"
+    explanation:
+      cs: "Sytý je vyjmenované slovo po S, proto píšeme y."
+      en: "\"Sytý\" (full, not hungry) is a listed word after S, so we write y."
+  - id: l2-vs-006
+    topic: vyjmenovana-slova
+    level: 2
+    type: choice
+    prompt: "Doplň i/y: V_ jste moji kamarádi."
+    options: ["i", "y"]
+    correct: "y"
+    explanation:
+      cs: "Slovo vy patří mezi vyjmenovaná slova po V, píšeme y."
+      en: "\"Vy\" (you, plural) is a listed word after V, so we write y."
+  - id: l2-vs-007
+    topic: vyjmenovana-slova
+    level: 2
+    type: choice
+    prompt: "Doplň i/y: Ta věž je velmi v_soká."
+    options: ["i", "y"]
+    correct: "y"
+    explanation:
+      cs: "Vysoký je vyjmenované slovo po V, proto píšeme y."
+      en: "\"Vysoký\" (tall, high) is a listed word after V, so we write y."
+  - id: l2-vs-008
+    topic: vyjmenovana-slova
+    level: 2
+    type: input
+    prompt: "Doplň í nebo ý a napiš celé slovo: V noci v lese houká v_r."
+    answers: ["výr"]
+    explanation:
+      cs: "Výr je pták (sova) a je to vyjmenované slovo po V, píšeme ý."
+      en: "\"Výr\" (eagle owl) is a bird and a listed word after V, so we write ý."
+  - id: l2-vs-009
+    topic: vyjmenovana-slova
+    level: 2
+    type: choice
+    prompt: "Doplň i/y: Ráno jsem musel vstávat br_."
+    options: ["i", "y"]
+    correct: "y"
+    explanation:
+      cs: "Brzy je vyjmenované slovo po Z, píšeme y."
+      en: "\"Brzy\" (early) is a listed word after Z, so we write y."
+  - id: l2-vs-010
+    topic: vyjmenovana-slova
+    level: 2
+    type: choice
+    prompt: "Doplň i/y: Pes měl vyplazený jaz_k."
+    options: ["i", "y"]
+    correct: "y"
+    explanation:
+      cs: "Jazyk je vyjmenované slovo po Z, píšeme y."
+      en: "\"Jazyk\" (tongue) is a listed word after Z, so we write y."
+  - id: l2-vs-011
+    topic: vyjmenovana-slova
+    level: 2
+    type: input
+    prompt: "Doplň í nebo ý a napiš celé slovo: Jak se naz_vá hlavní město Česka?"
+    answers: ["nazývá"]
+    explanation:
+      cs: "Nazývat se je vyjmenované slovo po Z, píšeme ý."
+      en: "\"Nazývat se\" (to be called) is a listed word after Z, so we write ý."
+  - id: l2-vs-012
+    topic: vyjmenovana-slova
+    level: 2
+    type: choice
+    prompt: "Doplň i/y: Táta řeže dřevo p_lou."
+    options: ["i", "y"]
+    correct: "i"
+    explanation:
+      cs: "Pila není vyjmenované slovo, proto píšeme měkké i."
+      en: "\"Pila\" (saw) is not a listed word, so we write soft i."
+  - id: l2-vs-013
+    topic: vyjmenovana-slova
+    level: 2
+    type: input
+    prompt: "Doplň i nebo y a napiš celé slovo: Strýc je velmi s_lný."
+    answers: ["silný"]
+    explanation:
+      cs: "Silný není vyjmenované slovo, proto píšeme měkké i."
+      en: "\"Silný\" (strong) is not a listed word, so we write soft i."
+  - id: l2-vs-014
+    topic: vyjmenovana-slova
+    level: 2
+    type: choice
+    prompt: "Doplň i/y: Bydlíme ve velké v_le u lesa."
+    options: ["i", "y"]
+    correct: "i"
+    explanation:
+      cs: "Vila není vyjmenované slovo, proto píšeme měkké i."
+      en: "\"Vila\" (villa) is not a listed word, so we write soft i."
+  - id: l2-vs-015
+    topic: vyjmenovana-slova
+    level: 2
+    type: input
+    prompt: "Doplň í nebo ý a napiš celé slovo: Ruce si umyj m_dlem."
+    answers: ["mýdlem"]
+    explanation:
+      cs: "Mýdlo je příbuzné se slovem mýt, to je vyjmenované slovo po M."
+      en: "\"Mýdlo\" (soap) is related to \"mýt\" (to wash), a listed word after M."
+  - id: l2-vs-016
+    topic: vyjmenovana-slova
+    level: 2
+    type: choice
+    prompt: "Ve kterém slově je chyba?"
+    options: ["lyže", "mlýn", "lýpa", "slyšet"]
+    correct: "lýpa"
+    explanation:
+      cs: "Lípa není vyjmenované slovo, správně se píše lípa s měkkým í."
+      en: "\"Lípa\" (linden tree) is not a listed word, so it is spelled with soft í."
+  - id: l2-vs-017
+    topic: vyjmenovana-slova
+    level: 2
+    type: input
+    prompt: "Doplň í nebo ý a napiš celé slovo: Na květině sedí mot_l."
+    answers: ["motýl"]
+    explanation:
+      cs: "Motýl je vyjmenované slovo po M, píšeme ý."
+      en: "\"Motýl\" (butterfly) is a listed word after M, so we write ý."
+  - id: l2-vs-018
+    topic: vyjmenovana-slova
+    level: 2
+    type: input
+    prompt: "Doplň í nebo ý a napiš celé slovo: Dědeček nosí b_lou košili."
+    answers: ["bílou"]
+    explanation:
+      cs: "Bílý není vyjmenované slovo, proto píšeme měkké í."
+      en: "\"Bílý\" (white) is not a listed word, so we write soft í."
+
+  # ---------- párové souhlásky ----------
+  - id: l2-par-001
+    topic: parove-souhlasky
+    level: 2
+    type: input
+    prompt: "Doplň b nebo p a napiš celé slovo: Na kopci roste starý du_."
+    answers: ["dub"]
+    explanation:
+      cs: "Ověříme: duby → dub."
+      en: "Check with another form: duby → dub."
+  - id: l2-par-002
+    topic: parove-souhlasky
+    level: 2
+    type: choice
+    prompt: "Doplň d/t: Rybník v zimě pokryl le_."
+    options: ["d", "t"]
+    correct: "d"
+    explanation:
+      cs: "Ověříme: ledy, ledu → led."
+      en: "Check with another form: ledy → led."
+  - id: l2-par-003
+    topic: parove-souhlasky
+    level: 2
+    type: choice
+    prompt: "Doplň ž/š: Na hradě stojí vysoká vě_."
+    options: ["ž", "š"]
+    correct: "ž"
+    explanation:
+      cs: "Ověříme: věže. Slyšíme ž, proto píšeme věž."
+      en: "Check with \"věže\": we hear ž, so we write \"věž\" (tower)."
+  - id: l2-par-004
+    topic: parove-souhlasky
+    level: 2
+    type: input
+    prompt: "Doplň z nebo s a napiš celé slovo: Na dvoře stojí naložený vů_."
+    answers: ["vůz"]
+    explanation:
+      cs: "Ověříme: vozy → vůz."
+      en: "Check with another form: vozy → vůz."
+  - id: l2-par-005
+    topic: parove-souhlasky
+    level: 2
+    type: input
+    prompt: "Doplň v nebo f a napiš celé slovo: V ZOO jsme viděli le_."
+    answers: ["lev"]
+    explanation:
+      cs: "Ověříme: lvi, lva → lev."
+      en: "Check with another form: lvi → lev."
+  - id: l2-par-006
+    topic: parove-souhlasky
+    level: 2
+    type: input
+    prompt: "Doplň h nebo ch a napiš celé slovo: Venku padá bílý sní_."
+    answers: ["sníh"]
+    explanation:
+      cs: "Ověříme: sněhu → sníh."
+      en: "Check with another form: sněhu → sníh."
+  - id: l2-par-007
+    topic: parove-souhlasky
+    level: 2
+    type: choice
+    prompt: "Doplň ď/ť: Na podzim sbíráme v lese žalu_."
+    options: ["ď", "ť"]
+    correct: "ď"
+    explanation:
+      cs: "Ověříme: žaludy → žaluď."
+      en: "Check with another form: žaludy → žaluď."
+  - id: l2-par-008
+    topic: parove-souhlasky
+    level: 2
+    type: input
+    prompt: "Doplň d nebo t a napiš celé slovo: Kolem zahrady vede dřevěný plo_."
+    answers: ["plot"]
+    explanation:
+      cs: "Ověříme: ploty → plot."
+      en: "Check with another form: ploty → plot."
+  - id: l2-par-009
+    topic: parove-souhlasky
+    level: 2
+    type: choice
+    prompt: "Doplň h/ch: Na zahradě roste zelený hrá_."
+    options: ["h", "ch"]
+    correct: "ch"
+    explanation:
+      cs: "Ověříme: hrachu. Slyšíme ch, proto píšeme hrách."
+      en: "Check with \"hrachu\": we hear ch, so we write \"hrách\" (peas)."
+  - id: l2-par-010
+    topic: parove-souhlasky
+    level: 2
+    type: input
+    prompt: "Doplň d nebo t a napiš celé slovo: Na větvi zpívá černý droz_."
+    answers: ["drozd"]
+    explanation:
+      cs: "Ověříme: drozdi. Slyšíme d, proto píšeme drozd."
+      en: "Check with \"drozdi\": we hear d, so we write \"drozd\" (thrush)."
+  - id: l2-par-011
+    topic: parove-souhlasky
+    level: 2
+    type: choice
+    prompt: "Které slovo nám pomůže ověřit písmeno na konci slova had?"
+    options: ["hadi", "had", "hadr"]
+    correct: "hadi"
+    explanation:
+      cs: "Změníme tvar slova: hadi – teď slyšíme d jasně."
+      en: "Change the form: hadi – now we clearly hear d."
+  - id: l2-par-012
+    topic: parove-souhlasky
+    level: 2
+    type: input
+    prompt: "Doplň b nebo p a napiš celé slovo: Na snídani jím chlé_ s máslem."
+    answers: ["chléb"]
+    explanation:
+      cs: "Ověříme: chleba, chlebem → chléb."
+      en: "Check with another form: chleba → chléb."
+  - id: l2-par-013
+    topic: parove-souhlasky
+    level: 2
+    type: choice
+    prompt: "Doplň z/s: V zimě venku štípe mrá_."
+    options: ["z", "s"]
+    correct: "z"
+    explanation:
+      cs: "Ověříme: mrazy → mráz."
+      en: "Check with another form: mrazy → mráz."
+
+  # ---------- slovní druhy ----------
+  - id: l2-sd-001
+    topic: slovni-druhy
+    level: 2
+    type: choice
+    prompt: "Jaký slovní druh je slovo „stůl“?"
+    options: ["podstatné jméno", "přídavné jméno", "sloveso"]
+    correct: "podstatné jméno"
+    explanation:
+      cs: "Stůl je věc – ptáme se kdo, co? Je to podstatné jméno."
+      en: "\"Stůl\" (table) is a thing (who? what?), so it is a noun."
+  - id: l2-sd-002
+    topic: slovni-druhy
+    level: 2
+    type: choice
+    prompt: "Jaký slovní druh je slovo „zelený“?"
+    options: ["podstatné jméno", "přídavné jméno", "sloveso"]
+    correct: "přídavné jméno"
+    explanation:
+      cs: "Zelený říká, jaká věc je (jaký?). Je to přídavné jméno."
+      en: "\"Zelený\" (green) describes what something is like, so it is an adjective."
+  - id: l2-sd-003
+    topic: slovni-druhy
+    level: 2
+    type: choice
+    prompt: "Jaký slovní druh je slovo „pod“?"
+    options: ["předložka", "spojka", "sloveso"]
+    correct: "předložka"
+    explanation:
+      cs: "Pod stojí před podstatným jménem (pod stolem). Je to předložka."
+      en: "\"Pod\" (under) stands before a noun (pod stolem), so it is a preposition."
+  - id: l2-sd-004
+    topic: slovni-druhy
+    level: 2
+    type: choice
+    prompt: "Jaký slovní druh je slovo „a“ ve větě: Mám psa a kočku."
+    options: ["předložka", "spojka", "podstatné jméno"]
+    correct: "spojka"
+    explanation:
+      cs: "Slovo a spojuje dvě slova. Je to spojka."
+      en: "\"A\" (and) joins two words, so it is a conjunction."
+  - id: l2-sd-005
+    topic: slovni-druhy
+    level: 2
+    type: input
+    prompt: "Najdi ve větě sloveso a napiš ho: Malý pes rychle běží."
+    answers: ["běží"]
+    explanation:
+      cs: "Běží říká, co pes dělá. Je to sloveso."
+      en: "\"Běží\" (runs) tells what the dog does, so it is a verb."
+  - id: l2-sd-006
+    topic: slovni-druhy
+    level: 2
+    type: input
+    prompt: "Najdi ve větě přídavné jméno a napiš ho: Na stole leží červené jablko."
+    answers: ["červené"]
+    explanation:
+      cs: "Červené říká, jaké je jablko. Je to přídavné jméno."
+      en: "\"Červené\" (red) tells what the apple is like, so it is an adjective."
+
+  # ---------- podstatná jména ----------
+  - id: l2-pj-001
+    topic: podstatna-jmena
+    level: 2
+    type: choice
+    prompt: "Jaký rod má podstatné jméno „město“?"
+    options: ["mužský", "ženský", "střední"]
+    correct: "střední"
+    explanation:
+      cs: "Řekneme to město, proto je to rod střední."
+      en: "We say \"to město\", so it is neuter."
+  - id: l2-pj-002
+    topic: podstatna-jmena
+    level: 2
+    type: choice
+    prompt: "Jaký rod má podstatné jméno „kniha“?"
+    options: ["mužský", "ženský", "střední"]
+    correct: "ženský"
+    explanation:
+      cs: "Řekneme ta kniha, proto je to rod ženský."
+      en: "We say \"ta kniha\", so it is feminine."
+  - id: l2-pj-003
+    topic: podstatna-jmena
+    level: 2
+    type: choice
+    prompt: "V jakém čísle je podstatné jméno „domy“?"
+    options: ["jednotné", "množné"]
+    correct: "množné"
+    explanation:
+      cs: "Domy je více domů, proto je to číslo množné."
+      en: "\"Domy\" means more than one house, so it is plural."
+  - id: l2-pj-004
+    topic: podstatna-jmena
+    level: 2
+    type: choice
+    prompt: "Které slovo je vlastní jméno?"
+    options: ["řeka", "Vltava", "hora", "město"]
+    correct: "Vltava"
+    explanation:
+      cs: "Vltava je jméno jedné určité řeky, proto ji píšeme s velkým V."
+      en: "\"Vltava\" is the name of one particular river, so it starts with a capital letter."
+  - id: l2-pj-005
+    topic: podstatna-jmena
+    level: 2
+    type: choice
+    prompt: "Jak správně napíšeš název nejvyšší hory Česka?"
+    options: ["Sněžka", "sněžka"]
+    correct: "Sněžka"
+    explanation:
+      cs: "Názvy hor jsou vlastní jména, píšeme je s velkým písmenem."
+      en: "Names of mountains are proper nouns, so they start with a capital letter."
+  - id: l2-pj-006
+    topic: podstatna-jmena
+    level: 2
+    type: choice
+    prompt: "Které spojení je napsané správně?"
+    options: ["v Dlouhé ulici", "v dlouhé ulici", "v Dlouhé Ulici"]
+    correct: "v Dlouhé ulici"
+    explanation:
+      cs: "Název ulice je Dlouhá, píšeme ho s velkým D. Slovo ulice píšeme s malým u."
+      en: "The street name \"Dlouhá\" gets a capital D; the word \"ulice\" (street) stays lowercase."
+  - id: l2-pj-007
+    topic: podstatna-jmena
+    level: 2
+    type: input
+    prompt: "Napiš slovo v množném čísle: kočka → ?"
+    answers: ["kočky"]
+    explanation:
+      cs: "Jedna kočka, dvě kočky."
+      en: "One cat is \"kočka\", more cats are \"kočky\"."
+  - id: l2-pj-008
+    topic: podstatna-jmena
+    level: 2
+    type: input
+    prompt: "Napiš slovo v jednotném čísle: stromy → ?"
+    answers: ["strom"]
+    explanation:
+      cs: "Hodně stromů jsou stromy, jeden je strom."
+      en: "Many trees are \"stromy\", one tree is \"strom\"."
+
+  # ---------- dě, tě, ně, bě, pě, vě, mě ----------
+  - id: l2-dtn-001
+    topic: de-te-ne
+    level: 2
+    type: choice
+    prompt: "Doplň ě/e: D_ti si hrají na hřišti."
+    options: ["ě", "e"]
+    correct: "ě"
+    explanation:
+      cs: "Slyšíme měkké ď, proto píšeme dě: děti."
+      en: "We hear a soft ď, so we write dě: děti (children)."
+  - id: l2-dtn-002
+    topic: de-te-ne
+    level: 2
+    type: choice
+    prompt: "Doplň ě/e: Po plavání mě bolí celé t_lo."
+    options: ["ě", "e"]
+    correct: "ě"
+    explanation:
+      cs: "Slyšíme měkké ť, proto píšeme tě: tělo."
+      en: "We hear a soft ť, so we write tě: tělo (body)."
+  - id: l2-dtn-003
+    topic: de-te-ne
+    level: 2
+    type: input
+    prompt: "Doplň ě nebo je a napiš celé slovo: Ve škole máme ob_d ve 12 hodin."
+    answers: ["oběd"]
+    explanation:
+      cs: "Slyšíme bje, ale píšeme bě: oběd."
+      en: "We hear \"bje\", but we write bě: oběd (lunch)."
+  - id: l2-dtn-004
+    topic: de-te-ne
+    level: 2
+    type: choice
+    prompt: "Doplň ě nebo je: Mám p_t prstů na ruce."
+    options: ["ě", "je"]
+    correct: "ě"
+    explanation:
+      cs: "Slyšíme pje, ale píšeme pě: pět."
+      en: "We hear \"pje\", but we write pě: pět (five)."
+  - id: l2-dtn-005
+    topic: de-te-ne
+    level: 2
+    type: input
+    prompt: "Doplň mě nebo mně a napiš celé slovo: Bydlíme ve velkém _stě."
+    answers: ["městě"]
+    explanation:
+      cs: "Ve slově město píšeme mě."
+      en: "In the word \"město\" (town) we write mě."
+  - id: l2-dtn-006
+    topic: de-te-ne
+    level: 2
+    type: choice
+    prompt: "Doplň mě nebo mně: Psali o _ v novinách."
+    options: ["mě", "mně"]
+    correct: "mně"
+    explanation:
+      cs: "Zkusíme dosadit tobě: psali o tobě. Kde se hodí tobě, píšeme mně."
+      en: "Try \"tobě\": \"psali o tobě\". Where \"tobě\" fits, we write mně."
+  - id: l2-dtn-007
+    topic: de-te-ne
+    level: 2
+    type: choice
+    prompt: "Které slovo je napsané správně?"
+    options: ["vjeděl", "věděl", "vjedel"]
+    correct: "věděl"
+    explanation:
+      cs: "Slyšíme vje a ďe, ale píšeme vě a dě: věděl."
+      en: "We hear \"vje\" and \"ďe\", but we write vě and dě: věděl (knew)."
+
+  # ---------- význam slov ----------
+  - id: l2-vys-001
+    topic: vyznam-slov
+    level: 2
+    type: choice
+    prompt: "Najdi slovo souznačné (stejného významu) ke slovu „malý“."
+    options: ["drobný", "velký", "rychlý"]
+    correct: "drobný"
+    explanation:
+      cs: "Malý a drobný znamenají skoro totéž."
+      en: "\"Malý\" and \"drobný\" mean almost the same: small."
+  - id: l2-vys-002
+    topic: vyznam-slov
+    level: 2
+    type: choice
+    prompt: "Najdi slovo opačného významu ke slovu „teplý“."
+    options: ["horký", "studený", "mokrý"]
+    correct: "studený"
+    explanation:
+      cs: "Opak slova teplý je studený."
+      en: "The opposite of \"teplý\" (warm) is \"studený\" (cold)."
+  - id: l2-vys-003
+    topic: vyznam-slov
+    level: 2
+    type: input
+    prompt: "Napiš slovo opačného významu: den → ?"
+    answers: ["noc"]
+    explanation:
+      cs: "Opak slova den je noc."
+      en: "The opposite of \"den\" (day) is \"noc\" (night)."
+  - id: l2-vys-004
+    topic: vyznam-slov
+    level: 2
+    type: input
+    prompt: "Napiš slovo opačného významu: rychlý → ?"
+    answers: ["pomalý"]
+    explanation:
+      cs: "Opak slova rychlý je pomalý."
+      en: "The opposite of \"rychlý\" (fast) is \"pomalý\" (slow)."
+  - id: l2-vys-005
+    topic: vyznam-slov
+    level: 2
+    type: choice
+    prompt: "Které slovo nepatří mezi ostatní?"
+    options: ["jablko", "hruška", "švestka", "mrkev"]
+    correct: "mrkev"
+    explanation:
+      cs: "Jablko, hruška a švestka jsou ovoce. Mrkev je zelenina."
+      en: "Apple, pear and plum are fruit. Carrot is a vegetable."
+  - id: l2-vys-006
+    topic: vyznam-slov
+    level: 2
+    type: choice
+    prompt: "Jakým společným slovem nazveš: pes, kočka, kráva?"
+    options: ["zvířata", "ptáci", "rostliny"]
+    correct: "zvířata"
+    explanation:
+      cs: "Pes, kočka i kráva jsou zvířata."
+      en: "Dog, cat and cow are all animals (zvířata)."
+
+  # ---------- věta a souvětí ----------
+  - id: l2-veta-001
+    topic: veta
+    level: 2
+    type: choice
+    prompt: "Je to věta jednoduchá, nebo souvětí? „Pes štěká na kočku.“"
+    options: ["věta jednoduchá", "souvětí"]
+    correct: "věta jednoduchá"
+    explanation:
+      cs: "Je tu jen jedno sloveso (štěká), proto je to věta jednoduchá."
+      en: "There is only one verb (štěká), so it is a simple sentence."
+  - id: l2-veta-002
+    topic: veta
+    level: 2
+    type: choice
+    prompt: "Je to věta jednoduchá, nebo souvětí? „Petr čte knihu a Jana maluje obrázek.“"
+    options: ["věta jednoduchá", "souvětí"]
+    correct: "souvětí"
+    explanation:
+      cs: "Jsou tu dvě slovesa (čte, maluje), proto je to souvětí."
+      en: "There are two verbs (čte, maluje), so it is a compound sentence."
+  - id: l2-veta-003
+    topic: veta
+    level: 2
+    type: input
+    prompt: "Kolik sloves je v souvětí? Napiš číslici: Když jsme přišli domů, maminka vařila večeři."
+    answers: ["2"]
+    explanation:
+      cs: "Slovesa jsou přišli a vařila. Jsou dvě."
+      en: "The verbs are \"přišli\" and \"vařila\" – there are two."
+  - id: l2-veta-004
+    topic: veta
+    level: 2
+    type: choice
+    prompt: "Z kolika vět jednoduchých se skládá souvětí: „Ráno jsem vstal, umyl jsem se a šel jsem do školy.“"
+    options: ["1", "2", "3"]
+    correct: "3"
+    explanation:
+      cs: "Slovesa jsou vstal, umyl se, šel. Tři slovesa = tři věty."
+      en: "The verbs are vstal, umyl se, šel. Three verbs = three clauses."
+  - id: l2-veta-005
+    topic: veta
+    level: 2
+    type: input
+    prompt: "Kolik sloves je ve větě? Napiš číslici: Babička peče buchty."
+    answers: ["1"]
+    explanation:
+      cs: "Jediné sloveso je peče, proto je to věta jednoduchá."
+      en: "The only verb is \"peče\" (bakes), so it is a simple sentence."

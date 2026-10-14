@@ -1,0 +1,533 @@
+questions:
+  # ---------- slovesa ----------
+  - id: "l3c-sl-001"
+    topic: "slovesa"
+    level: 3
+    type: "choice"
+    prompt: "Urči čas slovesa ve větě: Včera jsme hráli na hřišti vybíjenou."
+    options: ["minulý", "přítomný", "budoucí"]
+    correct: "minulý"
+    explanation:
+      cs: "„Hráli jsme“ se stalo včera, je to čas minulý."
+      en: "„hráli jsme“ happened yesterday, so it is the past tense."
+  - id: "l3c-sl-002"
+    topic: "slovesa"
+    level: 3
+    type: "choice"
+    prompt: "Urči osobu a číslo slovesa „píšeš“."
+    options: ["2. osoba, číslo jednotné", "2. osoba, číslo množné", "3. osoba, číslo jednotné", "1. osoba, číslo jednotné"]
+    correct: "2. osoba, číslo jednotné"
+    explanation:
+      cs: "Ty píšeš – to je 2. osoba čísla jednotného."
+      en: "ty píšeš (you write) is the 2nd person singular."
+  - id: "l3c-sl-003"
+    topic: "slovesa"
+    level: 3
+    type: "input"
+    prompt: "Napiš sloveso „psát“ v čase budoucím, 1. osoba čísla množného (my …). Napiš obě slova."
+    answers: ["budeme psát", "my budeme psát"]
+    explanation:
+      cs: "My budeme psát – čas budoucí, 1. osoba, číslo množné."
+      en: "my budeme psát (we will write) is the future tense, 1st person plural."
+  - id: "l3c-sl-004"
+    topic: "slovesa"
+    level: 3
+    type: "input"
+    prompt: "Napiš infinitiv (neurčitek) slovesa „pekla“."
+    answers: ["péct", "péci"]
+    explanation:
+      cs: "Babička pekla → infinitiv je péct (nebo péci)."
+      en: "pekla (she baked) comes from the infinitive péct (or péci)."
+  - id: "l3c-sl-005"
+    topic: "slovesa"
+    level: 3
+    type: "input"
+    prompt: "Napiš zápor slovesa „půjdeme“."
+    answers: ["nepůjdeme"]
+    explanation:
+      cs: "Zápor tvoříme předponou ne-, píšeme ji dohromady: nepůjdeme."
+      en: "The negative is made with ne- written together with the verb: nepůjdeme."
+  - id: "l3c-sl-006"
+    topic: "slovesa"
+    level: 3
+    type: "choice"
+    prompt: "Ve které větě je sloveso v čase budoucím?"
+    options: ["Poletíme letadlem k moři.", "Letěli jsme letadlem k moři.", "Letíme letadlem k moři."]
+    correct: "Poletíme letadlem k moři."
+    explanation:
+      cs: "Poletíme – to se teprve stane, je to čas budoucí."
+      en: "poletíme (we will fly) has not happened yet, so it is the future tense."
+  - id: "l3c-sl-007"
+    topic: "slovesa"
+    level: 3
+    type: "input"
+    prompt: "Napiš sloveso „být“ v čase přítomném, 2. osoba čísla množného (vy …)."
+    answers: ["jste", "vy jste"]
+    explanation:
+      cs: "Já jsem, ty jsi, on je, my jsme, vy jste, oni jsou."
+      en: "The present tense of být: vy jste (you are, plural)."
+  - id: "l3c-sl-008"
+    topic: "slovesa"
+    level: 3
+    type: "choice"
+    prompt: "Který tvar slovesa je infinitiv (neurčitek)?"
+    options: ["plavat", "plave", "plaval", "plavou"]
+    correct: "plavat"
+    explanation:
+      cs: "Infinitiv je základní tvar slovesa, končí obvykle na -t: plavat."
+      en: "The infinitive is the basic form of a verb, usually ending in -t: plavat."
+  - id: "l3c-sl-009"
+    topic: "slovesa"
+    level: 3
+    type: "input"
+    prompt: "Doplň sloveso „spát“ v čase minulém: Tomáš včera dlouho _ . Napiš jen chybějící slovo."
+    answers: ["spal"]
+    explanation:
+      cs: "Tomáš spal – sloveso spát v čase minulém, 3. osoba čísla jednotného."
+      en: "Tomáš spal (Tomáš slept) is the past tense of spát."
+  - id: "l3c-sl-010"
+    topic: "slovesa"
+    level: 3
+    type: "choice"
+    prompt: "Ve které větě je sloveso v záporu?"
+    options: ["Dnes nepůjdu ven.", "Neděle je můj oblíbený den.", "Nesu těžkou tašku.", "Nebe je dnes modré."]
+    correct: "Dnes nepůjdu ven."
+    explanation:
+      cs: "Nepůjdu je zápor slovesa půjdu. V ostatních větách ne- k záporu nepatří (neděle, nesu, nebe)."
+      en: "nepůjdu is the negative of půjdu. In the other words ne- is just part of the word."
+  - id: "l3c-sl-011"
+    topic: "slovesa"
+    level: 3
+    type: "input"
+    prompt: "Napiš sloveso „mýt“ v čase přítomném, 3. osoba čísla množného (oni …)."
+    answers: ["myjí"]
+    explanation:
+      cs: "Oni myjí – mýt je vyjmenované slovo, proto y."
+      en: "oni myjí (they wash); mýt is a listed word, so it has y."
+  - id: "l3c-sl-012"
+    topic: "slovesa"
+    level: 3
+    type: "choice"
+    prompt: "Urči osobu a číslo slovesa „neumíme“."
+    options: ["1. osoba, číslo množné", "1. osoba, číslo jednotné", "2. osoba, číslo množné", "3. osoba, číslo množné"]
+    correct: "1. osoba, číslo množné"
+    explanation:
+      cs: "My neumíme – 1. osoba čísla množného. Zápor osobu ani číslo nemění."
+      en: "my neumíme (we can't) is the 1st person plural; the negative doesn't change that."
+  # ---------- slovní druhy ----------
+  - id: "l3c-sd-001"
+    topic: "slovni-druhy"
+    level: 3
+    type: "choice"
+    prompt: "Jaký slovní druh je slovo „oni“?"
+    options: ["zájmeno", "podstatné jméno", "číslovka", "částice"]
+    correct: "zájmeno"
+    explanation:
+      cs: "Oni zastupuje podstatné jméno (např. děti), je to zájmeno."
+      en: "oni (they) stands in for a noun, so it is a pronoun (zájmeno)."
+  - id: "l3c-sd-002"
+    topic: "slovni-druhy"
+    level: 3
+    type: "choice"
+    prompt: "Jaký slovní druh je slovo „druhý“ ve větě: V závodě jsem doběhl druhý."
+    options: ["číslovka", "přídavné jméno", "příslovce", "zájmeno"]
+    correct: "číslovka"
+    explanation:
+      cs: "Druhý vyjadřuje pořadí, je to číslovka (řadová)."
+      en: "druhý (second) tells the order, so it is a numeral (číslovka)."
+  - id: "l3c-sd-003"
+    topic: "slovni-druhy"
+    level: 3
+    type: "choice"
+    prompt: "Jaký slovní druh je slovo „ano“?"
+    options: ["částice", "citoslovce", "příslovce", "spojka"]
+    correct: "částice"
+    explanation:
+      cs: "Slova ano a ne jsou částice."
+      en: "ano (yes) and ne (no) are particles (částice)."
+  - id: "l3c-sd-004"
+    topic: "slovni-druhy"
+    level: 3
+    type: "choice"
+    prompt: "Jaký slovní druh je slovo „zítra“?"
+    options: ["příslovce", "podstatné jméno", "sloveso", "předložka"]
+    correct: "příslovce"
+    explanation:
+      cs: "Zítra odpovídá na otázku kdy?, je to příslovce."
+      en: "zítra (tomorrow) answers „when?“, so it is an adverb (příslovce)."
+  - id: "l3c-sd-005"
+    topic: "slovni-druhy"
+    level: 3
+    type: "choice"
+    prompt: "Ve které řadě jsou samá zájmena?"
+    options: ["já, ty, on, my", "já, pes, on, my", "ty, dva, my, vy", "on, ona, oni, okno"]
+    correct: "já, ty, on, my"
+    explanation:
+      cs: "Já, ty, on, my jsou zájmena. Pes a okno jsou podstatná jména, dva je číslovka."
+      en: "já, ty, on, my are pronouns; pes and okno are nouns, dva is a numeral."
+  - id: "l3c-sd-006"
+    topic: "slovni-druhy"
+    level: 3
+    type: "choice"
+    prompt: "Ve které řadě jsou samé číslovky?"
+    options: ["tři, sto, pátý, deset", "tři, sto, pátek, deset", "jeden, první, dvojka, pět", "osm, devět, desítka, málo"]
+    correct: "tři, sto, pátý, deset"
+    explanation:
+      cs: "Tři, sto, pátý, deset jsou číslovky. Pátek, dvojka a desítka jsou podstatná jména."
+      en: "tři, sto, pátý, deset are numerals; pátek, dvojka and desítka are nouns."
+  - id: "l3c-sd-007"
+    topic: "slovni-druhy"
+    level: 3
+    type: "choice"
+    prompt: "Ve které řadě jsou samá příslovce?"
+    options: ["dnes, venku, pomalu, dobře", "dnes, venkov, pomalu, dobře", "dnes, venku, pomalý, dobře"]
+    correct: "dnes, venku, pomalu, dobře"
+    explanation:
+      cs: "Dnes, venku, pomalu, dobře jsou příslovce. Venkov je podstatné jméno, pomalý přídavné jméno."
+      en: "dnes, venku, pomalu, dobře are adverbs; venkov is a noun, pomalý is an adjective."
+  - id: "l3c-sd-008"
+    topic: "slovni-druhy"
+    level: 3
+    type: "input"
+    prompt: "Najdi ve větě zájmeno a napiš ho: Babička nám upekla jablečný koláč."
+    answers: ["nám"]
+    explanation:
+      cs: "Nám je zájmeno (od slova my)."
+      en: "nám (to us) is a pronoun, a form of my (we)."
+  - id: "l3c-sd-009"
+    topic: "slovni-druhy"
+    level: 3
+    type: "input"
+    prompt: "Najdi ve větě číslovku a napiš ji: Na plotě sedí sedm vrabců."
+    answers: ["sedm"]
+    explanation:
+      cs: "Sedm vyjadřuje počet, je to číslovka."
+      en: "sedm (seven) tells how many, so it is a numeral."
+  - id: "l3c-sd-010"
+    topic: "slovni-druhy"
+    level: 3
+    type: "input"
+    prompt: "Najdi ve větě příslovce a napiš ho: Pes hlasitě štěká na pošťáka."
+    answers: ["hlasitě"]
+    explanation:
+      cs: "Hlasitě odpovídá na otázku jak? štěká, je to příslovce."
+      en: "hlasitě (loudly) answers „how?“, so it is an adverb."
+  - id: "l3c-sd-011"
+    topic: "slovni-druhy"
+    level: 3
+    type: "input"
+    prompt: "Najdi ve větě citoslovce a napiš ho: Haf, ozvalo se ze dvora."
+    answers: ["haf"]
+    explanation:
+      cs: "Haf napodobuje zvuk psa, je to citoslovce."
+      en: "haf imitates a dog's bark, so it is an interjection (citoslovce)."
+  - id: "l3c-sd-012"
+    topic: "slovni-druhy"
+    level: 3
+    type: "input"
+    prompt: "Jaký slovní druh je slovo „nebo“ ve větě: Chceš čaj, nebo kakao? Napiš jedno slovo."
+    answers: ["spojka"]
+    explanation:
+      cs: "Nebo spojuje slova nebo věty, je to spojka."
+      en: "nebo (or) joins words or sentences, so it is a conjunction (spojka)."
+  # ---------- podstatná jména ----------
+  - id: "l3c-pj-001"
+    topic: "podstatna-jmena"
+    level: 3
+    type: "input"
+    prompt: "Urči rod podstatného jména „píseň“. Napiš jedno slovo: mužský, ženský, nebo střední."
+    answers: ["ženský", "ženského", "ženský rod", "rod ženský"]
+    explanation:
+      cs: "Ta píseň – rod ženský."
+      en: "ta píseň (the song) is feminine."
+  - id: "l3c-pj-002"
+    topic: "podstatna-jmena"
+    level: 3
+    type: "input"
+    prompt: "Urči rod podstatného jména „stavení“. Napiš jedno slovo: mužský, ženský, nebo střední."
+    answers: ["střední", "středního", "střední rod", "rod střední"]
+    explanation:
+      cs: "To stavení – rod střední."
+      en: "to stavení (the building) is neuter."
+  - id: "l3c-pj-003"
+    topic: "podstatna-jmena"
+    level: 3
+    type: "choice"
+    prompt: "Jakého rodu je podstatné jméno „soudce“?"
+    options: ["mužského", "ženského", "středního"]
+    correct: "mužského"
+    explanation:
+      cs: "Ten soudce – rod mužský, i když slovo končí na -e."
+      en: "ten soudce (the judge) is masculine, even though it ends in -e."
+  - id: "l3c-pj-004"
+    topic: "podstatna-jmena"
+    level: 3
+    type: "choice"
+    prompt: "Které podstatné jméno je v čísle množném?"
+    options: ["kuřata", "kuře", "kohout", "husa"]
+    correct: "kuřata"
+    explanation:
+      cs: "Jedno kuře, ale více kuřat: ta kuřata – číslo množné."
+      en: "kuře is one chick; kuřata means several chicks, so it is plural."
+  - id: "l3c-pj-005"
+    topic: "podstatna-jmena"
+    level: 3
+    type: "input"
+    prompt: "Napiš podstatné jméno v čísle množném: jedno kotě, tři …"
+    answers: ["koťata"]
+    explanation:
+      cs: "Jedno kotě – tři koťata."
+      en: "one kitten is kotě, three kittens are koťata."
+  - id: "l3c-pj-006"
+    topic: "podstatna-jmena"
+    level: 3
+    type: "input"
+    prompt: "Napiš podstatné jméno v čísle jednotném: dva lidé, ale jeden …"
+    answers: ["člověk"]
+    explanation:
+      cs: "Jednotné číslo od slova lidé je člověk."
+      en: "The singular of lidé (people) is člověk (person)."
+  - id: "l3c-pj-007"
+    topic: "podstatna-jmena"
+    level: 3
+    type: "choice"
+    prompt: "Vyber správně napsaný název města."
+    options: ["Ústí nad Labem", "Ústí Nad Labem", "ústí nad Labem", "Ústí nad labem"]
+    correct: "Ústí nad Labem"
+    explanation:
+      cs: "Velké písmeno má první slovo a jméno řeky Labe, předložka nad se píše malým."
+      en: "The first word and the river name Labe are capitalised; the preposition nad is not."
+  - id: "l3c-pj-008"
+    topic: "podstatna-jmena"
+    level: 3
+    type: "choice"
+    prompt: "Vyber správně napsaný název pohoří."
+    options: ["Krušné hory", "Krušné Hory", "krušné hory", "krušné Hory"]
+    correct: "Krušné hory"
+    explanation:
+      cs: "V názvu pohoří píšeme velké jen první slovo: Krušné hory."
+      en: "In this mountain range name only the first word is capitalised."
+  - id: "l3c-pj-009"
+    topic: "podstatna-jmena"
+    level: 3
+    type: "choice"
+    prompt: "Vyber správně napsaný název mostu v Praze."
+    options: ["Karlův most", "Karlův Most", "karlův most", "karlův Most"]
+    correct: "Karlův most"
+    explanation:
+      cs: "Velké písmeno má jen první slovo: Karlův most."
+      en: "Only the first word is capitalised: Karlův most (Charles Bridge)."
+  # ---------- věta a souvětí ----------
+  - id: "l3c-veta-001"
+    topic: "veta"
+    level: 3
+    type: "input"
+    prompt: "Kolik vět jednoduchých je v souvětí: Pes zaštěkal, kočka utekla na strom a ptáci odletěli. Napiš číslo."
+    answers: ["3", "tři"]
+    explanation:
+      cs: "Slovesa jsou tři (zaštěkal, utekla, odletěli), proto jsou v souvětí tři věty jednoduché."
+      en: "There are three verbs, so the compound sentence has three simple sentences."
+  - id: "l3c-veta-002"
+    topic: "veta"
+    level: 3
+    type: "input"
+    prompt: "Kolik vět jednoduchých je v souvětí: Až se vrátíš ze školy, napiš si úkol. Napiš číslo."
+    answers: ["2", "dvě"]
+    explanation:
+      cs: "Slovesa jsou dvě (vrátíš, napiš), proto jsou to dvě věty jednoduché."
+      en: "There are two verbs (vrátíš, napiš), so there are two simple sentences."
+  - id: "l3c-veta-003"
+    topic: "veta"
+    level: 3
+    type: "input"
+    prompt: "Kolik vět jednoduchých je v souvětí: Když jsme přijeli k moři, svítilo slunce, ale voda byla studená. Napiš číslo."
+    answers: ["3", "tři"]
+    explanation:
+      cs: "Slovesa: přijeli, svítilo, byla – tři věty jednoduché."
+      en: "Verbs: přijeli, svítilo, byla – three simple sentences."
+  - id: "l3c-veta-004"
+    topic: "veta"
+    level: 3
+    type: "choice"
+    prompt: "Doplň vhodnou spojku: Nešel jsem ven, _ jsem byl nemocný."
+    options: ["protože", "ale", "nebo", "až"]
+    correct: "protože"
+    explanation:
+      cs: "Druhá věta říká důvod, proto spojka protože."
+      en: "The second part gives the reason, so we use protože (because)."
+  - id: "l3c-veta-005"
+    topic: "veta"
+    level: 3
+    type: "choice"
+    prompt: "Doplň vhodnou spojku: Půjdeme na hřiště, _ přestane pršet."
+    options: ["až", "ale", "nebo", "protože"]
+    correct: "až"
+    explanation:
+      cs: "Na hřiště půjdeme teprve potom, co přestane pršet – spojka až."
+      en: "We will go only after the rain stops, so we use až (when/once)."
+  - id: "l3c-veta-006"
+    topic: "veta"
+    level: 3
+    type: "choice"
+    prompt: "Seřaď věty tak, aby dávaly smysl. A) Zasadili jsme semínko do květináče. B) Za týden vyrostla malá rostlinka. C) Každý den jsme ho zalévali."
+    options: ["A, C, B", "A, B, C", "C, A, B", "B, A, C"]
+    correct: "A, C, B"
+    explanation:
+      cs: "Nejdřív semínko zasadíme, pak ho zaléváme a nakonec vyroste rostlinka."
+      en: "First we plant the seed, then we water it, and at last a plant grows."
+  - id: "l3c-veta-007"
+    topic: "veta"
+    level: 3
+    type: "input"
+    prompt: "Seřaď věty tak, aby dávaly smysl, a napiš písmena za sebou (např. A, B, C). A) Pak jsme postavili sněhuláka. B) V noci napadl sníh. C) Ráno jsme se teple oblékli a vyběhli ven."
+    answers: ["b, c, a", "b,c,a", "b c a", "bca"]
+    explanation:
+      cs: "Nejdřív napadl sníh, ráno jsme vyběhli ven a pak jsme postavili sněhuláka."
+      en: "First it snowed, in the morning we ran out, then we built a snowman."
+  - id: "l3c-veta-008"
+    topic: "veta"
+    level: 3
+    type: "choice"
+    prompt: "Jaký druh věty je: Kdybych tak měl křídla!"
+    options: ["přací", "oznamovací", "tázací", "rozkazovací"]
+    correct: "přací"
+    explanation:
+      cs: "Věta vyjadřuje přání, je to věta přací."
+      en: "The sentence expresses a wish, so it is a wishing sentence (přací)."
+  - id: "l3c-veta-009"
+    topic: "veta"
+    level: 3
+    type: "choice"
+    prompt: "Která z těchto vět je souvětí?"
+    options: ["Na zahradě rostou jabloně a tatínek je zalévá.", "Na zahradě rostou jabloně a hrušně.", "Na zahradě rostou staré jabloně."]
+    correct: "Na zahradě rostou jabloně a tatínek je zalévá."
+    explanation:
+      cs: "Souvětí má dvě slovesa (rostou, zalévá). Ve druhé větě spojka a spojuje jen slova jabloně a hrušně."
+      en: "The compound sentence has two verbs; in the other one a only joins two nouns."
+  # ---------- abeceda ----------
+  - id: "l3c-ab-001"
+    topic: "abeceda"
+    level: 3
+    type: "choice"
+    prompt: "Které slovo bude v abecedním pořadí první?"
+    options: ["chata", "hora", "cibule", "čáp"]
+    correct: "cibule"
+    explanation:
+      cs: "Pořadí písmen: c, č, h, ch. První je cibule."
+      en: "The letter order is c, č, h, ch, so cibule comes first."
+  - id: "l3c-ab-002"
+    topic: "abeceda"
+    level: 3
+    type: "choice"
+    prompt: "Které slovo bude v abecedním pořadí první?"
+    options: ["kapr", "kachna", "klíč", "krtek"]
+    correct: "kachna"
+    explanation:
+      cs: "Všechna slova začínají na k, rozhoduje další písmeno: ka-ch před ka-p, pak kl a kr."
+      en: "All start with k; look at the next letters: kach comes before kap, then kl and kr."
+  - id: "l3c-ab-003"
+    topic: "abeceda"
+    level: 3
+    type: "choice"
+    prompt: "Ve které řadě jsou slova seřazena podle abecedy?"
+    options: ["hrad, chalupa, chodba, jahoda", "chalupa, hrad, chodba, jahoda", "hrad, chodba, chalupa, jahoda"]
+    correct: "hrad, chalupa, chodba, jahoda"
+    explanation:
+      cs: "Ch je v abecedě za h. Chalupa je před chodbou, protože a je před o."
+      en: "ch comes after h; chalupa is before chodba because a comes before o."
+  - id: "l3c-ab-004"
+    topic: "abeceda"
+    level: 3
+    type: "input"
+    prompt: "Seřaď slova podle abecedy a napiš to, které bude poslední: řepa, rak, ryba, rohlík."
+    answers: ["řepa"]
+    explanation:
+      cs: "Ř je v abecedě až za r, proto je řepa poslední."
+      en: "ř comes after r in the alphabet, so řepa is last."
+  - id: "l3c-ab-005"
+    topic: "abeceda"
+    level: 3
+    type: "input"
+    prompt: "Seřaď slova podle abecedy a napiš to, které bude první: šiška, slunce, stůl, sáňky."
+    answers: ["sáňky"]
+    explanation:
+      cs: "Š je až za s. Ze slov na s je první sáňky (a je před l a t)."
+      en: "š comes after s; among the s-words sáňky is first (a before l and t)."
+  - id: "l3c-ab-006"
+    topic: "abeceda"
+    level: 3
+    type: "input"
+    prompt: "Seřaď slova podle abecedy a napiš to, které bude třetí: mléko, mrak, med, mouka."
+    answers: ["mouka"]
+    explanation:
+      cs: "Pořadí je: med, mléko, mouka, mrak. Třetí je mouka."
+      en: "The order is med, mléko, mouka, mrak, so the third one is mouka."
+  - id: "l3c-ab-007"
+    topic: "abeceda"
+    level: 3
+    type: "choice"
+    prompt: "Které slovo bude v abecedním pořadí poslední?"
+    options: ["cesta", "čepice", "chata", "citron"]
+    correct: "chata"
+    explanation:
+      cs: "Pořadí: cesta, citron, čepice, chata. Ch je až za h, proto je chata poslední."
+      en: "The order is cesta, citron, čepice, chata; ch comes after h, so chata is last."
+  # ---------- význam slov ----------
+  - id: "l3c-vyz-001"
+    topic: "vyznam-slov"
+    level: 3
+    type: "choice"
+    prompt: "Které slovo je mnohoznačné (má více významů)?"
+    options: ["koruna", "mrkev", "sešit", "polévka"]
+    correct: "koruna"
+    explanation:
+      cs: "Koruna může být královská, koruna stromu i peníze (česká koruna)."
+      en: "koruna can be a king's crown, a treetop or the Czech crown (money)."
+  - id: "l3c-vyz-002"
+    topic: "vyznam-slov"
+    level: 3
+    type: "choice"
+    prompt: "Ve které větě má slovo „oko“ jiný význam než v ostatních?"
+    options: ["Na polévce plavalo mastné oko.", "Bolí mě levé oko.", "Kamarád na mě mrkl jedním okem."]
+    correct: "Na polévce plavalo mastné oko."
+    explanation:
+      cs: "Mastné oko na polévce je kapka tuku, ne oko, kterým vidíme."
+      en: "mastné oko on soup is a drop of fat, not the eye we see with."
+  - id: "l3c-vyz-003"
+    topic: "vyznam-slov"
+    level: 3
+    type: "choice"
+    prompt: "Které slovo je citově zabarvené?"
+    options: ["pejsek", "pes", "zvíře", "savec"]
+    correct: "pejsek"
+    explanation:
+      cs: "Pejsek je zdrobnělina, vyjadřuje něhu – je citově zabarvené."
+      en: "pejsek is a diminutive (little doggy), it carries a feeling of affection."
+  - id: "l3c-vyz-004"
+    topic: "vyznam-slov"
+    level: 3
+    type: "choice"
+    prompt: "Najdi slovo souznačné (stejného významu) ke slovu „statečný“."
+    options: ["odvážný", "bojácný", "líný", "smutný"]
+    correct: "odvážný"
+    explanation:
+      cs: "Statečný a odvážný znamenají totéž. Bojácný je slovo opačného významu."
+      en: "statečný and odvážný both mean brave; bojácný is the opposite."
+  - id: "l3c-vyz-005"
+    topic: "vyznam-slov"
+    level: 3
+    type: "input"
+    prompt: "Napiš slovo opačného významu: pravda → ?"
+    answers: ["lež"]
+    explanation:
+      cs: "Opakem pravdy je lež."
+      en: "The opposite of pravda (truth) is lež (lie)."
+  - id: "l3c-vyz-006"
+    topic: "vyznam-slov"
+    level: 3
+    type: "input"
+    prompt: "Napiš slovo opačného významu: začátek → ?"
+    answers: ["konec"]
+    explanation:
+      cs: "Opakem začátku je konec."
+      en: "The opposite of začátek (beginning) is konec (end)."

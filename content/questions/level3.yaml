@@ -1,0 +1,587 @@
+questions:
+  # ---------- vyjmenovaná slova ----------
+  - id: l3-vs-001
+    topic: vyjmenovana-slova
+    level: 3
+    type: choice
+    prompt: "Vyber správně napsanou větu."
+    options: ["Kluci se nesmějí bít.", "Kluci se nesmějí být."]
+    correct: "Kluci se nesmějí bít."
+    explanation:
+      cs: "bít = tlouct, píšeme i. být = existovat, píšeme y."
+      en: "bít means to hit (i); být means to be (y)."
+  - id: l3-vs-002
+    topic: vyjmenovana-slova
+    level: 3
+    type: choice
+    prompt: "Doplň slovo: V noci v lese houká _ ."
+    options: ["výr", "vír"]
+    correct: "výr"
+    explanation:
+      cs: "výr je pták (sova), je to vyjmenované slovo po V."
+      en: "výr is an owl, a listed word after V, so ý."
+  - id: l3-vs-003
+    topic: vyjmenovana-slova
+    level: 3
+    type: choice
+    prompt: "Doplň slovo: Na řece se točil nebezpečný _ ."
+    options: ["vír", "výr"]
+    correct: "vír"
+    explanation:
+      cs: "vír je točící se voda, není to vyjmenované slovo, proto í."
+      en: "vír is a whirlpool; it is not a listed word, so í."
+  - id: l3-vs-004
+    topic: vyjmenovana-slova
+    level: 3
+    type: input
+    prompt: "Doplň i/y: Jirka p_l čaj a pak si um_l ruce. Napiš chybějící písmena za sebou, oddělená čárkou (např. i, y)."
+    answers: ["i, y", "i,y", "i y", "iy"]
+    explanation:
+      cs: "pil (pít) není vyjmenované slovo → i. umyl (mýt) je vyjmenované → y."
+      en: "pil (to drink) has i; umyl (to wash) comes from mýt, a listed word, so y."
+  - id: l3-vs-005
+    topic: vyjmenovana-slova
+    level: 3
+    type: choice
+    prompt: "Vyber správně napsanou větu."
+    options: ["Maso bylo ještě syrové, muselo se péct déle.", "Maso bylo ještě sirové, muselo se péct déle."]
+    correct: "Maso bylo ještě syrové, muselo se péct déle."
+    explanation:
+      cs: "syrový (nevařený, neupečený) je vyjmenované slovo po S, píšeme y."
+      en: "syrový (raw) is a listed word after S, so it has y."
+  - id: l3-vs-006
+    topic: vyjmenovana-slova
+    level: 3
+    type: choice
+    prompt: "Doplň slovo: Vosa mě _ do ruky."
+    options: ["píchla", "pýchla"]
+    correct: "píchla"
+    explanation:
+      cs: "píchat není příbuzné se slovem pýcha, proto píšeme í."
+      en: "píchat (to sting) is not related to pýcha (pride), so í."
+  - id: l3-vs-007
+    topic: vyjmenovana-slova
+    level: 3
+    type: input
+    prompt: "Doplň i/y: Ml_nář v_děl, že m_š běží do sklepa. Napiš chybějící písmena za sebou, oddělená čárkou (např. i, y, i)."
+    answers: ["y, i, y", "y,i,y", "y i y", "yiy"]
+    explanation:
+      cs: "mlynář (mlýn) → y, viděl → i, myš → y."
+      en: "mlynář comes from mlýn (y), viděl has i, myš is a listed word (y)."
+  - id: l3-vs-008
+    topic: vyjmenovana-slova
+    level: 3
+    type: input
+    prompt: "Doplň i/y: Děti b_ly v lese a sl_šely tam kukačku. Napiš chybějící písmena za sebou, oddělená čárkou (např. i, y)."
+    answers: ["y, y", "y,y", "y y", "yy"]
+    explanation:
+      cs: "byly je od slova být → y. slyšely je od slova slyšet (vyjmenované slovo po L) → y."
+      en: "byly comes from být (y); slyšely comes from slyšet, a listed word after L (y)."
+  - id: l3-vs-009
+    topic: vyjmenovana-slova
+    level: 3
+    type: choice
+    prompt: "Vyber větu, ve které je CHYBA."
+    options: ["Mýlíš se, to není pravda.", "Babička se mile usmála.", "Pozdravil nás milý pán.", "Mílil jsem se v počítání."]
+    correct: "Mílil jsem se v počítání."
+    explanation:
+      cs: "mýlit se (udělat chybu) je vyjmenované slovo, správně je mýlil. milý a mile se píší s i."
+      en: "mýlit se (to be wrong) is a listed word: mýlil. milý (nice) is written with i."
+  - id: l3-vs-010
+    topic: vyjmenovana-slova
+    level: 3
+    type: input
+    prompt: "Doplň í nebo ý: Zítra budu m_t narozeniny. Napiš jen chybějící písmeno."
+    answers: ["í"]
+    explanation:
+      cs: "mít (něco mít, vlastnit) není vyjmenované slovo, proto í. mýt = umývat."
+      en: "mít (to have) is not a listed word, so í; mýt means to wash."
+  - id: l3-vs-011
+    topic: vyjmenovana-slova
+    level: 3
+    type: choice
+    prompt: "Doplň slovo: Před obědem si musím _ ruce."
+    options: ["mýt", "mít"]
+    correct: "mýt"
+    explanation:
+      cs: "mýt (umývat) je vyjmenované slovo po M, proto ý."
+      en: "mýt (to wash) is a listed word after M, so ý."
+  - id: l3-vs-012
+    topic: vyjmenovana-slova
+    level: 3
+    type: choice
+    prompt: "Které slovo NENÍ příbuzné se slovem „být“?"
+    options: ["bydlet", "obyvatel", "bitva", "byt"]
+    correct: "bitva"
+    explanation:
+      cs: "bitva je od slova bít (bojovat), proto i. Ostatní slova jsou příbuzná s být."
+      en: "bitva (battle) comes from bít (to hit). The others are related to být."
+  - id: l3-vs-013
+    topic: vyjmenovana-slova
+    level: 3
+    type: input
+    prompt: "Doplň i/y: Rytíři se b_li v b_tvě. Napiš chybějící písmena za sebou, oddělená čárkou (např. i, y)."
+    answers: ["i, i", "i,i", "i i", "ii"]
+    explanation:
+      cs: "bili se = bojovali (bít) → i. bitva je také od bít → i."
+      en: "bili se means they fought (bít) and bitva means battle, both with i."
+  - id: l3-vs-014
+    topic: vyjmenovana-slova
+    level: 3
+    type: choice
+    prompt: "Doplň slovo: Obraz _ na stěně."
+    options: ["visel", "vysel"]
+    correct: "visel"
+    explanation:
+      cs: "viset není vyjmenované slovo, proto i."
+      en: "viset (to hang) is not a listed word, so i."
+  # ---------- slovesa ----------
+  - id: l3-sl-001
+    topic: slovesa
+    level: 3
+    type: input
+    prompt: "Napiš sloveso „jít“ v čase budoucím, 1. osoba čísla jednotného (já …)."
+    answers: ["půjdu", "já půjdu"]
+    explanation:
+      cs: "já půjdu – čas budoucí."
+      en: "I will go = já půjdu."
+  - id: l3-sl-002
+    topic: slovesa
+    level: 3
+    type: choice
+    prompt: "V jakém čase je sloveso ve větě: Zítra budeme hrát fotbal."
+    options: ["minulý", "přítomný", "budoucí"]
+    correct: "budoucí"
+    explanation:
+      cs: "budeme hrát – děj se stane až zítra, je to čas budoucí."
+      en: "budeme hrát (we will play) happens tomorrow: future tense."
+  - id: l3-sl-003
+    topic: slovesa
+    level: 3
+    type: choice
+    prompt: "Urči osobu a číslo slovesa „čtete“."
+    options: ["2. osoba, číslo jednotné", "2. osoba, číslo množné", "3. osoba, číslo množné"]
+    correct: "2. osoba, číslo množné"
+    explanation:
+      cs: "vy čtete – 2. osoba, číslo množné."
+      en: "vy čtete (you all read) is 2nd person plural."
+  - id: l3-sl-004
+    topic: slovesa
+    level: 3
+    type: input
+    prompt: "Napiš infinitiv (neurčitek) slovesa „nesl“."
+    answers: ["nést"]
+    explanation:
+      cs: "nesl → nést (co dělat?)."
+      en: "The basic form (infinitive) of nesl is nést (to carry)."
+  - id: l3-sl-005
+    topic: slovesa
+    level: 3
+    type: input
+    prompt: "Napiš zápor slovesa „umím“."
+    answers: ["neumím"]
+    explanation:
+      cs: "Zápor tvoříme předponou ne-: neumím."
+      en: "We make the negative with ne-: neumím (I can't)."
+  - id: l3-sl-006
+    topic: slovesa
+    level: 3
+    type: choice
+    prompt: "Ve které větě je sloveso v čase minulém?"
+    options: ["Maminka vaří oběd.", "Maminka uvařila oběd.", "Maminka uvaří oběd."]
+    correct: "Maminka uvařila oběd."
+    explanation:
+      cs: "uvařila – děj už proběhl, je to čas minulý."
+      en: "uvařila (she cooked) already happened: past tense."
+  - id: l3-sl-007
+    topic: slovesa
+    level: 3
+    type: choice
+    prompt: "Které slovo NENÍ sloveso?"
+    options: ["běhat", "běh", "běží", "běžel"]
+    correct: "běh"
+    explanation:
+      cs: "běh je podstatné jméno (ten běh). Ostatní slova jsou slovesa."
+      en: "běh (a run) is a noun. The others are verbs."
+  - id: l3-sl-008
+    topic: slovesa
+    level: 3
+    type: choice
+    prompt: "Urči osobu a číslo slovesa ve větě: Petr a Jana šli do kina."
+    options: ["3. osoba, číslo jednotné", "3. osoba, číslo množné", "1. osoba, číslo množné"]
+    correct: "3. osoba, číslo množné"
+    explanation:
+      cs: "Petr a Jana = oni šli – 3. osoba, číslo množné."
+      en: "Petr and Jana = they went: 3rd person plural."
+  # ---------- slovní druhy ----------
+  - id: l3-sd-001
+    topic: slovni-druhy
+    level: 3
+    type: choice
+    prompt: "Jaký slovní druh je slovo „pět“?"
+    options: ["podstatné jméno", "číslovka", "přídavné jméno"]
+    correct: "číslovka"
+    explanation:
+      cs: "pět vyjadřuje počet, je to číslovka."
+      en: "pět (five) tells a number, so it is a numeral."
+  - id: l3-sd-002
+    topic: slovni-druhy
+    level: 3
+    type: choice
+    prompt: "Jaký slovní druh je slovo „rychle“?"
+    options: ["přídavné jméno", "příslovce", "sloveso"]
+    correct: "příslovce"
+    explanation:
+      cs: "rychle odpovídá na otázku jak?, je to příslovce. Přídavné jméno je rychlý."
+      en: "rychle (quickly) answers how?, so it is an adverb. rychlý is the adjective."
+  - id: l3-sd-003
+    topic: slovni-druhy
+    level: 3
+    type: choice
+    prompt: "Jaký slovní druh je slovo „au“?"
+    options: ["citoslovce", "částice", "spojka"]
+    correct: "citoslovce"
+    explanation:
+      cs: "au vyjadřuje bolest, je to citoslovce."
+      en: "au (ouch) shows a feeling, so it is an interjection."
+  - id: l3-sd-004
+    topic: slovni-druhy
+    level: 3
+    type: choice
+    prompt: "Jaký slovní druh je slovo „kéž“ ve větě: Kéž by už byly prázdniny!"
+    options: ["spojka", "částice", "předložka"]
+    correct: "částice"
+    explanation:
+      cs: "kéž vyjadřuje přání, je to částice."
+      en: "kéž (if only) expresses a wish, so it is a particle."
+  - id: l3-sd-005
+    topic: slovni-druhy
+    level: 3
+    type: input
+    prompt: "Jaký slovní druh je slovo „přes“ ve větě: Kočka skočila přes plot. Napiš název slovního druhu."
+    answers: ["předložka", "předložky"]
+    explanation:
+      cs: "přes stojí před podstatným jménem (přes plot), je to předložka."
+      en: "přes (over) stands before a noun (přes plot), so it is a preposition."
+  - id: l3-sd-006
+    topic: slovni-druhy
+    level: 3
+    type: input
+    prompt: "Jaký slovní druh je slovo „kamenný“ ve větě: Za vesnicí stojí starý kamenný most. Napiš název slovního druhu (dvě slova)."
+    answers: ["přídavné jméno", "přídavná jména", "jméno přídavné"]
+    explanation:
+      cs: "kamenný odpovídá na otázku jaký? most, je to přídavné jméno."
+      en: "kamenný (made of stone) answers what kind of bridge?, so it is an adjective."
+  - id: l3-sd-007
+    topic: slovni-druhy
+    level: 3
+    type: choice
+    prompt: "Ve které řadě jsou samá přídavná jména?"
+    options: ["velký, modrý, veselý", "velký, modře, veselý", "velký, modrý, vesele"]
+    correct: "velký, modrý, veselý"
+    explanation:
+      cs: "velký, modrý, veselý odpovídají na otázku jaký? modře a vesele jsou příslovce."
+      en: "velký, modrý, veselý answer what kind?; modře and vesele are adverbs."
+  - id: l3-sd-008
+    topic: slovni-druhy
+    level: 3
+    type: input
+    prompt: "Kolik podstatných jmen je ve větě: Tatínek dal mamince kytici růží. Napiš číslo."
+    answers: ["4", "čtyři"]
+    explanation:
+      cs: "Podstatná jména jsou: tatínek, mamince, kytici, růží – celkem 4."
+      en: "The nouns are tatínek, mamince, kytici, růží: 4 in total."
+  # ---------- dě, tě, ně, bě, pě, vě, mě ----------
+  - id: l3-dtn-001
+    topic: de-te-ne
+    level: 3
+    type: choice
+    prompt: "Doplň slovo: Jedeme autobusem do _ ."
+    options: ["města", "mněsta"]
+    correct: "města"
+    explanation:
+      cs: "město – slyšíme mňe, ale píšeme mě."
+      en: "město (town) sounds like mňe, but we write mě."
+  - id: l3-dtn-002
+    topic: de-te-ne
+    level: 3
+    type: choice
+    prompt: "Doplň slovo: Ten míč patří _, ne tobě."
+    options: ["mě", "mně"]
+    correct: "mně"
+    explanation:
+      cs: "Komu patří míč? – mně. Ptáme se komu, proto mně."
+      en: "Whom does the ball belong to? – mně (to me), so we write mně."
+  - id: l3-dtn-003
+    topic: de-te-ne
+    level: 3
+    type: choice
+    prompt: "Vyber správně napsané slovo."
+    options: ["zapomenout", "zapomněnout", "zapoměnout"]
+    correct: "zapomenout"
+    explanation:
+      cs: "zapomenout – za-po-me-nout, píšeme me."
+      en: "zapomenout (to forget) is spelled za-po-me-nout."
+  - id: l3-dtn-004
+    topic: de-te-ne
+    level: 3
+    type: input
+    prompt: "Doplň „mě“ nebo „mně“: Maminka _ pochválila. Napiš jen chybějící slovo."
+    answers: ["mě"]
+    explanation:
+      cs: "Koho pochválila? Mě. Ptáme se koho, proto mě."
+      en: "Whom did she praise? mě (me), so we write mě."
+  - id: l3-dtn-005
+    topic: de-te-ne
+    level: 3
+    type: input
+    prompt: "Doplň „mě“ nebo „mně“: Tu knížku dej _, ne bratrovi. Napiš jen chybějící slovo."
+    answers: ["mně"]
+    explanation:
+      cs: "Komu dej knížku? – mně. Ptáme se komu, proto mně."
+      en: "Give it to whom? mně (to me), so we write mně."
+  - id: l3-dtn-006
+    topic: de-te-ne
+    level: 3
+    type: input
+    prompt: "Doplň „ě“ nebo „je“: ob_d, ob_dnat. Napiš chybějící písmena za sebou, oddělená čárkou (např. je, ě)."
+    answers: ["ě, je", "ě,je", "ě je", "ěje"]
+    explanation:
+      cs: "oběd → ě. objednat = ob + jednat → je."
+      en: "oběd (lunch) has ě; objednat (to order) is ob + jednat, so je."
+  - id: l3-dtn-007
+    topic: de-te-ne
+    level: 3
+    type: choice
+    prompt: "Vyber správně napsanou větu."
+    options: ["Ten dárek je pro mě.", "Ten dárek je pro mně."]
+    correct: "Ten dárek je pro mě."
+    explanation:
+      cs: "Pro koho? Pro mě. Ptáme se koho, proto mě."
+      en: "For whom? pro mě (for me), so we write mě."
+  # ---------- párové souhlásky ----------
+  - id: l3-ps-001
+    topic: parove-souhlasky
+    level: 3
+    type: choice
+    prompt: "Vyber správně napsané slovo: Babička upekla sla_ký koláč."
+    options: ["sladký", "slatký"]
+    correct: "sladký"
+    explanation:
+      cs: "sladký – ověříme slovem sladit, slyšíme d."
+      en: "Check with sladit (to sweeten): we hear d, so sladký."
+  - id: l3-ps-002
+    topic: parove-souhlasky
+    level: 3
+    type: input
+    prompt: "Doplň h nebo ch: Ten kufr je le_ký. Napiš jen chybějící písmeno."
+    answers: ["h"]
+    explanation:
+      cs: "lehký – ověříme slovem lehoučký, slyšíme h."
+      en: "Check with lehoučký: we hear h, so lehký (light)."
+  - id: l3-ps-003
+    topic: parove-souhlasky
+    level: 3
+    type: choice
+    prompt: "Vyber správně napsané slovo: Na rybníku pluje malá lo_ka."
+    options: ["loďka", "loťka"]
+    correct: "loďka"
+    explanation:
+      cs: "loďka – ověříme slovem loď, lodě, slyšíme ď."
+      en: "Check with loď, lodě: we hear ď, so loďka (little boat)."
+  - id: l3-ps-004
+    topic: parove-souhlasky
+    level: 3
+    type: input
+    prompt: "Doplň chybějící písmena: ry_ka, hla_ký, kní_ka. Napiš je za sebou, oddělená čárkou (např. p, t, š)."
+    answers: ["b, d, ž", "b,d,ž", "b d ž", "bdž"]
+    explanation:
+      cs: "rybka (rybička) → b, hladký (hladit) → d, knížka (knížečka) → ž."
+      en: "rybka (rybička) b, hladký (hladit) d, knížka (knížečka) ž."
+  - id: l3-ps-005
+    topic: parove-souhlasky
+    level: 3
+    type: input
+    prompt: "Doplň chybějící písmena: tu_ka, ne_ty, ka_ka. Napiš je za sebou, oddělená čárkou (např. b, d, ž)."
+    answers: ["ž, h, p", "ž,h,p", "ž h p", "žhp"]
+    explanation:
+      cs: "tužka (tužek) → ž, nehty (nehet) → h, kapka (kapek) → p."
+      en: "tužka (tužek) ž, nehty (nehet) h, kapka (kapek) p."
+  - id: l3-ps-006
+    topic: parove-souhlasky
+    level: 3
+    type: choice
+    prompt: "Ve kterém slově je CHYBA?"
+    options: ["dub", "had", "plot", "zup"]
+    correct: "zup"
+    explanation:
+      cs: "Správně je zub – ověříme slovem zuby."
+      en: "It should be zub (tooth): check with zuby."
+  # ---------- podstatná jména ----------
+  - id: l3-pj-001
+    topic: podstatna-jmena
+    level: 3
+    type: choice
+    prompt: "Vyber správně napsaný název města."
+    options: ["Nové Město na Moravě", "Nové město na Moravě", "Nové Město na moravě"]
+    correct: "Nové Město na Moravě"
+    explanation:
+      cs: "V názvu města píšeme velké první slovo a všechna další kromě předložek: Nové Město na Moravě."
+      en: "In a town name, every word except prepositions starts with a capital letter."
+  - id: l3-pj-002
+    topic: podstatna-jmena
+    level: 3
+    type: choice
+    prompt: "Vyber správně napsaný název státu."
+    options: ["Česká republika", "Česká Republika", "česká republika"]
+    correct: "Česká republika"
+    explanation:
+      cs: "V názvu státu píšeme velké jen první slovo: Česká republika."
+      en: "In the name of the country only the first word has a capital: Česká republika."
+  - id: l3-pj-003
+    topic: podstatna-jmena
+    level: 3
+    type: choice
+    prompt: "Jakého rodu je podstatné jméno „kuře“?"
+    options: ["mužského", "ženského", "středního"]
+    correct: "středního"
+    explanation:
+      cs: "to kuře – rod střední."
+      en: "to kuře (the chick): neuter gender."
+  - id: l3-pj-004
+    topic: podstatna-jmena
+    level: 3
+    type: input
+    prompt: "Napiš podstatné jméno „dítě“ v čísle množném (jedno dítě, ale tři …)."
+    answers: ["děti"]
+    explanation:
+      cs: "jedno dítě – tři děti."
+      en: "one child = dítě, three children = děti."
+  - id: l3-pj-005
+    topic: podstatna-jmena
+    level: 3
+    type: choice
+    prompt: "Ve které větě jsou vlastní jména napsaná správně?"
+    options: ["Řeka Vltava teče Prahou.", "Řeka vltava teče Prahou.", "Řeka Vltava teče prahou."]
+    correct: "Řeka Vltava teče Prahou."
+    explanation:
+      cs: "Vltava (řeka) a Praha (město) jsou vlastní jména, píšeme je s velkým písmenem."
+      en: "Vltava (a river) and Praha (a city) are proper names, so they start with a capital."
+  - id: l3-pj-006
+    topic: podstatna-jmena
+    level: 3
+    type: choice
+    prompt: "Jakého rodu je podstatné jméno „kost“?"
+    options: ["mužského", "ženského", "středního"]
+    correct: "ženského"
+    explanation:
+      cs: "ta kost – rod ženský."
+      en: "ta kost (the bone): feminine gender."
+  # ---------- věta a souvětí ----------
+  - id: l3-v-001
+    topic: veta
+    level: 3
+    type: input
+    prompt: "Kolik vět jednoduchých je v souvětí: Když jsem přišel domů, maminka vařila a tatínek četl noviny. Napiš číslo."
+    answers: ["3", "tři"]
+    explanation:
+      cs: "Slovesa jsou: přišel, vařila, četl. Tři slovesa = tři věty jednoduché."
+      en: "There are three verbs (přišel, vařila, četl), so three simple sentences."
+  - id: l3-v-002
+    topic: veta
+    level: 3
+    type: input
+    prompt: "Kolik vět jednoduchých je v souvětí: Venku prší, proto zůstaneme doma. Napiš číslo."
+    answers: ["2", "dvě"]
+    explanation:
+      cs: "Slovesa jsou: prší, zůstaneme. Dvě slovesa = dvě věty jednoduché."
+      en: "Two verbs (prší, zůstaneme), so two simple sentences."
+  - id: l3-v-003
+    topic: veta
+    level: 3
+    type: choice
+    prompt: "Která z těchto vět je souvětí?"
+    options: ["Petr a Pavel hrají fotbal.", "Petr hraje fotbal a Pavel se dívá.", "Petr a Pavel se dívají na fotbal."]
+    correct: "Petr hraje fotbal a Pavel se dívá."
+    explanation:
+      cs: "Souvětí má aspoň dvě slovesa: hraje, dívá."
+      en: "A compound sentence has at least two verbs: hraje and dívá."
+  - id: l3-v-004
+    topic: veta
+    level: 3
+    type: choice
+    prompt: "Doplň vhodnou spojku: Chtěl jsem jít ven, _ pršelo."
+    options: ["ale", "a", "nebo"]
+    correct: "ale"
+    explanation:
+      cs: "ale spojuje věty, které si odporují: chtěl jsem ven, ale pršelo."
+      en: "ale (but) joins two ideas that go against each other."
+  - id: l3-v-005
+    topic: veta
+    level: 3
+    type: choice
+    prompt: "Seřaď věty do správného pořadí. A) Pak jsem si vyčistil zuby. B) Ráno jsem vstal z postele. C) Nakonec jsem odešel do školy."
+    options: ["B, A, C", "A, B, C", "C, B, A"]
+    correct: "B, A, C"
+    explanation:
+      cs: "Nejdřív vstanu (B), pak si vyčistím zuby (A), nakonec jdu do školy (C)."
+      en: "First get up (B), then brush teeth (A), finally go to school (C)."
+  - id: l3-v-006
+    topic: veta
+    level: 3
+    type: choice
+    prompt: "Jaký druh věty je: Zavři okno!"
+    options: ["oznamovací", "tázací", "rozkazovací"]
+    correct: "rozkazovací"
+    explanation:
+      cs: "Věta něco přikazuje, je rozkazovací."
+      en: "It gives an order, so it is an imperative sentence."
+  # ---------- abeceda ----------
+  - id: l3-ab-001
+    topic: abeceda
+    level: 3
+    type: choice
+    prompt: "Které slovo bude v abecedním pořadí poslední?"
+    options: ["hrad", "chléb", "dům"]
+    correct: "chléb"
+    explanation:
+      cs: "V české abecedě je ch až za h: dům, hrad, chléb."
+      en: "In the Czech alphabet ch comes after h: dům, hrad, chléb."
+  - id: l3-ab-002
+    topic: abeceda
+    level: 3
+    type: choice
+    prompt: "Ve které řadě jsou slova seřazena podle abecedy?"
+    options: ["auto, balon, cesta, čepice", "auto, cesta, balon, čepice", "čepice, cesta, balon, auto"]
+    correct: "auto, balon, cesta, čepice"
+    explanation:
+      cs: "Pořadí písmen je a, b, c, č."
+      en: "The letters go a, b, c, č."
+  - id: l3-ab-003
+    topic: abeceda
+    level: 3
+    type: choice
+    prompt: "Seřaď podle abecedy slova: myš, malina, motýl."
+    options: ["malina, motýl, myš", "motýl, malina, myš", "malina, myš, motýl"]
+    correct: "malina, motýl, myš"
+    explanation:
+      cs: "Všechna začínají na m, rozhoduje druhé písmeno: a, o, y."
+      en: "All start with m, so look at the second letter: a, o, y."
+  - id: l3-ab-004
+    topic: abeceda
+    level: 3
+    type: input
+    prompt: "Které písmeno je v české abecedě hned za písmenem h? Napiš ho malými písmeny."
+    answers: ["ch"]
+    explanation:
+      cs: "Za h následuje ch, potom i."
+      en: "After h comes ch, then i."
+  - id: l3-ab-005
+    topic: abeceda
+    level: 3
+    type: input
+    prompt: "Seřaď slova podle abecedy a napiš to, které bude první: šnek, sova, žába, zebra."
+    answers: ["sova"]
+    explanation:
+      cs: "Pořadí je s, š, z, ž: sova, šnek, zebra, žába."
+      en: "The order is s, š, z, ž: sova, šnek, zebra, žába."

@@ -1,0 +1,93 @@
+app.name: Czech for 3rd grade
+nav:
+    practice: Practice
+    stats: My results
+    parent: For parents
+    logout: Log out
+form:
+    username: Username
+    password: Password
+    password_repeat: Repeat password
+login:
+    title: Log in
+    submit: Log in
+    no_account: No account yet?
+register:
+    title: Sign up
+    submit: Create account
+    have_account: Already have an account?
+home:
+    hello: Hi, %name%! 👋
+    first_time: Pick a level and start practising.
+    answered: "%total% answers in total"
+    mistakes: "Mistakes to fix: %count%"
+    mistakes_button: Fix mistakes
+    start_mix: "Start (%count% questions)"
+    level_progress: "You have done %done% of %total% questions"
+    unlock_need: "Unlocks when you answer at least %done% questions of the previous level with %percent% % success."
+    unlock_now: "So far: %done% questions, %percent% % success."
+    level_done: "Level complete! You have answered every question."
+    by_topic: Practise one topic only
+level:
+    1: Level 1 – easy
+    1.desc: Alphabet, hard and soft consonants, ú/ů, first listed words.
+    2: Level 2 – medium
+    2.desc: All listed words, paired consonants, parts of speech, noun gender.
+    3: Level 3 – hard
+    3.desc: Related words, mě/mně, verbs, all parts of speech, compound sentences.
+quiz:
+    progress: Question %current% of %total%
+    type_here: Type your answer…
+    check: Check
+    letters: Letters with diacritics
+    correct: Correct! 🎉
+    wrong: That's not right 🙁
+    your_answer: Your answer
+    correct_answer: Correct answer
+    next: Next question
+    finish: See result
+    result: "%correct% of %total% correct"
+    praise:
+        great: Excellent! Top marks!
+        good: Good job! A little more and it will be perfect.
+        keep: Never mind, keep practising – you can fix your mistakes.
+    again: Again
+    back_home: Back to levels
+    mistakes_mode: Fixing mistakes
+    no_questions: "No new questions left here – you have answered them all. 🏆"
+    level_locked: "This level is still locked."
+    no_mistakes: You have no mistakes to fix. 👍
+    empty_answer: Type an answer first.
+stats:
+    passed: "Questions done"
+    passed_short: "%done% of %total% done"
+    title: Results
+    total: Answers
+    correct: Correct
+    wrong: Wrong
+    success: Success rate
+    by_level: By level
+    by_topic: By topic
+    mistakes: Mistakes to fix
+    no_mistakes: No mistakes to fix.
+    sessions: Recent exercises
+    no_sessions: No exercises yet.
+    unfinished: unfinished
+    when: When
+    what: What
+    result: Result
+    history: Answer history (last 100)
+    question: Question
+    answer: Answer
+parent:
+    title: Children overview
+    child: Child
+    since: since
+    detail: Details
+    no_children: No child has signed up yet.
+rank:
+    label: "Rank"
+    to_next: "%points% more points to the next player (correct +1, mistake −0.5)"
+    promoted: "Promotion – %level%!"
+    demoted: "Careful, your rank dropped – %level%"
+    by_level: "Rank"

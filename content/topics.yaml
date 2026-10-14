@@ -1,0 +1,24 @@
+# Темы программы ČJ 3. třída. code — стабильный ключ, на него ссылаются вопросы.
+topics:
+  - code: abeceda
+    title: { cs: "Abeceda", en: "Alphabet" }
+  - code: tvrde-mekke
+    title: { cs: "Tvrdé a měkké souhlásky", en: "Hard and soft consonants" }
+  - code: vyjmenovana-slova
+    title: { cs: "Vyjmenovaná slova", en: "Listed words (i/y after B, L, M, P, S, V, Z)" }
+  - code: parove-souhlasky
+    title: { cs: "Párové souhlásky", en: "Paired consonants" }
+  - code: u-u
+    title: { cs: "ú / ů", en: "ú / ů" }
+  - code: de-te-ne
+    title: { cs: "dě, tě, ně, bě, pě, vě, mě", en: "dě, tě, ně, bě, pě, vě, mě" }
+  - code: slovni-druhy
+    title: { cs: "Slovní druhy", en: "Parts of speech" }
+  - code: podstatna-jmena
+    title: { cs: "Podstatná jména (rod, číslo, velká písmena)", en: "Nouns (gender, number, capital letters)" }
+  - code: slovesa
+    title: { cs: "Slovesa (osoba, číslo, čas)", en: "Verbs (person, number, tense)" }
+  - code: vyznam-slov
+    title: { cs: "Význam slov", en: "Word meaning (synonyms, antonyms, word groups)" }
+  - code: veta
+    title: { cs: "Věta a souvětí", en: "Sentences" }

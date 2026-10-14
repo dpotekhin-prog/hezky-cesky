@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+{% set percent = (100 * session.correctCount / session.total)|round %}
+<div class="card summary">
+    <div class="big-emoji">{{ percent >= 90 ? '🏆' : (percent >= 60 ? '👍' : '💪') }}</div>
+    <h1>{{ 'quiz.result'|trans({'%correct%': session.correctCount, '%total%': session.total}) }}</h1>
+    <p class="muted">{{ (percent >= 90 ? 'quiz.praise.great' : (percent >= 60 ? 'quiz.praise.good' : 'quiz.praise.keep'))|trans }}</p>
+
+    {% for number, change in rank_changes %}
+        {% set lvl = change.level %}
+        <div class="rank-change {{ lvl.rank > change.before ? 'up' : (lvl.rank < change.before ? 'down' : '') }}">
+            {% if lvl.rank > change.before %}
+                <div class="rank-change-title">🎉 {{ 'rank.promoted'|trans({'%level%': ('level.' ~ number)|trans}) }}</div>
+            {% elseif lvl.rank < change.before %}
+                <div class="rank-change-title">{{ 'rank.demoted'|trans({'%level%': ('level.' ~ number)|trans}) }}</div>
+            {% else %}
+                <div class="rank-change-title">{{ ('level.' ~ number)|trans }}</div>
+            {% endif %}
+            {% include 'home/_rank.html.twig' %}
+        </div>
+    {% endfor %}
+
+    <ul class="answer-list">
+        {% for a in answers %}
+            <li class="{{ a.correct ? 'ok' : 'bad' }}">
+                <span class="mark">{{ a.correct ? '✔' : '✘' }}</span>
+                <span class="q">{{ a.question.prompt }}</span>
+                <span class="a">{{ a.givenAnswer }}{% if not a.correct %} → <strong>{{ a.question.correctAnswer }}</strong>{% endif %}</span>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <div class="actions">
+        {% if session.level %}
+            <form method="post" action="{{ path('quiz_start') }}">
+                <input type="hidden" name="_token" value="{{ csrf_token('quiz_start') }}">
+                <input type="hidden" name="level" value="{{ session.level }}">
+                {% if session.topic %}<input type="hidden" name="topic" value="{{ session.topic.code }}">{% endif %}
+                <button class="btn btn-primary" type="submit">{{ 'quiz.again'|trans }}</button>
+            </form>
+        {% endif %}
+        <a class="btn" href="{{ path('app_home') }}">{{ 'quiz.back_home'|trans }}</a>
+    </div>
+</div>
+{% endblock %}

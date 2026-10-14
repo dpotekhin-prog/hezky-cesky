@@ -1,0 +1,36 @@
+# Ранги 0–10 на каждом уровне сложности. Внизу — текущий состав, наверху — легенды.
+# Ранг = 10 * очки / число вопросов уровня; очки = правильные − 0.5 × неправильные (не меньше 0).
+players:
+  - rank: 0
+    name: "Alejandro Balde"
+    about: { cs: "Rychlý levý obránce z akademie La Masia.", en: "Speedy left-back from the La Masia academy." }
+  - rank: 1
+    name: "Pau Cubarsí"
+    about: { cs: "Mladý stoper, v A-týmu debutoval už v 16 letech.", en: "Young centre-back who debuted for the first team at 16." }
+  - rank: 2
+    name: "Fermín López"
+    about: { cs: "Záložník z La Masie, olympijský vítěz z Paříže 2024.", en: "La Masia midfielder, Olympic champion at Paris 2024." }
+  - rank: 3
+    name: "Gavi"
+    about: { cs: "Bojovný záložník, odchovanec La Masie.", en: "Fierce midfielder raised at La Masia." }
+  - rank: 4
+    name: "Raphinha"
+    about: { cs: "Brazilské křídlo s ostrou levačkou.", en: "Brazilian winger with a powerful left foot." }
+  - rank: 5
+    name: "Pedri"
+    about: { cs: "Kouzelník ve středu hřiště z Kanárských ostrovů.", en: "Midfield magician from the Canary Islands." }
+  - rank: 6
+    name: "Lamine Yamal"
+    about: { cs: "Zázračný talent z La Masie, mistr Evropy 2024.", en: "La Masia wonderkid, European champion 2024." }
+  - rank: 7
+    name: "Carles Puyol"
+    about: { cs: "Legendární kapitán a neústupný obránce.", en: "Legendary captain and fearless defender." }
+  - rank: 8
+    name: "Xavi Hernández"
+    about: { cs: "Mozek zálohy, později trenér Barcelony.", en: "The brain of midfield, later Barça's coach." }
+  - rank: 9
+    name: "Andrés Iniesta"
+    about: { cs: "Dal vítězný gól ve finále mistrovství světa 2010.", en: "Scored the winning goal in the 2010 World Cup final." }
+  - rank: 10
+    name: "Lionel Messi"
+    about: { cs: "Nejlepší střelec v historii Barcelony. Jsi na vrcholu!", en: "Barça's all-time top scorer. You made it to the top!" }

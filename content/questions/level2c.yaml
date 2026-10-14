@@ -1,0 +1,522 @@
+questions:
+  - id: "l2c-sd-001"
+    topic: "slovni-druhy"
+    level: 2
+    type: "choice"
+    prompt: "Jaký slovní druh je slovo „pračka“?"
+    options: ["podstatné jméno", "přídavné jméno", "sloveso", "předložka"]
+    correct: "podstatné jméno"
+    explanation:
+      cs: "Pračka je věc, ptáme se na ni co? Je to podstatné jméno."
+      en: "\"Pračka\" (washing machine) is a thing – a noun."
+  - id: "l2c-sd-002"
+    topic: "slovni-druhy"
+    level: 2
+    type: "choice"
+    prompt: "Jaký slovní druh je slovo „skáče“?"
+    options: ["podstatné jméno", "přídavné jméno", "sloveso", "předložka"]
+    correct: "sloveso"
+    explanation:
+      cs: "Skáče vyjadřuje, co někdo dělá. Je to sloveso."
+      en: "\"Skáče\" (jumps) tells what someone does – a verb."
+  - id: "l2c-sd-003"
+    topic: "slovni-druhy"
+    level: 2
+    type: "choice"
+    prompt: "Jaký slovní druh je slovo „kulatý“?"
+    options: ["podstatné jméno", "přídavné jméno", "sloveso", "předložka"]
+    correct: "přídavné jméno"
+    explanation:
+      cs: "Kulatý říká, jaká věc je. Je to přídavné jméno."
+      en: "\"Kulatý\" (round) describes what a thing is like – an adjective."
+  - id: "l2c-sd-004"
+    topic: "slovni-druhy"
+    level: 2
+    type: "choice"
+    prompt: "Jaký slovní druh je slovo „nad“ ve větě: Nad lesem letí pták."
+    options: ["předložka", "spojka", "sloveso", "podstatné jméno"]
+    correct: "předložka"
+    explanation:
+      cs: "Nad stojí před podstatným jménem (nad lesem). Je to předložka."
+      en: "\"Nad\" (above) stands before a noun – a preposition."
+  - id: "l2c-sd-005"
+    topic: "slovni-druhy"
+    level: 2
+    type: "choice"
+    prompt: "Jaký slovní druh je slovo „ale“ ve větě: Chci si hrát, ale musím se učit."
+    options: ["předložka", "spojka", "přídavné jméno", "sloveso"]
+    correct: "spojka"
+    explanation:
+      cs: "Ale spojuje dvě věty dohromady. Je to spojka."
+      en: "\"Ale\" (but) joins two clauses – a conjunction."
+  - id: "l2c-sd-006"
+    topic: "slovni-druhy"
+    level: 2
+    type: "choice"
+    prompt: "Ve které řadě jsou samá podstatná jména?"
+    options: ["pes, škola, mléko", "pes, skáče, mléko", "velký, škola, mléko"]
+    correct: "pes, škola, mléko"
+    explanation:
+      cs: "Pes, škola i mléko jsou názvy zvířat a věcí – podstatná jména. Skáče je sloveso, velký je přídavné jméno."
+      en: "Dog, school and milk are all nouns. \"Skáče\" is a verb and \"velký\" is an adjective."
+  - id: "l2c-sd-007"
+    topic: "slovni-druhy"
+    level: 2
+    type: "input"
+    prompt: "Najdi ve větě předložku a napiš ji: Kočka spí na gauči."
+    answers: ["na"]
+    explanation:
+      cs: "Na stojí před podstatným jménem gauči. Je to předložka."
+      en: "\"Na\" (on) stands before the noun – it is a preposition."
+  - id: "l2c-sd-008"
+    topic: "slovni-druhy"
+    level: 2
+    type: "input"
+    prompt: "Najdi ve větě spojku a napiš ji: Chceš čaj, nebo kakao?"
+    answers: ["nebo"]
+    explanation:
+      cs: "Nebo spojuje slova čaj a kakao. Je to spojka."
+      en: "\"Nebo\" (or) joins tea and cocoa – it is a conjunction."
+  - id: "l2c-sd-009"
+    topic: "slovni-druhy"
+    level: 2
+    type: "input"
+    prompt: "Najdi ve větě podstatné jméno a napiš ho: Veselý klaun tancuje."
+    answers: ["klaun"]
+    explanation:
+      cs: "Klaun je osoba, ptáme se kdo. Je to podstatné jméno."
+      en: "\"Klaun\" (clown) is a person – a noun."
+  - id: "l2c-sd-010"
+    topic: "slovni-druhy"
+    level: 2
+    type: "input"
+    prompt: "Najdi ve větě sloveso a napiš ho: Děti na kopci sáňkují."
+    answers: ["sáňkují"]
+    explanation:
+      cs: "Sáňkují říká, co děti dělají. Je to sloveso."
+      en: "\"Sáňkují\" (are sledging) tells what the children do – a verb."
+  - id: "l2c-pj-001"
+    topic: "podstatna-jmena"
+    level: 2
+    type: "choice"
+    prompt: "Jaký rod má podstatné jméno „židle“?"
+    options: ["mužský", "ženský", "střední"]
+    correct: "ženský"
+    explanation:
+      cs: "Říkáme ta židle, proto je rodu ženského."
+      en: "We say \"ta židle\" (that chair), so it is feminine."
+  - id: "l2c-pj-002"
+    topic: "podstatna-jmena"
+    level: 2
+    type: "choice"
+    prompt: "Jaký rod má podstatné jméno „učitel“?"
+    options: ["mužský", "ženský", "střední"]
+    correct: "mužský"
+    explanation:
+      cs: "Říkáme ten učitel, proto je rodu mužského."
+      en: "We say \"ten učitel\" (that teacher), so it is masculine."
+  - id: "l2c-pj-003"
+    topic: "podstatna-jmena"
+    level: 2
+    type: "input"
+    prompt: "Jaký rod má podstatné jméno „moře“? Napiš jedno slovo: mužský, ženský, nebo střední."
+    answers: ["střední", "středního"]
+    explanation:
+      cs: "Říkáme to moře, proto je rodu středního."
+      en: "We say \"to moře\" (that sea), so it is neuter."
+  - id: "l2c-pj-004"
+    topic: "podstatna-jmena"
+    level: 2
+    type: "choice"
+    prompt: "V jakém čísle je podstatné jméno „ptáci“?"
+    options: ["jednotné", "množné"]
+    correct: "množné"
+    explanation:
+      cs: "Ptáci znamená více ptáků, proto je to číslo množné."
+      en: "\"Ptáci\" means more birds, so it is plural."
+  - id: "l2c-pj-005"
+    topic: "podstatna-jmena"
+    level: 2
+    type: "choice"
+    prompt: "Které spojení je napsané správně?"
+    options: ["řeka Morava", "Řeka morava", "řeka morava"]
+    correct: "řeka Morava"
+    explanation:
+      cs: "Morava je jméno řeky, píšeme ji s velkým M. Slovo řeka píšeme s malým."
+      en: "\"Morava\" is the name of a river, so it has a capital M; the word \"řeka\" (river) stays lowercase."
+  - id: "l2c-pj-006"
+    topic: "podstatna-jmena"
+    level: 2
+    type: "choice"
+    prompt: "Vyber správně napsaný název pohoří."
+    options: ["Krkonoše", "krkonoše"]
+    correct: "Krkonoše"
+    explanation:
+      cs: "Krkonoše jsou jméno hor, proto píšeme velké K."
+      en: "\"Krkonoše\" is the name of mountains, so it starts with a capital K."
+  - id: "l2c-pj-007"
+    topic: "podstatna-jmena"
+    level: 2
+    type: "choice"
+    prompt: "Vyber správně napsanou větu."
+    options: ["Babička bydlí v Olomouci.", "Babička bydlí v olomouci.", "babička bydlí v Olomouci."]
+    correct: "Babička bydlí v Olomouci."
+    explanation:
+      cs: "Na začátku věty a v názvu města Olomouc píšeme velké písmeno."
+      en: "A sentence starts with a capital letter, and so does the town name Olomouc."
+  - id: "l2c-pj-008"
+    topic: "podstatna-jmena"
+    level: 2
+    type: "input"
+    prompt: "Napiš slovo v množném čísle: myš → ?"
+    answers: ["myši"]
+    explanation:
+      cs: "Jedna myš, dvě myši."
+      en: "One mouse – \"myš\", two mice – \"myši\"."
+  - id: "l2c-pj-009"
+    topic: "podstatna-jmena"
+    level: 2
+    type: "input"
+    prompt: "Napiš slovo v jednotném čísle: jablka → ?"
+    answers: ["jablko"]
+    explanation:
+      cs: "Dvě jablka, jedno jablko."
+      en: "Two apples – \"jablka\", one apple – \"jablko\"."
+  - id: "l2c-sl-001"
+    topic: "slovesa"
+    level: 2
+    type: "choice"
+    prompt: "Které slovo je sloveso?"
+    options: ["zpěv", "zpívat", "zpěvák", "zpěvný"]
+    correct: "zpívat"
+    explanation:
+      cs: "Zpívat vyjadřuje činnost, je to sloveso. Ostatní slova jsou podstatná a přídavná jména."
+      en: "\"Zpívat\" (to sing) is an action – a verb. The others are nouns or adjectives."
+  - id: "l2c-sl-002"
+    topic: "slovesa"
+    level: 2
+    type: "choice"
+    prompt: "Urči osobu a číslo slovesa „píšeme“."
+    options: ["1. osoba, číslo množné", "2. osoba, číslo množné", "3. osoba, číslo jednotné"]
+    correct: "1. osoba, číslo množné"
+    explanation:
+      cs: "My píšeme – to je 1. osoba čísla množného."
+      en: "\"My píšeme\" (we write) is 1st person plural."
+  - id: "l2c-sl-003"
+    topic: "slovesa"
+    level: 2
+    type: "choice"
+    prompt: "Urči osobu a číslo slovesa „čte“."
+    options: ["1. osoba, číslo jednotné", "3. osoba, číslo jednotné", "3. osoba, číslo množné"]
+    correct: "3. osoba, číslo jednotné"
+    explanation:
+      cs: "On (ona, ono) čte – to je 3. osoba čísla jednotného."
+      en: "\"On čte\" (he reads) is 3rd person singular."
+  - id: "l2c-sl-004"
+    topic: "slovesa"
+    level: 2
+    type: "choice"
+    prompt: "Urči osobu a číslo slovesa „běháš“."
+    options: ["1. osoba, číslo jednotné", "2. osoba, číslo jednotné", "2. osoba, číslo množné"]
+    correct: "2. osoba, číslo jednotné"
+    explanation:
+      cs: "Ty běháš – to je 2. osoba čísla jednotného."
+      en: "\"Ty běháš\" (you run) is 2nd person singular."
+  - id: "l2c-sl-005"
+    topic: "slovesa"
+    level: 2
+    type: "choice"
+    prompt: "Které sloveso je v infinitivu (neurčitku)?"
+    options: ["plave", "plavat", "plaval"]
+    correct: "plavat"
+    explanation:
+      cs: "Infinitiv je základní tvar slovesa a často končí na -t: plavat."
+      en: "The infinitive is the basic form of a verb, often ending in -t: \"plavat\" (to swim)."
+  - id: "l2c-sl-006"
+    topic: "slovesa"
+    level: 2
+    type: "input"
+    prompt: "Napiš infinitiv (neurčitek) slovesa „kreslí“."
+    answers: ["kreslit"]
+    explanation:
+      cs: "Kreslí → co dělat? kreslit."
+      en: "\"Kreslí\" (draws) → infinitive \"kreslit\" (to draw)."
+  - id: "l2c-sl-007"
+    topic: "slovesa"
+    level: 2
+    type: "input"
+    prompt: "Napiš infinitiv (neurčitek) slovesa „vaříme“."
+    answers: ["vařit"]
+    explanation:
+      cs: "Vaříme → co dělat? vařit."
+      en: "\"Vaříme\" (we cook) → infinitive \"vařit\" (to cook)."
+  - id: "l2c-sl-008"
+    topic: "slovesa"
+    level: 2
+    type: "input"
+    prompt: "Doplň sloveso „skákat“ ve správném tvaru: My _ přes švihadlo. Napiš jen chybějící slovo."
+    answers: ["skáčeme"]
+    explanation:
+      cs: "My skáčeme – 1. osoba čísla množného."
+      en: "\"My skáčeme\" (we jump) – 1st person plural."
+  - id: "l2c-sl-009"
+    topic: "slovesa"
+    level: 2
+    type: "input"
+    prompt: "Doplň sloveso „mít“ ve správném tvaru: Oni _ nové kolo. Napiš jen chybějící slovo."
+    answers: ["mají"]
+    explanation:
+      cs: "Oni mají – 3. osoba čísla množného."
+      en: "\"Oni mají\" (they have) – 3rd person plural."
+  - id: "l2c-dtn-001"
+    topic: "de-te-ne"
+    level: 2
+    type: "choice"
+    prompt: "Doplň ě/e: V zim_ nosíme teplou čepici."
+    options: ["ě", "e"]
+    correct: "ě"
+    explanation:
+      cs: "V zimě píšeme mě, vyslovujeme [mňe]."
+      en: "In \"zimě\" (in winter) we write mě, pronounced [mňe]."
+  - id: "l2c-dtn-002"
+    topic: "de-te-ne"
+    level: 2
+    type: "choice"
+    prompt: "Doplň ě nebo je: Na louce roste modrá kv_tina."
+    options: ["ě", "je"]
+    correct: "ě"
+    explanation:
+      cs: "Slovo květina píšeme s vě."
+      en: "\"Květina\" (flower) is written with vě."
+  - id: "l2c-dtn-003"
+    topic: "de-te-ne"
+    level: 2
+    type: "choice"
+    prompt: "Doplň ě nebo je: Pavel ob_vil v trávě ježka."
+    options: ["ě", "je"]
+    correct: "je"
+    explanation:
+      cs: "Objevil má předponu ob- a slovo jevit, proto píšeme je."
+      en: "\"Objevil\" (discovered) = prefix ob- + \"jevit\", so we write je."
+  - id: "l2c-dtn-004"
+    topic: "de-te-ne"
+    level: 2
+    type: "choice"
+    prompt: "Doplň ě nebo je: Holčička má p_kné šaty."
+    options: ["ě", "je"]
+    correct: "ě"
+    explanation:
+      cs: "Slovo pěkné píšeme s pě."
+      en: "\"Pěkné\" (nice) is written with pě."
+  - id: "l2c-dtn-005"
+    topic: "de-te-ne"
+    level: 2
+    type: "choice"
+    prompt: "Doplň mě nebo mně: Na nebi svítí _síc."
+    options: ["mě", "mně"]
+    correct: "mě"
+    explanation:
+      cs: "Slovo měsíc píšeme s mě."
+      en: "\"Měsíc\" (moon) is written with mě."
+  - id: "l2c-dtn-006"
+    topic: "de-te-ne"
+    level: 2
+    type: "choice"
+    prompt: "Které slovo je napsané správně?"
+    options: ["stěna", "stjena", "stena"]
+    correct: "stěna"
+    explanation:
+      cs: "Slovo stěna píšeme s tě, vyslovujeme [sťena]."
+      en: "\"Stěna\" (wall) is written with tě, pronounced [sťena]."
+  - id: "l2c-dtn-007"
+    topic: "de-te-ne"
+    level: 2
+    type: "input"
+    prompt: "Doplň ě nebo e a napiš celé slovo: Pes spí v boud_."
+    answers: ["boudě"]
+    explanation:
+      cs: "Pes spí v boudě – píšeme dě, vyslovujeme [ďe]."
+      en: "\"V boudě\" (in the kennel) – we write dě, pronounced [ďe]."
+  - id: "l2c-dtn-008"
+    topic: "de-te-ne"
+    level: 2
+    type: "input"
+    prompt: "Doplň mě nebo mně a napiš celé slovo: Kluci si o přestávce _ní kartičky."
+    answers: ["mění"]
+    explanation:
+      cs: "Slovo mění (měnit) píšeme s mě, vyslovujeme [mňeňí]."
+      en: "\"Mění\" (they swap, from \"měnit\") is written with mě, pronounced [mňeňí]."
+  - id: "l2c-dtn-009"
+    topic: "de-te-ne"
+    level: 2
+    type: "input"
+    prompt: "Doplň ě nebo e a napiš celé slovo: Na plotě sedí n_kolik vrabců."
+    answers: ["několik"]
+    explanation:
+      cs: "Slovo několik píšeme s ně, vyslovujeme [ňekolik]."
+      en: "\"Několik\" (several) is written with ně, pronounced [ňekolik]."
+  - id: "l2c-vys-001"
+    topic: "vyznam-slov"
+    level: 2
+    type: "choice"
+    prompt: "Najdi slovo souznačné (stejného významu) ke slovu „smutný“."
+    options: ["nešťastný", "veselý", "rychlý"]
+    correct: "nešťastný"
+    explanation:
+      cs: "Smutný a nešťastný znamenají skoro totéž."
+      en: "\"Smutný\" (sad) and \"nešťastný\" (unhappy) mean almost the same."
+  - id: "l2c-vys-002"
+    topic: "vyznam-slov"
+    level: 2
+    type: "choice"
+    prompt: "Najdi slovo souznačné (stejného významu) ke slovu „hovořit“."
+    options: ["mluvit", "mlčet", "běhat"]
+    correct: "mluvit"
+    explanation:
+      cs: "Hovořit a mluvit znamenají totéž."
+      en: "\"Hovořit\" and \"mluvit\" both mean to speak."
+  - id: "l2c-vys-003"
+    topic: "vyznam-slov"
+    level: 2
+    type: "choice"
+    prompt: "Najdi slovo opačného významu ke slovu „starý“."
+    options: ["mladý", "moudrý", "veliký"]
+    correct: "mladý"
+    explanation:
+      cs: "Opakem slova starý je mladý."
+      en: "The opposite of \"starý\" (old) is \"mladý\" (young)."
+  - id: "l2c-vys-004"
+    topic: "vyznam-slov"
+    level: 2
+    type: "choice"
+    prompt: "Najdi slovo opačného významu ke slovu „vysoký“."
+    options: ["nízký", "dlouhý", "široký"]
+    correct: "nízký"
+    explanation:
+      cs: "Opakem slova vysoký je nízký."
+      en: "The opposite of \"vysoký\" (tall/high) is \"nízký\" (low)."
+  - id: "l2c-vys-005"
+    topic: "vyznam-slov"
+    level: 2
+    type: "choice"
+    prompt: "Které slovo nepatří mezi ostatní?"
+    options: ["housle", "klavír", "kytara", "kladivo"]
+    correct: "kladivo"
+    explanation:
+      cs: "Housle, klavír a kytara jsou hudební nástroje. Kladivo je nářadí."
+      en: "Violin, piano and guitar are musical instruments; a hammer is a tool."
+  - id: "l2c-vys-006"
+    topic: "vyznam-slov"
+    level: 2
+    type: "choice"
+    prompt: "Jakým společným slovem nazveš: kladivo, pila, šroubovák?"
+    options: ["nářadí", "nádobí", "nábytek"]
+    correct: "nářadí"
+    explanation:
+      cs: "Kladivo, pila i šroubovák jsou nářadí."
+      en: "Hammer, saw and screwdriver are all tools (nářadí)."
+  - id: "l2c-vys-007"
+    topic: "vyznam-slov"
+    level: 2
+    type: "choice"
+    prompt: "Které slovo je příbuzné se slovem „les“?"
+    options: ["lesník", "list", "lev"]
+    correct: "lesník"
+    explanation:
+      cs: "Lesník má stejný kořen les- jako slovo les."
+      en: "\"Lesník\" (forester) has the same root les- as \"les\" (forest)."
+  - id: "l2c-vys-008"
+    topic: "vyznam-slov"
+    level: 2
+    type: "input"
+    prompt: "Napiš slovo opačného významu: plný → ?"
+    answers: ["prázdný"]
+    explanation:
+      cs: "Opakem slova plný je prázdný."
+      en: "The opposite of \"plný\" (full) is \"prázdný\" (empty)."
+  - id: "l2c-vys-009"
+    topic: "vyznam-slov"
+    level: 2
+    type: "input"
+    prompt: "Napiš slovo opačného významu: nahoře → ?"
+    answers: ["dole"]
+    explanation:
+      cs: "Opakem slova nahoře je dole."
+      en: "The opposite of \"nahoře\" (up) is \"dole\" (down)."
+  - id: "l2c-veta-001"
+    topic: "veta"
+    level: 2
+    type: "choice"
+    prompt: "Je to věta jednoduchá, nebo souvětí? „Babička s dědou jedou na chatu.“"
+    options: ["věta jednoduchá", "souvětí"]
+    correct: "věta jednoduchá"
+    explanation:
+      cs: "Ve větě je jen jedno sloveso (jedou), je to věta jednoduchá."
+      en: "There is only one verb (jedou), so it is a simple sentence."
+  - id: "l2c-veta-002"
+    topic: "veta"
+    level: 2
+    type: "choice"
+    prompt: "Je to věta jednoduchá, nebo souvětí? „Svítí slunce, ptáci zpívají.“"
+    options: ["věta jednoduchá", "souvětí"]
+    correct: "souvětí"
+    explanation:
+      cs: "Jsou tu dvě slovesa (svítí, zpívají), je to souvětí."
+      en: "There are two verbs (svítí, zpívají), so it is a compound sentence."
+  - id: "l2c-veta-003"
+    topic: "veta"
+    level: 2
+    type: "choice"
+    prompt: "Která z těchto vět je souvětí?"
+    options: ["Na zahradě rostou jahody a maliny.", "Na zahradě rostou jahody a v lese rostou houby.", "Na zahradě rostou sladké jahody."]
+    correct: "Na zahradě rostou jahody a v lese rostou houby."
+    explanation:
+      cs: "Jen tato věta má dvě slovesa (rostou, rostou), proto je to souvětí."
+      en: "Only this sentence has two verbs, so it is a compound sentence."
+  - id: "l2c-veta-004"
+    topic: "veta"
+    level: 2
+    type: "choice"
+    prompt: "Doplň vhodnou spojku: Chceš jít ven, _ zůstaneš doma?"
+    options: ["nebo", "protože", "ale"]
+    correct: "nebo"
+    explanation:
+      cs: "Vybíráme ze dvou možností, proto použijeme spojku nebo."
+      en: "We choose between two options, so we use \"nebo\" (or)."
+  - id: "l2c-veta-005"
+    topic: "veta"
+    level: 2
+    type: "choice"
+    prompt: "Doplň vhodnou spojku: Nešel jsem ven, _ jsem byl nemocný."
+    options: ["protože", "ale", "nebo"]
+    correct: "protože"
+    explanation:
+      cs: "Druhá věta vysvětluje důvod, proto použijeme spojku protože."
+      en: "The second clause gives the reason, so we use \"protože\" (because)."
+  - id: "l2c-veta-006"
+    topic: "veta"
+    level: 2
+    type: "input"
+    prompt: "Kolik sloves je ve větě? Napiš číslici: Kocour leží na okně a spí."
+    answers: ["2", "dvě"]
+    explanation:
+      cs: "Slovesa jsou leží a spí, to jsou 2."
+      en: "The verbs are \"leží\" and \"spí\" – 2."
+  - id: "l2c-veta-007"
+    topic: "veta"
+    level: 2
+    type: "input"
+    prompt: "Kolik sloves je v souvětí? Napiš číslici: Tatínek opravuje auto, maminka žehlí a Ema kreslí."
+    answers: ["3", "tři"]
+    explanation:
+      cs: "Slovesa jsou opravuje, žehlí a kreslí, to jsou 3."
+      en: "The verbs are \"opravuje\", \"žehlí\" and \"kreslí\" – 3."
+  - id: "l2c-veta-008"
+    topic: "veta"
+    level: 2
+    type: "input"
+    prompt: "Najdi v souvětí spojku a napiš ji: Venku sněží, ale není zima."
+    answers: ["ale"]
+    explanation:
+      cs: "Spojka ale spojuje obě věty."
+      en: "The conjunction \"ale\" (but) joins the two clauses."

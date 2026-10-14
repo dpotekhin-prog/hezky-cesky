@@ -1,0 +1,528 @@
+questions:
+  # ---------- vyjmenovaná slova ----------
+  - id: "l3b-vs-001"
+    topic: "vyjmenovana-slova"
+    level: 3
+    type: "choice"
+    prompt: "Doplň slovo: Moje sestra chce _ zpěvačkou."
+    options: ["být", "bít"]
+    correct: "být"
+    explanation:
+      cs: "být = existovat, něčím se stát. Je to vyjmenované slovo, píšeme y."
+      en: "být means to be (become); it is a listed word, so y."
+  - id: "l3b-vs-002"
+    topic: "vyjmenovana-slova"
+    level: 3
+    type: "input"
+    prompt: "Doplň i/y nebo í/ý: Orel létá ve velké v_šce a v_dí každou myš. Napiš chybějící písmena za sebou, oddělená čárkou (např. y, í)."
+    answers: ["ý, i", "ý,i", "ý i", "ýi"]
+    explanation:
+      cs: "výška je příbuzná se slovem vysoký (vyjmenované slovo po V) → ý. vidí je od slova vidět, není vyjmenované → i."
+      en: "výška (height) is related to vysoký, a listed word, so ý; vidí comes from vidět, not a listed word, so i."
+  - id: "l3b-vs-003"
+    topic: "vyjmenovana-slova"
+    level: 3
+    type: "choice"
+    prompt: "Doplň slovo: Kovář _ kladivem do železa."
+    options: ["bil", "byl"]
+    correct: "bil"
+    explanation:
+      cs: "Kovář tloukl kladivem, to je sloveso bít → píšeme i."
+      en: "The smith was hitting with a hammer: bít (to hit), so i."
+  - id: "l3b-vs-004"
+    topic: "vyjmenovana-slova"
+    level: 3
+    type: "choice"
+    prompt: "Doplň slovo: Včera _ krásný slunečný den."
+    options: ["byl", "bil"]
+    correct: "byl"
+    explanation:
+      cs: "byl je od slova být (existovat) → y."
+      en: "byl comes from být (to be), so y."
+  - id: "l3b-vs-005"
+    topic: "vyjmenovana-slova"
+    level: 3
+    type: "input"
+    prompt: "Doplň i/y: Kluci se b_li polštáři a pak b_li unavení. Napiš chybějící písmena za sebou, oddělená čárkou (např. i, y)."
+    answers: ["i, y", "i,y", "i y", "iy"]
+    explanation:
+      cs: "bili se = tloukli se (bít) → i. byli unavení = být → y."
+      en: "bili se means they fought (bít), so i; byli means they were (být), so y."
+  - id: "l3b-vs-006"
+    topic: "vyjmenovana-slova"
+    level: 3
+    type: "choice"
+    prompt: "Doplň slovo: Promiň, _ jsem se."
+    options: ["zmýlil", "zmílil"]
+    correct: "zmýlil"
+    explanation:
+      cs: "zmýlit se = udělat chybu, je příbuzné s mýlit se → ý."
+      en: "zmýlit se (to make a mistake) is related to mýlit se, so ý."
+  - id: "l3b-vs-007"
+    topic: "vyjmenovana-slova"
+    level: 3
+    type: "input"
+    prompt: "Doplň i nebo y a napiš celé slovo: Naše paní učitelka je velmi m_lá."
+    answers: ["milá"]
+    explanation:
+      cs: "milá (hodná) není příbuzné s mýlit se, proto píšeme i."
+      en: "milá (nice, kind) is not related to mýlit se, so i."
+  - id: "l3b-vs-008"
+    topic: "vyjmenovana-slova"
+    level: 3
+    type: "choice"
+    prompt: "Vyber správně napsanou větu."
+    options: ["Had zasyčel a rychle zmizel v trávě.", "Had zasičel a rychle zmizel v trávě.", "Had zasyčel a rychle zmyzel v trávě."]
+    correct: "Had zasyčel a rychle zmizel v trávě."
+    explanation:
+      cs: "zasyčel je od slova syčet (vyjmenované slovo po S) → y. zmizel není vyjmenované slovo → i."
+      en: "zasyčel comes from syčet, a listed word after S (y); zmizel (disappeared) is not a listed word (i)."
+  - id: "l3b-vs-009"
+    topic: "vyjmenovana-slova"
+    level: 3
+    type: "input"
+    prompt: "Doplň i nebo y a napiš celé slovo: Ten kluk je moc p_šný, myslí si, že je nejlepší."
+    answers: ["pyšný"]
+    explanation:
+      cs: "pyšný je příbuzné se slovem pýcha (vyjmenované slovo) → y."
+      en: "pyšný (proud) is related to pýcha, a listed word, so y."
+  - id: "l3b-vs-010"
+    topic: "vyjmenovana-slova"
+    level: 3
+    type: "choice"
+    prompt: "Které slovo NENÍ příbuzné se slovem „pýcha“?"
+    options: ["pyšný", "pyšnit se", "pyšně", "píchnout"]
+    correct: "píchnout"
+    explanation:
+      cs: "píchnout (bodnout) nemá s pýchou nic společného, proto í."
+      en: "píchnout (to prick) has nothing to do with pýcha (pride), so í."
+  - id: "l3b-vs-011"
+    topic: "vyjmenovana-slova"
+    level: 3
+    type: "choice"
+    prompt: "Vyber správně napsanou větu."
+    options: ["Hlavička zápalky obsahuje síru.", "Hlavička zápalky obsahuje sýru."]
+    correct: "Hlavička zápalky obsahuje síru."
+    explanation:
+      cs: "síra je žlutá látka, není to vyjmenované slovo → í. sýr je jídlo."
+      en: "síra (sulphur) is not a listed word, so í; sýr means cheese."
+  - id: "l3b-vs-012"
+    topic: "vyjmenovana-slova"
+    level: 3
+    type: "input"
+    prompt: "Doplň í nebo ý a napiš celé slovo: Na pizze bylo hodně s_ra."
+    answers: ["sýra"]
+    explanation:
+      cs: "sýr je jídlo, vyjmenované slovo po S → ý."
+      en: "sýr (cheese) is a listed word after S, so ý."
+  - id: "l3b-vs-013"
+    topic: "vyjmenovana-slova"
+    level: 3
+    type: "choice"
+    prompt: "Doplň slovo: Na jaře jsme na zahradě _ jabloň."
+    options: ["vysadili", "visadili"]
+    correct: "vysadili"
+    explanation:
+      cs: "vy- je předpona, píšeme ji vždy s y."
+      en: "vy- is a prefix and is always written with y."
+  - id: "l3b-vs-014"
+    topic: "vyjmenovana-slova"
+    level: 3
+    type: "input"
+    prompt: "Doplň i/y: Babička s_pala cukr do m_sky. Napiš chybějící písmena za sebou, oddělená čárkou (např. i, y)."
+    answers: ["y, i", "y,i", "y i", "yi"]
+    explanation:
+      cs: "sypala je od slova sypat (vyjmenované slovo po S) → y. miska není vyjmenované slovo → i."
+      en: "sypala comes from sypat, a listed word after S (y); miska (bowl) is not a listed word (i)."
+  - id: "l3b-vs-015"
+    topic: "vyjmenovana-slova"
+    level: 3
+    type: "choice"
+    prompt: "Doplň slovo: Byl jsem unavený, a tak jsem pořád _."
+    options: ["zíval", "zýval"]
+    correct: "zíval"
+    explanation:
+      cs: "zívat (otevírat pusu únavou) není příbuzné s nazývat → í."
+      en: "zívat (to yawn) is not related to nazývat, so í."
+  - id: "l3b-vs-016"
+    topic: "vyjmenovana-slova"
+    level: 3
+    type: "input"
+    prompt: "Doplň í nebo ý a napiš celé slovo: Paní učitelka mě vyz_vá k tabuli."
+    answers: ["vyzývá"]
+    explanation:
+      cs: "vyzývat je příbuzné s nazývat (vyjmenované slovo po Z) → ý."
+      en: "vyzývat (to call on) is related to nazývat, a listed word, so ý."
+  - id: "l3b-vs-017"
+    topic: "vyjmenovana-slova"
+    level: 3
+    type: "choice"
+    prompt: "Vyber větu, ve které je CHYBA."
+    options: ["Ráno jsem dlouho zíval.", "Jak se nazývá ta řeka?", "Kamarád mě vyzval na souboj.", "Na oslavu nás pozívali."]
+    correct: "Na oslavu nás pozívali."
+    explanation:
+      cs: "pozývat je příbuzné s nazývat → správně je pozývali."
+      en: "pozývat (to invite) is related to nazývat, so it is pozývali."
+  - id: "l3b-vs-018"
+    topic: "vyjmenovana-slova"
+    level: 3
+    type: "choice"
+    prompt: "Které slovo je příbuzné se slovem „mýt“?"
+    options: ["mýdlo", "míč", "milý", "mince"]
+    correct: "mýdlo"
+    explanation:
+      cs: "Mýdlem se myjeme, proto mýdlo patří k mýt a píše se s ý."
+      en: "We wash (mýt) with soap (mýdlo), so they are related."
+  - id: "l3b-vs-019"
+    topic: "vyjmenovana-slova"
+    level: 3
+    type: "choice"
+    prompt: "Které slovo NENÍ příbuzné se slovem „lyže“?"
+    options: ["lyžař", "lyžovat", "lyžařský", "lízat"]
+    correct: "lízat"
+    explanation:
+      cs: "lízat (jazykem) nemá s lyžemi nic společného, píše se í."
+      en: "lízat (to lick) is not related to lyže (skis), so í."
+  - id: "l3b-vs-020"
+    topic: "vyjmenovana-slova"
+    level: 3
+    type: "choice"
+    prompt: "Které slovo je příbuzné se slovem „slyšet“?"
+    options: ["uslyšet", "slina", "slíbit", "sliz"]
+    correct: "uslyšet"
+    explanation:
+      cs: "uslyšet je příbuzné se slyšet, proto y. Ostatní slova nejsou vyjmenovaná."
+      en: "uslyšet is related to slyšet, so y; the others are not listed words."
+  - id: "l3b-vs-021"
+    topic: "vyjmenovana-slova"
+    level: 3
+    type: "input"
+    prompt: "Doplň i/y: Brzy ráno l_ška v_lezla z nory a m_slela na kořist. Napiš chybějící písmena za sebou, oddělená čárkou (např. i, y, i)."
+    answers: ["i, y, y", "i,y,y", "i y y", "iyy"]
+    explanation:
+      cs: "liška není vyjmenované slovo → i. vylezla má předponu vy- → y. myslet je vyjmenované → y."
+      en: "liška has i; vylezla has the prefix vy- (y); myslet is a listed word (y)."
+  - id: "l3b-vs-022"
+    topic: "vyjmenovana-slova"
+    level: 3
+    type: "input"
+    prompt: "Doplň i/y: Na poli rostlo ob_lí a na mezi kvetly b_linky. Napiš chybějící písmena za sebou, oddělená čárkou (např. i, y)."
+    answers: ["i, y", "i,y", "i y", "iy"]
+    explanation:
+      cs: "obilí není vyjmenované slovo → i. bylinky jsou příbuzné s bylina → y."
+      en: "obilí (grain) is not a listed word, so i; bylinky is related to bylina, so y."
+  - id: "l3b-vs-023"
+    topic: "vyjmenovana-slova"
+    level: 3
+    type: "choice"
+    prompt: "Vyber správně napsanou větu."
+    options: ["Myslivec viděl v lese jelena.", "Mislivec viděl v lese jelena.", "Myslivec vyděl v lese jelena."]
+    correct: "Myslivec viděl v lese jelena."
+    explanation:
+      cs: "myslivec je vyjmenované slovo po M → y. vidět není vyjmenované → i."
+      en: "myslivec (hunter) is a listed word (y); vidět (to see) has i."
+  - id: "l3b-vs-024"
+    topic: "vyjmenovana-slova"
+    level: 3
+    type: "choice"
+    prompt: "Vyber správně napsanou větu."
+    options: ["Pavel je pilný žák.", "Pavel je pylný žák."]
+    correct: "Pavel je pilný žák."
+    explanation:
+      cs: "pilný znamená pracovitý, není to pyl z květů → píšeme i."
+      en: "pilný means hard-working; it is not related to pyl (pollen), so i."
+  - id: "l3b-vs-025"
+    topic: "vyjmenovana-slova"
+    level: 3
+    type: "input"
+    prompt: "Doplň i nebo y a napiš celé slovo: Včely sbírají na květech p_l."
+    answers: ["pyl"]
+    explanation:
+      cs: "pyl (žlutý prášek z květů) je vyjmenované slovo po P → y."
+      en: "pyl (pollen) is a listed word after P, so y."
+  - id: "l3b-vs-026"
+    topic: "vyjmenovana-slova"
+    level: 3
+    type: "choice"
+    prompt: "Doplň i/y: Náš pes ob_čejně spí v boudě."
+    options: ["i", "y"]
+    correct: "y"
+    explanation:
+      cs: "obyčejně je příbuzné se slovem obyčej (vyjmenované slovo po B) → y."
+      en: "obyčejně (usually) is related to obyčej, a listed word after B, so y."
+  - id: "l3b-vs-027"
+    topic: "vyjmenovana-slova"
+    level: 3
+    type: "choice"
+    prompt: "Doplň slovo: Mlynář bude _ obilí na mouku."
+    options: ["mlít", "mlýt"]
+    correct: "mlít"
+    explanation:
+      cs: "Pozor: mlýn je vyjmenované slovo, ale sloveso mlít se píše s í."
+      en: "Careful: mlýn (mill) is a listed word, but the verb mlít (to grind) is written with í."
+  - id: "l3b-vs-028"
+    topic: "vyjmenovana-slova"
+    level: 3
+    type: "input"
+    prompt: "Doplň i nebo y a napiš celé slovo: Kočka umí v_skočit až na skříň."
+    answers: ["vyskočit"]
+    explanation:
+      cs: "vy- je předpona, píšeme ji vždy s y: vyskočit."
+      en: "vy- is a prefix and is always written with y: vyskočit."
+  - id: "l3b-vs-029"
+    topic: "vyjmenovana-slova"
+    level: 3
+    type: "choice"
+    prompt: "Doplň i/y: Na nové škole jsem si rychle zv_kl."
+    options: ["i", "y"]
+    correct: "y"
+    explanation:
+      cs: "zvykat je vyjmenované slovo po V → zvykl s y."
+      en: "zvykat (to get used to) is a listed word after V, so y."
+  - id: "l3b-vs-030"
+    topic: "vyjmenovana-slova"
+    level: 3
+    type: "input"
+    prompt: "Doplň í nebo ý a napiš celé slovo: Kráva pomalu žv_ká trávu."
+    answers: ["žvýká"]
+    explanation:
+      cs: "žvýkat je vyjmenované slovo po V → ý."
+      en: "žvýkat (to chew) is a listed word after V, so ý."
+  # ---------- párové souhlásky ----------
+  - id: "l3b-par-001"
+    topic: "parove-souhlasky"
+    level: 3
+    type: "input"
+    prompt: "Doplň ď nebo ť a napiš celé slovo: Na otázku jsem dal správnou odpově_."
+    answers: ["odpověď"]
+    explanation:
+      cs: "Ověříme: odpovědi → slyšíme d, proto odpověď."
+      en: "Check with odpovědi: we hear d, so it is odpověď."
+  - id: "l3b-par-002"
+    topic: "parove-souhlasky"
+    level: 3
+    type: "input"
+    prompt: "Doplň chybějící písmena: ža_ka (malá žába), loke_ (část ruky), pohá_ka. Napiš je za sebou, oddělená čárkou (např. b, d, ž)."
+    answers: ["b, t, d", "b,t,d", "b t d", "btd"]
+    explanation:
+      cs: "žabka (žába) → b, loket (lokty) → t, pohádka (pohádek) → d."
+      en: "žabka (from žába) b, loket (lokty) t, pohádka d."
+  - id: "l3b-par-003"
+    topic: "parove-souhlasky"
+    level: 3
+    type: "input"
+    prompt: "Doplň z nebo s a napiš celé slovo: Ta ulička je velmi ú_ká."
+    answers: ["úzká"]
+    explanation:
+      cs: "Ověříme: úzoučká → slyšíme z, proto úzká."
+      en: "Check with úzoučká: we hear z, so úzká."
+  - id: "l3b-par-004"
+    topic: "parove-souhlasky"
+    level: 3
+    type: "choice"
+    prompt: "Doplň z/s: Bydlíme blí_ko školy."
+    options: ["z", "s"]
+    correct: "z"
+    explanation:
+      cs: "Ověříme: blizoučko → slyšíme z."
+      en: "Check with blizoučko: we hear z."
+  - id: "l3b-par-005"
+    topic: "parove-souhlasky"
+    level: 3
+    type: "input"
+    prompt: "Doplň ž nebo š a napiš celé slovo: Polévku jím l_ičkou."
+    answers: ["lžičkou"]
+    explanation:
+      cs: "Ověříme: lžíce → ž, proto lžička, lžičkou."
+      en: "Check with lžíce (spoon): ž, so lžičkou."
+  - id: "l3b-par-006"
+    topic: "parove-souhlasky"
+    level: 3
+    type: "choice"
+    prompt: "Ve kterém slově je CHYBA?"
+    options: ["zpěvák", "obchod", "hřebík", "nehed"]
+    correct: "nehed"
+    explanation:
+      cs: "Ověříme: nehty → t. Správně je nehet."
+      en: "Check with nehty: t. The correct word is nehet (nail)."
+  - id: "l3b-par-007"
+    topic: "parove-souhlasky"
+    level: 3
+    type: "input"
+    prompt: "Doplň d nebo t a napiš celé slovo: Ráno nás vzbudil hlasitý kohou_."
+    answers: ["kohout"]
+    explanation:
+      cs: "Ověříme: kohouti → slyšíme t."
+      en: "Check with kohouti: we hear t."
+  - id: "l3b-par-008"
+    topic: "parove-souhlasky"
+    level: 3
+    type: "choice"
+    prompt: "Doplň v/f: Z odřeného kolena tekla kre_."
+    options: ["v", "f"]
+    correct: "v"
+    explanation:
+      cs: "Ověříme: krve → slyšíme v."
+      en: "Check with krve: we hear v."
+  - id: "l3b-par-009"
+    topic: "parove-souhlasky"
+    level: 3
+    type: "choice"
+    prompt: "Doplň ď/ť: V létě jsme jeli s dědou na pou_."
+    options: ["ď", "ť"]
+    correct: "ť"
+    explanation:
+      cs: "Ověříme: pouti → slyšíme t, proto pouť."
+      en: "Check with pouti: we hear t, so pouť (fair)."
+  - id: "l3b-par-010"
+    topic: "parove-souhlasky"
+    level: 3
+    type: "input"
+    prompt: "Doplň b nebo p a napiš celé slovo: U cesty roste strom jeřá_ s červenými plody."
+    answers: ["jeřáb"]
+    explanation:
+      cs: "Ověříme: jeřáby → slyšíme b."
+      en: "Check with jeřáby: we hear b."
+  - id: "l3b-par-011"
+    topic: "parove-souhlasky"
+    level: 3
+    type: "input"
+    prompt: "Doplň chybějící písmena: Výta_ nás vyvezl nahoru a odtud byl krásný výhle_. Napiš je za sebou, oddělená čárkou (např. b, d)."
+    answers: ["h, d", "h,d", "h d", "hd"]
+    explanation:
+      cs: "výtahy → h, výhledy → d."
+      en: "Check with výtahy (h) and výhledy (d)."
+  - id: "l3b-par-012"
+    topic: "parove-souhlasky"
+    level: 3
+    type: "choice"
+    prompt: "Které slovo nám pomůže ověřit písmeno z ve slově „hezký“?"
+    options: ["hezoučký", "hezky", "hezčí"]
+    correct: "hezoučký"
+    explanation:
+      cs: "Ve slově hezoučký je po z samohláska, proto z jasně slyšíme."
+      en: "In hezoučký a vowel follows z, so we can clearly hear it."
+  - id: "l3b-par-013"
+    topic: "parove-souhlasky"
+    level: 3
+    type: "choice"
+    prompt: "Ve které řadě jsou všechna slova napsaná správně?"
+    options: ["drozd, plaz, zpěv", "drozt, plaz, zpěv", "drozd, plas, zpěf"]
+    correct: "drozd, plaz, zpěv"
+    explanation:
+      cs: "Ověříme: drozdi → d, plazi → z, zpěvy → v."
+      en: "Check with drozdi (d), plazi (z), zpěvy (v)."
+  # ---------- dě, tě, ně, bě, pě, vě, mě ----------
+  - id: "l3b-dtn-001"
+    topic: "de-te-ne"
+    level: 3
+    type: "choice"
+    prompt: "Vyber správně napsanou větu."
+    options: ["Půjdeš se mnou na hřiště?", "Půjdeš se mňou na hřiště?"]
+    correct: "Půjdeš se mnou na hřiště?"
+    explanation:
+      cs: "Píšeme se mnou, bez háčku."
+      en: "It is written se mnou (with me), without a háček."
+  - id: "l3b-dtn-002"
+    topic: "de-te-ne"
+    level: 3
+    type: "input"
+    prompt: "Doplň „mě“ nebo „mně“: Přijď ke _ zítra na návštěvu. Napiš jen chybějící slovo."
+    answers: ["mně"]
+    explanation:
+      cs: "Ke komu? – ke mně. Ptáme se komu, proto mně."
+      en: "To whom? – ke mně (to me): we ask komu, so we write mně."
+  - id: "l3b-dtn-003"
+    topic: "de-te-ne"
+    level: 3
+    type: "input"
+    prompt: "Doplň „mě“ nebo „mně“: Dědeček napsal dopis _ i bratrovi. Napiš jen chybějící slovo."
+    answers: ["mně"]
+    explanation:
+      cs: "Komu napsal dopis? – mně. Ptáme se komu, proto mně."
+      en: "To whom did he write a letter? – mně (to me): we ask komu, so mně."
+  - id: "l3b-dtn-004"
+    topic: "de-te-ne"
+    level: 3
+    type: "input"
+    prompt: "Doplň „mě“ nebo „mně“: Kamarádi _ pozvali na oslavu. Napiš jen chybějící slovo."
+    answers: ["mě"]
+    explanation:
+      cs: "Koho pozvali? – mě. Ptáme se koho, proto mě."
+      en: "Whom did they invite? – mě (me): we ask koho, so mě."
+  - id: "l3b-dtn-005"
+    topic: "de-te-ne"
+    level: 3
+    type: "choice"
+    prompt: "Vyber správně napsané slovo: Petr _ doma svačinu."
+    options: ["zapomněl", "zapoměl", "zapomnněl"]
+    correct: "zapomněl"
+    explanation:
+      cs: "zapomenout → zapomněl. Je tam n, proto píšeme mně."
+      en: "zapomenout has an n, so the past form is zapomněl (mně)."
+  - id: "l3b-dtn-006"
+    topic: "de-te-ne"
+    level: 3
+    type: "choice"
+    prompt: "Doplň slovo: O _ se neboj, zvládnu to."
+    options: ["mě", "mně"]
+    correct: "mně"
+    explanation:
+      cs: "O kom? – o mně. Po předložce o píšeme vždy mně."
+      en: "About whom? – o mně (about me): after o we always write mně."
+  - id: "l3b-dtn-007"
+    topic: "de-te-ne"
+    level: 3
+    type: "input"
+    prompt: "Doplň ě nebo je a napiš celé slovo: Ráno jsem musel sp_chat do školy."
+    answers: ["spěchat"]
+    explanation:
+      cs: "Ve slově spěchat není předpona, píšeme pě."
+      en: "spěchat (to hurry) has no prefix, so we write pě."
+  - id: "l3b-dtn-008"
+    topic: "de-te-ne"
+    level: 3
+    type: "choice"
+    prompt: "Doplň ě nebo je: Auto zastavilo u v_zdu do garáže."
+    options: ["ě", "je"]
+    correct: "je"
+    explanation:
+      cs: "v- je předpona a jezdit je základ, proto vjezd."
+      en: "v- is a prefix and jezd is the root, so vjezd."
+  - id: "l3b-dtn-009"
+    topic: "de-te-ne"
+    level: 3
+    type: "input"
+    prompt: "Doplň ě nebo je a napiš celé slovo: Ve třídě visí velká mapa sv_ta."
+    answers: ["světa"]
+    explanation:
+      cs: "Ve slově svět není předpona, píšeme vě: světa."
+      en: "svět has no prefix, so we write vě: světa."
+  - id: "l3b-dtn-010"
+    topic: "de-te-ne"
+    level: 3
+    type: "choice"
+    prompt: "Vyber správně napsanou větu."
+    options: ["Autem jsme objeli celé jezero.", "Autem jsme oběli celé jezero."]
+    correct: "Autem jsme objeli celé jezero."
+    explanation:
+      cs: "objeli = předpona ob- + jeli (jet), proto píšeme je."
+      en: "objeli = prefix ob- + jeli (to drive), so we write je."
+  - id: "l3b-dtn-011"
+    topic: "de-te-ne"
+    level: 3
+    type: "input"
+    prompt: "Doplň mě nebo mně a napiš celé slovo: Tatínek si vzpo_l na svou první školu."
+    answers: ["vzpomněl"]
+    explanation:
+      cs: "vzpomenout má n, proto vzpomněl (mně)."
+      en: "vzpomenout has an n, so it becomes vzpomněl (mně)."
+  - id: "l3b-dtn-012"
+    topic: "de-te-ne"
+    level: 3
+    type: "input"
+    prompt: "Doplň mě nebo mně a napiš celé slovo: Polštář je krásně _kký."
+    answers: ["měkký"]
+    explanation:
+      cs: "měkký nemá ve slově n, proto píšeme mě."
+      en: "měkký (soft) has no n, so it is written mě."

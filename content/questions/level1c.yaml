@@ -1,0 +1,550 @@
+# ČJ 3. třída — úroveň 1 (snadné otázky), dávka C
+questions:
+  # ---------- vyjmenovaná slova (B, L, M) ----------
+  - id: "l1c-vs-001"
+    topic: "vyjmenovana-slova"
+    level: 1
+    type: "input"
+    prompt: "Doplň i nebo y a napiš celé slovo: b_dlet"
+    answers: ["bydlet"]
+    explanation:
+      cs: "Bydlet je vyjmenované slovo po B, píšeme y."
+      en: "Bydlet (to live somewhere) is a listed word after B, so we write y."
+  - id: "l1c-vs-002"
+    topic: "vyjmenovana-slova"
+    level: 1
+    type: "input"
+    prompt: "Doplň i nebo y a napiš celé slovo: kob_la"
+    answers: ["kobyla"]
+    explanation:
+      cs: "Kobyla je vyjmenované slovo po B, píšeme y."
+      en: "Kobyla (mare) is a listed word after B, so we write y."
+  - id: "l1c-vs-003"
+    topic: "vyjmenovana-slova"
+    level: 1
+    type: "input"
+    prompt: "Doplň i nebo y a napiš celé slovo: m_slet"
+    answers: ["myslet"]
+    explanation:
+      cs: "Myslet je vyjmenované slovo po M, píšeme y."
+      en: "Myslet (to think) is a listed word after M, so we write y."
+  - id: "l1c-vs-004"
+    topic: "vyjmenovana-slova"
+    level: 1
+    type: "input"
+    prompt: "Doplň i nebo y a napiš celé slovo: zam_kat"
+    answers: ["zamykat"]
+    explanation:
+      cs: "Zamykat je vyjmenované slovo po M, píšeme y."
+      en: "Zamykat (to lock) is a listed word after M, so we write y."
+  - id: "l1c-vs-005"
+    topic: "vyjmenovana-slova"
+    level: 1
+    type: "input"
+    prompt: "Doplň i nebo y a napiš celé slovo: Pes rychle pol_kal maso."
+    answers: ["polykal"]
+    explanation:
+      cs: "Polykat je vyjmenované slovo po L, píšeme y: polykal."
+      en: "Polykat (to swallow) is a listed word after L, so we write y: polykal."
+  - id: "l1c-vs-006"
+    topic: "vyjmenovana-slova"
+    level: 1
+    type: "choice"
+    prompt: "Doplň i/y: Kluk je velmi b_strý."
+    options: ["i", "y"]
+    correct: "y"
+    explanation:
+      cs: "Bystrý je vyjmenované slovo po B, píšeme y."
+      en: "Bystrý (quick, clever) is a listed word after B, so we write y."
+  - id: "l1c-vs-007"
+    topic: "vyjmenovana-slova"
+    level: 1
+    type: "choice"
+    prompt: "Doplň i/y: Bydlíme v novém b_tě."
+    options: ["i", "y"]
+    correct: "y"
+    explanation:
+      cs: "Byt je vyjmenované slovo po B, píšeme y: v bytě."
+      en: "Byt (flat) is a listed word after B, so we write y: v bytě."
+  - id: "l1c-vs-008"
+    topic: "vyjmenovana-slova"
+    level: 1
+    type: "choice"
+    prompt: "Které slovo je napsané správně?"
+    options: ["obyvatel", "obivatel"]
+    correct: "obyvatel"
+    explanation:
+      cs: "Obyvatel je vyjmenované slovo po B, píšeme y."
+      en: "Obyvatel (inhabitant) is a listed word after B, so we write y."
+  - id: "l1c-vs-009"
+    topic: "vyjmenovana-slova"
+    level: 1
+    type: "choice"
+    prompt: "Které slovo je napsané správně?"
+    options: ["lítko", "lýtko"]
+    correct: "lýtko"
+    explanation:
+      cs: "Lýtko je vyjmenované slovo po L, píšeme ý."
+      en: "Lýtko (calf of the leg) is a listed word after L, so we write ý."
+  - id: "l1c-vs-010"
+    topic: "vyjmenovana-slova"
+    level: 1
+    type: "choice"
+    prompt: "Které slovo je vyjmenované slovo po L?"
+    options: ["líný", "lysý", "lékař"]
+    correct: "lysý"
+    explanation:
+      cs: "Lysý patří mezi vyjmenovaná slova po L."
+      en: "Lysý (bald) is one of the listed words after L."
+  - id: "l1c-vs-011"
+    topic: "vyjmenovana-slova"
+    level: 1
+    type: "choice"
+    prompt: "Které slovo NENÍ vyjmenované slovo?"
+    options: ["dobytek", "babička", "plyš"]
+    correct: "babička"
+    explanation:
+      cs: "Babička není vyjmenované slovo, proto píšeme i. Dobytek a plyš jsou vyjmenovaná slova."
+      en: "Babička (grandma) is not a listed word, so it has i. Dobytek and plyš are listed words."
+
+  # ---------- význam slov ----------
+  - id: "l1c-vyz-001"
+    topic: "vyznam-slov"
+    level: 1
+    type: "choice"
+    prompt: "Které slovo má opačný význam než slovo vysoký?"
+    options: ["dlouhý", "nízký", "široký"]
+    correct: "nízký"
+    explanation:
+      cs: "Opak slova vysoký je nízký."
+      en: "The opposite of vysoký (tall/high) is nízký (low)."
+  - id: "l1c-vyz-002"
+    topic: "vyznam-slov"
+    level: 1
+    type: "input"
+    prompt: "Napiš slovo s opačným významem: dobrý"
+    answers: ["zlý", "špatný"]
+    explanation:
+      cs: "Opak slova dobrý je zlý nebo špatný."
+      en: "The opposite of dobrý (good) is zlý or špatný (bad)."
+  - id: "l1c-vyz-003"
+    topic: "vyznam-slov"
+    level: 1
+    type: "input"
+    prompt: "Napiš slovo s opačným významem: nahoře"
+    answers: ["dole"]
+    explanation:
+      cs: "Opak slova nahoře je dole."
+      en: "The opposite of nahoře (up) is dole (down)."
+  - id: "l1c-vyz-004"
+    topic: "vyznam-slov"
+    level: 1
+    type: "input"
+    prompt: "Napiš slovo s opačným významem: plný"
+    answers: ["prázdný"]
+    explanation:
+      cs: "Opak slova plný je prázdný."
+      en: "The opposite of plný (full) is prázdný (empty)."
+  - id: "l1c-vyz-005"
+    topic: "vyznam-slov"
+    level: 1
+    type: "input"
+    prompt: "Napiš slovo s opačným významem: léto"
+    answers: ["zima"]
+    explanation:
+      cs: "Opak slova léto je zima."
+      en: "The opposite of léto (summer) is zima (winter)."
+  - id: "l1c-vyz-006"
+    topic: "vyznam-slov"
+    level: 1
+    type: "choice"
+    prompt: "Které slovo znamená totéž jako slovo hezký?"
+    options: ["ošklivý", "pěkný", "velký"]
+    correct: "pěkný"
+    explanation:
+      cs: "Hezký a pěkný znamenají totéž."
+      en: "Hezký and pěkný both mean nice/pretty."
+  - id: "l1c-vyz-007"
+    topic: "vyznam-slov"
+    level: 1
+    type: "choice"
+    prompt: "Které slovo znamená totéž jako slovo mluvit?"
+    options: ["mlčet", "psát", "hovořit"]
+    correct: "hovořit"
+    explanation:
+      cs: "Mluvit a hovořit znamenají totéž."
+      en: "Mluvit and hovořit both mean to speak."
+  - id: "l1c-vyz-008"
+    topic: "vyznam-slov"
+    level: 1
+    type: "choice"
+    prompt: "Které slovo nepatří mezi ostatní?"
+    options: ["pondělí", "středa", "leden", "pátek"]
+    correct: "leden"
+    explanation:
+      cs: "Pondělí, středa a pátek jsou dny v týdnu, leden je měsíc."
+      en: "Monday, Wednesday and Friday are days of the week; leden (January) is a month."
+  - id: "l1c-vyz-009"
+    topic: "vyznam-slov"
+    level: 1
+    type: "choice"
+    prompt: "Které slovo nepatří mezi ostatní?"
+    options: ["kladivo", "talíř", "pila", "šroubovák"]
+    correct: "talíř"
+    explanation:
+      cs: "Kladivo, pila a šroubovák jsou nářadí, talíř je nádobí."
+      en: "Hammer, saw and screwdriver are tools; talíř (plate) is a dish."
+  - id: "l1c-vyz-010"
+    topic: "vyznam-slov"
+    level: 1
+    type: "choice"
+    prompt: "Jak nazveme jedním slovem: hrnec, talíř, hrnek, mísa?"
+    options: ["nábytek", "nádobí", "nářadí"]
+    correct: "nádobí"
+    explanation:
+      cs: "Hrnec, talíř, hrnek a mísa jsou nádobí."
+      en: "Pot, plate, mug and bowl are all dishes (nádobí)."
+  - id: "l1c-vyz-011"
+    topic: "vyznam-slov"
+    level: 1
+    type: "input"
+    prompt: "Jak nazveme jedním slovem: kos, vrabec, sýkora? Napiš jedno slovo."
+    answers: ["ptáci", "pták", "ptactvo"]
+    explanation:
+      cs: "Kos, vrabec a sýkora jsou ptáci."
+      en: "Blackbird, sparrow and tit are all birds (ptáci)."
+  - id: "l1c-vyz-012"
+    topic: "vyznam-slov"
+    level: 1
+    type: "choice"
+    prompt: "Které slovo je druh stromu?"
+    options: ["růže", "dub", "mrkev"]
+    correct: "dub"
+    explanation:
+      cs: "Dub je strom. Růže je květina a mrkev je zelenina."
+      en: "Dub (oak) is a tree. Rose is a flower and carrot is a vegetable."
+
+  # ---------- věta ----------
+  - id: "l1c-veta-001"
+    topic: "veta"
+    level: 1
+    type: "choice"
+    prompt: "Jaké znaménko patří na konec věty? Kdy přijde babička_"
+    options: [".", "?", "!"]
+    correct: "?"
+    explanation:
+      cs: "Je to otázka (tázací věta), proto píšeme otazník."
+      en: "It is a question, so we write a question mark."
+  - id: "l1c-veta-002"
+    topic: "veta"
+    level: 1
+    type: "choice"
+    prompt: "Jaké znaménko patří na konec této oznamovací věty? Dnes jdeme do kina_"
+    options: [".", "?", ","]
+    correct: "."
+    explanation:
+      cs: "Věta něco oznamuje (oznamovací věta), proto píšeme tečku."
+      en: "The sentence tells us something, so we write a full stop."
+  - id: "l1c-veta-003"
+    topic: "veta"
+    level: 1
+    type: "choice"
+    prompt: "Jaké znaménko patří na konec věty? Podej mi tu knihu_"
+    options: ["!", "?", ","]
+    correct: "!"
+    explanation:
+      cs: "Věta někomu přikazuje (rozkazovací věta), proto píšeme vykřičník."
+      en: "The sentence tells someone what to do, so we write an exclamation mark."
+  - id: "l1c-veta-004"
+    topic: "veta"
+    level: 1
+    type: "input"
+    prompt: "Jaký je to druh věty? Máš doma psa? Napiš jedno slovo."
+    answers: ["tázací"]
+    explanation:
+      cs: "Věta se ptá a končí otazníkem, je to věta tázací."
+      en: "The sentence asks something and ends with a question mark, so it is tázací."
+  - id: "l1c-veta-005"
+    topic: "veta"
+    level: 1
+    type: "choice"
+    prompt: "Jaký je to druh věty? Babička peče koláč."
+    options: ["oznamovací", "tázací", "rozkazovací", "přací"]
+    correct: "oznamovací"
+    explanation:
+      cs: "Věta nám něco oznamuje a končí tečkou, je to věta oznamovací."
+      en: "The sentence tells us something and ends with a full stop, so it is oznamovací."
+  - id: "l1c-veta-006"
+    topic: "veta"
+    level: 1
+    type: "input"
+    prompt: "Jaký je to druh věty? Pojď sem! Napiš jedno slovo."
+    answers: ["rozkazovací"]
+    explanation:
+      cs: "Věta někomu přikazuje, je to věta rozkazovací."
+      en: "The sentence gives an order, so it is rozkazovací (imperative)."
+  - id: "l1c-veta-007"
+    topic: "veta"
+    level: 1
+    type: "choice"
+    prompt: "Jaký je to druh věty? Kéž by zítra svítilo slunce!"
+    options: ["oznamovací", "tázací", "rozkazovací", "přací"]
+    correct: "přací"
+    explanation:
+      cs: "Věta vyjadřuje přání (kéž by), je to věta přací."
+      en: "The sentence expresses a wish (kéž by = if only), so it is přací."
+  - id: "l1c-veta-008"
+    topic: "veta"
+    level: 1
+    type: "choice"
+    prompt: "Vyber správně sestavenou větu."
+    options: ["Do jdu školy.", "Jdu do školy.", "Školy jdu do."]
+    correct: "Jdu do školy."
+    explanation:
+      cs: "Slova musí jít ve správném pořadí, aby věta dávala smysl: Jdu do školy."
+      en: "Words must be in the right order for the sentence to make sense: Jdu do školy."
+  - id: "l1c-veta-009"
+    topic: "veta"
+    level: 1
+    type: "choice"
+    prompt: "Vyber správně sestavenou větu."
+    options: ["Na sedí stromě pták.", "Pták stromě na sedí.", "Na stromě sedí pták."]
+    correct: "Na stromě sedí pták."
+    explanation:
+      cs: "Správné pořadí slov je: Na stromě sedí pták."
+      en: "The correct word order is: Na stromě sedí pták (A bird sits on the tree)."
+  - id: "l1c-veta-010"
+    topic: "veta"
+    level: 1
+    type: "choice"
+    prompt: "Který zápis věty je správný?"
+    options: ["ráno svítí slunce.", "Ráno svítí slunce.", "Ráno Svítí slunce."]
+    correct: "Ráno svítí slunce."
+    explanation:
+      cs: "Na začátku věty píšeme velké písmeno, ostatní slova malým."
+      en: "A sentence starts with a capital letter; the other words here are lowercase."
+  - id: "l1c-veta-011"
+    topic: "veta"
+    level: 1
+    type: "input"
+    prompt: "Jakým písmenem začíná každá věta – velkým, nebo malým? Napiš jedno slovo."
+    answers: ["velkým", "velké"]
+    explanation:
+      cs: "Každou větu začínáme velkým písmenem."
+      en: "Every sentence starts with a capital (velké) letter."
+
+  # ---------- podstatná jména ----------
+  - id: "l1c-pj-001"
+    topic: "podstatna-jmena"
+    level: 1
+    type: "choice"
+    prompt: "Které slovo musíme psát s velkým písmenem?"
+    options: ["holka", "jana", "sestra"]
+    correct: "jana"
+    explanation:
+      cs: "Jména lidí píšeme s velkým písmenem: Jana."
+      en: "People's names start with a capital letter: Jana."
+  - id: "l1c-pj-002"
+    topic: "podstatna-jmena"
+    level: 1
+    type: "choice"
+    prompt: "Které slovo musíme psát s velkým písmenem?"
+    options: ["město", "ulice", "ostrava"]
+    correct: "ostrava"
+    explanation:
+      cs: "Názvy měst píšeme s velkým písmenem: Ostrava."
+      en: "Names of cities start with a capital letter: Ostrava."
+  - id: "l1c-pj-003"
+    topic: "podstatna-jmena"
+    level: 1
+    type: "choice"
+    prompt: "Jak správně napíšeš název naší země?"
+    options: ["česko", "Česko"]
+    correct: "Česko"
+    explanation:
+      cs: "Názvy států píšeme s velkým písmenem: Česko."
+      en: "Names of countries start with a capital letter: Česko."
+  - id: "l1c-pj-004"
+    topic: "podstatna-jmena"
+    level: 1
+    type: "choice"
+    prompt: "Který zápis je správný?"
+    options: ["Naše Kočka micka ráda spí.", "Naše kočka Micka ráda spí.", "naše kočka Micka ráda spí."]
+    correct: "Naše kočka Micka ráda spí."
+    explanation:
+      cs: "Větu začínáme velkým písmenem a jméno zvířete také: Micka. Slovo kočka píšeme malým."
+      en: "The sentence and the pet's name (Micka) start with capitals; the word kočka (cat) does not."
+  - id: "l1c-pj-005"
+    topic: "podstatna-jmena"
+    level: 1
+    type: "choice"
+    prompt: "Které z těchto slov je jméno člověka (vlastní jméno)?"
+    options: ["učitel", "bratr", "Tomáš"]
+    correct: "Tomáš"
+    explanation:
+      cs: "Tomáš je vlastní jméno, proto ho píšeme s velkým písmenem."
+      en: "Tomáš is a proper name, so it starts with a capital letter."
+  - id: "l1c-pj-006"
+    topic: "podstatna-jmena"
+    level: 1
+    type: "choice"
+    prompt: "V jakém čísle je slovo „hračky“?"
+    options: ["v jednotném", "v množném"]
+    correct: "v množném"
+    explanation:
+      cs: "Hračky je víc hraček, je to číslo množné."
+      en: "Hračky means more than one toy, so it is plural."
+  - id: "l1c-pj-007"
+    topic: "podstatna-jmena"
+    level: 1
+    type: "choice"
+    prompt: "V jakém čísle je slovo „pes“?"
+    options: ["v jednotném", "v množném"]
+    correct: "v jednotném"
+    explanation:
+      cs: "Pes je jeden, je to číslo jednotné."
+      en: "Pes means one dog, so it is singular."
+  - id: "l1c-pj-008"
+    topic: "podstatna-jmena"
+    level: 1
+    type: "input"
+    prompt: "Doplň a napiš jedno slovo: jedna ryba, dvě …"
+    answers: ["ryby"]
+    explanation:
+      cs: "Jedna ryba, dvě ryby."
+      en: "One fish (ryba), two fish (ryby)."
+  - id: "l1c-pj-009"
+    topic: "podstatna-jmena"
+    level: 1
+    type: "input"
+    prompt: "Doplň a napiš jedno slovo: jeden míč, dva …"
+    answers: ["míče"]
+    explanation:
+      cs: "Jeden míč, dva míče."
+      en: "One ball (míč), two balls (míče)."
+  - id: "l1c-pj-010"
+    topic: "podstatna-jmena"
+    level: 1
+    type: "input"
+    prompt: "Napiš slovo v jednotném čísle: knihy → ?"
+    answers: ["kniha"]
+    explanation:
+      cs: "Jedna kniha, dvě knihy."
+      en: "One book (kniha), two books (knihy)."
+  - id: "l1c-pj-011"
+    topic: "podstatna-jmena"
+    level: 1
+    type: "input"
+    prompt: "Napiš slovo v jednotném čísle: stoly → ?"
+    answers: ["stůl"]
+    explanation:
+      cs: "Jeden stůl, dva stoly."
+      en: "One table (stůl), two tables (stoly)."
+
+  # ---------- slovní druhy ----------
+  - id: "l1c-sd-001"
+    topic: "slovni-druhy"
+    level: 1
+    type: "choice"
+    prompt: "Jaký slovní druh je slovo „kočka“?"
+    options: ["podstatné jméno", "přídavné jméno", "sloveso"]
+    correct: "podstatné jméno"
+    explanation:
+      cs: "Kočka je zvíře, je to podstatné jméno (kdo? co?)."
+      en: "Kočka (cat) is an animal, so it is a noun."
+  - id: "l1c-sd-002"
+    topic: "slovni-druhy"
+    level: 1
+    type: "choice"
+    prompt: "Jaký slovní druh je slovo „veselý“?"
+    options: ["podstatné jméno", "přídavné jméno", "sloveso"]
+    correct: "přídavné jméno"
+    explanation:
+      cs: "Veselý říká, jaký někdo je, je to přídavné jméno (jaký?)."
+      en: "Veselý (cheerful) describes what someone is like, so it is an adjective."
+  - id: "l1c-sd-003"
+    topic: "slovni-druhy"
+    level: 1
+    type: "choice"
+    prompt: "Jaký slovní druh je slovo „skáče“?"
+    options: ["podstatné jméno", "přídavné jméno", "sloveso"]
+    correct: "sloveso"
+    explanation:
+      cs: "Skáče říká, co kdo dělá, je to sloveso."
+      en: "Skáče (jumps) tells what someone does, so it is a verb."
+  - id: "l1c-sd-004"
+    topic: "slovni-druhy"
+    level: 1
+    type: "choice"
+    prompt: "Jaký slovní druh je slovo „škola“?"
+    options: ["podstatné jméno", "přídavné jméno", "sloveso"]
+    correct: "podstatné jméno"
+    explanation:
+      cs: "Škola je věc (co?), je to podstatné jméno."
+      en: "Škola (school) is a thing, so it is a noun."
+  - id: "l1c-sd-005"
+    topic: "slovni-druhy"
+    level: 1
+    type: "choice"
+    prompt: "Jaký slovní druh je slovo „chytrý“?"
+    options: ["podstatné jméno", "přídavné jméno", "sloveso"]
+    correct: "přídavné jméno"
+    explanation:
+      cs: "Chytrý říká, jaký někdo je, je to přídavné jméno."
+      en: "Chytrý (clever) describes someone, so it is an adjective."
+  - id: "l1c-sd-006"
+    topic: "slovni-druhy"
+    level: 1
+    type: "choice"
+    prompt: "Jaký slovní druh je slovo „kreslit“?"
+    options: ["podstatné jméno", "přídavné jméno", "sloveso"]
+    correct: "sloveso"
+    explanation:
+      cs: "Kreslit je činnost (co dělat?), je to sloveso."
+      en: "Kreslit (to draw) is an action, so it is a verb."
+  - id: "l1c-sd-007"
+    topic: "slovni-druhy"
+    level: 1
+    type: "choice"
+    prompt: "Které slovo je sloveso?"
+    options: ["kniha", "čte", "modrá"]
+    correct: "čte"
+    explanation:
+      cs: "Čte říká, co kdo dělá, je to sloveso. Kniha je podstatné jméno, modrá přídavné jméno."
+      en: "Čte (reads) is a verb. Kniha (book) is a noun, modrá (blue) is an adjective."
+  - id: "l1c-sd-008"
+    topic: "slovni-druhy"
+    level: 1
+    type: "input"
+    prompt: "Najdi ve větě sloveso a napiš ho: Maminka vaří oběd."
+    answers: ["vaří"]
+    explanation:
+      cs: "Vaří říká, co maminka dělá, je to sloveso."
+      en: "Vaří (cooks) tells what mum does, so it is the verb."
+  - id: "l1c-sd-009"
+    topic: "slovni-druhy"
+    level: 1
+    type: "input"
+    prompt: "Najdi ve větě sloveso a napiš ho: Pták zpívá na stromě."
+    answers: ["zpívá"]
+    explanation:
+      cs: "Zpívá říká, co pták dělá, je to sloveso."
+      en: "Zpívá (sings) tells what the bird does, so it is the verb."
+  - id: "l1c-sd-010"
+    topic: "slovni-druhy"
+    level: 1
+    type: "input"
+    prompt: "Najdi ve větě podstatné jméno a napiš ho: Malý kluk se směje."
+    answers: ["kluk"]
+    explanation:
+      cs: "Kluk je osoba (kdo?), je to podstatné jméno."
+      en: "Kluk (boy) is a person, so it is the noun."
+  - id: "l1c-sd-011"
+    topic: "slovni-druhy"
+    level: 1
+    type: "input"
+    prompt: "Najdi ve větě přídavné jméno a napiš ho: Máme nové auto."
+    answers: ["nové"]
+    explanation:
+      cs: "Nové říká, jaké je auto, je to přídavné jméno."
+      en: "Nové (new) describes the car, so it is the adjective."

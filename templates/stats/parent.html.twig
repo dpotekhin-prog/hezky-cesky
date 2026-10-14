@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<h1>{{ 'parent.title'|trans }}</h1>
+{% if children %}
+    <div class="card">
+        <table class="stats">
+            <tr><th>{{ 'parent.child'|trans }}</th><th>{{ 'stats.total'|trans }}</th><th>{{ 'stats.result'|trans }}</th><th>{{ 'rank.by_level'|trans }}</th><th></th></tr>
+            {% for item in children %}
+                <tr>
+                    <td><strong>{{ item.user.username }}</strong><br><small class="muted">{{ 'parent.since'|trans }} {{ item.user.createdAt|date('d.m.Y') }}</small></td>
+                    <td>{{ item.summary.total }}</td>
+                    <td>{% include 'stats/_percent.html.twig' with {row: item.summary} %}</td>
+                    <td class="small">{% for n, l in item.progress.levels %}{{ n }}: ⚽ {{ l.rank }} {{ l.player.name }}{% if not l.unlocked %} 🔒{% endif %}<br>{% endfor %}</td>
+                    <td><a class="btn" href="{{ path('parent_child', {id: item.user.id}) }}">{{ 'parent.detail'|trans }}</a></td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% else %}
+    <p class="muted">{{ 'parent.no_children'|trans }}</p>
+{% endif %}
+{% endblock %}

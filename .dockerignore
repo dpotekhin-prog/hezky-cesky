@@ -1,0 +1,7 @@
+.git
+vendor
+var
+public/assets
+.env.local
+.env.*.local
+.env.local.php

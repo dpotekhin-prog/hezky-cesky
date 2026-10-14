@@ -1,0 +1,519 @@
+questions:
+  - id: "l2b-vs-001"
+    topic: "vyjmenovana-slova"
+    level: 2
+    type: "choice"
+    prompt: "Doplň í/ý: Na stromě sedí s_kora."
+    options: ["í", "ý"]
+    correct: "ý"
+    explanation:
+      cs: "Sýkora je vyjmenované slovo po S, píšeme ý."
+      en: "\"Sýkora\" (tit) is a listed word after S, so we write ý."
+  - id: "l2b-vs-002"
+    topic: "vyjmenovana-slova"
+    level: 2
+    type: "input"
+    prompt: "Doplň i nebo y a napiš celé slovo: V_dra loví v řece ryby."
+    answers: ["vydra"]
+    explanation:
+      cs: "Vydra je vyjmenované slovo po V, píšeme y."
+      en: "\"Vydra\" (otter) is a listed word after V, so we write y."
+  - id: "l2b-vs-003"
+    topic: "vyjmenovana-slova"
+    level: 2
+    type: "input"
+    prompt: "Doplň i nebo y a napiš celé slovo: Kůň má na noze kop_to."
+    answers: ["kopyto"]
+    explanation:
+      cs: "Kopyto je vyjmenované slovo po P, píšeme y."
+      en: "\"Kopyto\" (hoof) is a listed word after P, so we write y."
+  - id: "l2b-vs-004"
+    topic: "vyjmenovana-slova"
+    level: 2
+    type: "input"
+    prompt: "Doplň í nebo ý a napiš celé slovo: Netop_r spí ve dne."
+    answers: ["netopýr"]
+    explanation:
+      cs: "Netopýr je vyjmenované slovo po P, píšeme ý."
+      en: "\"Netopýr\" (bat) is a listed word after P, so we write ý."
+  - id: "l2b-vs-005"
+    topic: "vyjmenovana-slova"
+    level: 2
+    type: "choice"
+    prompt: "Doplň i/y: Venku je s_chravé počasí."
+    options: ["i", "y"]
+    correct: "y"
+    explanation:
+      cs: "Sychravý je vyjmenované slovo po S, píšeme y."
+      en: "\"Sychravý\" (damp and chilly) is a listed word after S, so we write y."
+  - id: "l2b-vs-006"
+    topic: "vyjmenovana-slova"
+    level: 2
+    type: "input"
+    prompt: "Doplň i nebo y a napiš celé slovo: Babička s_pe mouku do mísy."
+    answers: ["sype"]
+    explanation:
+      cs: "Sypat je vyjmenované slovo po S, proto „sype“ píšeme s y."
+      en: "\"Sypat\" (to pour) is a listed word after S, so \"sype\" has y."
+  - id: "l2b-vs-007"
+    topic: "vyjmenovana-slova"
+    level: 2
+    type: "choice"
+    prompt: "Doplň i/y: Dědeček je úplně l_sý."
+    options: ["i", "y"]
+    correct: "y"
+    explanation:
+      cs: "Lysý je vyjmenované slovo po L, píšeme y."
+      en: "\"Lysý\" (bald) is a listed word after L, so we write y."
+  - id: "l2b-vs-008"
+    topic: "vyjmenovana-slova"
+    level: 2
+    type: "choice"
+    prompt: "Doplň i/y: Maminka vaří na pl_nu."
+    options: ["i", "y"]
+    correct: "y"
+    explanation:
+      cs: "Plyn je vyjmenované slovo po L, píšeme y."
+      en: "\"Plyn\" (gas) is a listed word after L, so we write y."
+  - id: "l2b-vs-009"
+    topic: "vyjmenovana-slova"
+    level: 2
+    type: "input"
+    prompt: "Doplň i nebo y a napiš celé slovo: Hvězdy se na nebi třp_tí."
+    answers: ["třpytí"]
+    explanation:
+      cs: "Třpytit se je vyjmenované slovo po P, píšeme y."
+      en: "\"Třpytit se\" (to sparkle) is a listed word after P, so we write y."
+  - id: "l2b-vs-010"
+    topic: "vyjmenovana-slova"
+    level: 2
+    type: "choice"
+    prompt: "Doplň í/ý: Nesmíme pl_tvat jídlem."
+    options: ["í", "ý"]
+    correct: "ý"
+    explanation:
+      cs: "Plýtvat je vyjmenované slovo po L, píšeme ý."
+      en: "\"Plýtvat\" (to waste) is a listed word after L, so we write ý."
+  - id: "l2b-vs-011"
+    topic: "vyjmenovana-slova"
+    level: 2
+    type: "input"
+    prompt: "Doplň í nebo ý a napiš celé slovo: Venku se bl_ská a hřmí."
+    answers: ["blýská"]
+    explanation:
+      cs: "Blýskat se je vyjmenované slovo po L, píšeme ý."
+      en: "\"Blýskat se\" (to flash with lightning) is a listed word after L, so we write ý."
+  - id: "l2b-vs-012"
+    topic: "vyjmenovana-slova"
+    level: 2
+    type: "choice"
+    prompt: "Doplň í/ý: Po listu pomalu leze hlem_žď."
+    options: ["í", "ý"]
+    correct: "ý"
+    explanation:
+      cs: "Hlemýžď je vyjmenované slovo po M, píšeme ý."
+      en: "\"Hlemýžď\" (snail) is a listed word after M, so we write ý."
+  - id: "l2b-vs-013"
+    topic: "vyjmenovana-slova"
+    level: 2
+    type: "choice"
+    prompt: "Doplň í/ý: Na odkvetlé pampelišce je bílé chm_ří."
+    options: ["í", "ý"]
+    correct: "ý"
+    explanation:
+      cs: "Chmýří je vyjmenované slovo po M, píšeme ý."
+      en: "\"Chmýří\" (fluff) is a listed word after M, so we write ý."
+  - id: "l2b-vs-014"
+    topic: "vyjmenovana-slova"
+    level: 2
+    type: "input"
+    prompt: "Doplň i nebo y a napiš celé slovo: Pečení vánočního cukroví je u nás starý ob_čej."
+    answers: ["obyčej"]
+    explanation:
+      cs: "Obyčej je vyjmenované slovo po B, píšeme y."
+      en: "\"Obyčej\" (custom, tradition) is a listed word after B, so we write y."
+  - id: "l2b-vs-015"
+    topic: "vyjmenovana-slova"
+    level: 2
+    type: "choice"
+    prompt: "Doplň í/ý: Z lesa se oz_val zpěv ptáků."
+    options: ["í", "ý"]
+    correct: "ý"
+    explanation:
+      cs: "Ozývat se je příbuzné s vyjmenovaným slovem nazývat, píšeme ý."
+      en: "\"Ozývat se\" (to sound) is related to the listed word \"nazývat\", so we write ý."
+  - id: "l2b-vs-016"
+    topic: "vyjmenovana-slova"
+    level: 2
+    type: "choice"
+    prompt: "Doplň í/ý: Babička p_še dopis."
+    options: ["í", "ý"]
+    correct: "í"
+    explanation:
+      cs: "Psát (píše) není vyjmenované slovo, proto píšeme í."
+      en: "\"Psát\" (to write) is not a listed word, so \"píše\" has í."
+  - id: "l2b-vs-017"
+    topic: "vyjmenovana-slova"
+    level: 2
+    type: "choice"
+    prompt: "Doplň i/y: V z_mě venku sněží."
+    options: ["i", "y"]
+    correct: "i"
+    explanation:
+      cs: "Zima není vyjmenované slovo, proto píšeme i."
+      en: "\"Zima\" (winter) is not a listed word, so we write i."
+  - id: "l2b-vs-018"
+    topic: "vyjmenovana-slova"
+    level: 2
+    type: "choice"
+    prompt: "Doplň i/y: Na stole leží l_st papíru."
+    options: ["i", "y"]
+    correct: "i"
+    explanation:
+      cs: "List není vyjmenované slovo, proto píšeme i."
+      en: "\"List\" (sheet, leaf) is not a listed word, so we write i."
+  - id: "l2b-vs-019"
+    topic: "vyjmenovana-slova"
+    level: 2
+    type: "choice"
+    prompt: "Které slovo patří mezi vyjmenovaná slova?"
+    options: ["lidé", "slepýš", "pivo", "zima"]
+    correct: "slepýš"
+    explanation:
+      cs: "Slepýš je vyjmenované slovo po P. Ostatní slova se píšou s i."
+      en: "\"Slepýš\" (slow worm) is a listed word after P. The other words are spelled with i."
+  - id: "l2b-vs-020"
+    topic: "vyjmenovana-slova"
+    level: 2
+    type: "choice"
+    prompt: "Které slovo je vyjmenované slovo po V?"
+    options: ["vidle", "vítr", "zvykat", "víla"]
+    correct: "zvykat"
+    explanation:
+      cs: "Zvykat patří mezi vyjmenovaná slova po V. Vidle, vítr i víla se píšou s i."
+      en: "\"Zvykat\" (to get used to) is a listed word after V. \"Vidle\", \"vítr\" and \"víla\" are spelled with i."
+  - id: "l2b-vs-021"
+    topic: "vyjmenovana-slova"
+    level: 2
+    type: "choice"
+    prompt: "Které slovo je vyjmenované slovo po S?"
+    options: ["síto", "sýček", "silnice", "sirka"]
+    correct: "sýček"
+    explanation:
+      cs: "Sýček (malá sova) patří mezi vyjmenovaná slova po S. Ostatní slova se píšou s i."
+      en: "\"Sýček\" (little owl) is a listed word after S. The other words are spelled with i."
+  - id: "l2b-vs-022"
+    topic: "vyjmenovana-slova"
+    level: 2
+    type: "choice"
+    prompt: "Ve kterém slově je chyba?"
+    options: ["obyvatel", "nábytek", "lysý", "mislet"]
+    correct: "mislet"
+    explanation:
+      cs: "Myslet je vyjmenované slovo po M, správně se píše s y."
+      en: "\"Myslet\" (to think) is a listed word after M, so it must be spelled with y."
+  - id: "l2b-vs-023"
+    topic: "vyjmenovana-slova"
+    level: 2
+    type: "choice"
+    prompt: "Ve kterém slově je chyba?"
+    options: ["kobyla", "pyl", "sisel", "sýkora"]
+    correct: "sisel"
+    explanation:
+      cs: "Sysel je vyjmenované slovo po S, správně se píše s y."
+      en: "\"Sysel\" (ground squirrel) is a listed word after S, so it must be spelled with y."
+  - id: "l2b-vs-024"
+    topic: "vyjmenovana-slova"
+    level: 2
+    type: "choice"
+    prompt: "Které slovo je napsané správně?"
+    options: ["žvíkat", "žvýkat", "žvikat"]
+    correct: "žvýkat"
+    explanation:
+      cs: "Žvýkat je vyjmenované slovo po V, píšeme ý."
+      en: "\"Žvýkat\" (to chew) is a listed word after V, so we write ý."
+  - id: "l2b-vs-025"
+    topic: "vyjmenovana-slova"
+    level: 2
+    type: "choice"
+    prompt: "Které město je napsané správně?"
+    options: ["Litomišl", "Litomyšl", "Litomíšl"]
+    correct: "Litomyšl"
+    explanation:
+      cs: "Litomyšl patří mezi vyjmenovaná slova po M, píšeme y."
+      en: "\"Litomyšl\" (a Czech town) is a listed word after M, so we write y."
+  - id: "l2b-vs-026"
+    topic: "vyjmenovana-slova"
+    level: 2
+    type: "input"
+    prompt: "Doplň i nebo y a napiš celé slovo: V naší obci žije sto ob_vatel."
+    answers: ["obyvatel"]
+    explanation:
+      cs: "Obyvatel je příbuzné se slovem bydlet, píšeme y."
+      en: "\"Obyvatel\" (inhabitant) is related to the listed word \"bydlet\", so we write y."
+  - id: "l2b-vs-027"
+    topic: "vyjmenovana-slova"
+    level: 2
+    type: "input"
+    prompt: "Doplň i nebo y a napiš celé slovo: Do pokoje jsme koupili nový náb_tek."
+    answers: ["nábytek"]
+    explanation:
+      cs: "Nábytek patří mezi vyjmenovaná slova po B, píšeme y."
+      en: "\"Nábytek\" (furniture) is a listed word after B, so we write y."
+  - id: "l2b-vs-028"
+    topic: "vyjmenovana-slova"
+    level: 2
+    type: "input"
+    prompt: "Doplň i nebo y a napiš celé slovo: Liška si v noře udělala útulný příb_tek."
+    answers: ["příbytek"]
+    explanation:
+      cs: "Příbytek je vyjmenované slovo po B, píšeme y."
+      en: "\"Příbytek\" (dwelling) is a listed word after B, so we write y."
+  - id: "l2b-vs-029"
+    topic: "vyjmenovana-slova"
+    level: 2
+    type: "choice"
+    prompt: "Které město je napsané správně?"
+    options: ["Přibislav", "Přibyslav", "Přybyslav"]
+    correct: "Přibyslav"
+    explanation:
+      cs: "Přibyslav patří mezi vyjmenovaná slova po B, píšeme -by-. Začátek při- se píše s i."
+      en: "\"Přibyslav\" (a Czech town) is a listed word after B, so -by- has y; the start při- has i."
+  - id: "l2b-vs-030"
+    topic: "vyjmenovana-slova"
+    level: 2
+    type: "input"
+    prompt: "Doplň í nebo ý a napiš celé slovo: Děti radostí v_skaly."
+    answers: ["výskaly"]
+    explanation:
+      cs: "Výskat je vyjmenované slovo po V, píšeme ý."
+      en: "\"Výskat\" (to whoop with joy) is a listed word after V, so we write ý."
+  - id: "l2b-vs-031"
+    topic: "vyjmenovana-slova"
+    level: 2
+    type: "input"
+    prompt: "Doplň i nebo y a napiš celé slovo: Malé dítě v posteli vzl_kalo."
+    answers: ["vzlykalo"]
+    explanation:
+      cs: "Vzlykat je vyjmenované slovo po L, píšeme y."
+      en: "\"Vzlykat\" (to sob) is a listed word after L, so we write y."
+  - id: "l2b-vs-032"
+    topic: "vyjmenovana-slova"
+    level: 2
+    type: "input"
+    prompt: "Doplň í nebo ý a napiš celé slovo: Na kamenech jsem klop_tl."
+    answers: ["klopýtl"]
+    explanation:
+      cs: "Klopýtat je vyjmenované slovo po P, píšeme ý."
+      en: "\"Klopýtat\" (to stumble) is a listed word after P, so we write ý."
+  - id: "l2b-par-001"
+    topic: "parove-souhlasky"
+    level: 2
+    type: "choice"
+    prompt: "Doplň b/p: V lese jsme našli velký hři_."
+    options: ["b", "p"]
+    correct: "b"
+    explanation:
+      cs: "Ověříme: hřiby. Slyšíme b, proto píšeme hřib."
+      en: "Check with \"hřiby\": we hear b, so we write \"hřib\" (mushroom)."
+  - id: "l2b-par-002"
+    topic: "parove-souhlasky"
+    level: 2
+    type: "input"
+    prompt: "Doplň b nebo p a napiš celé slovo: Na střeše vrká holu_."
+    answers: ["holub"]
+    explanation:
+      cs: "Ověříme: holubi. Slyšíme b, proto píšeme holub."
+      en: "Check with \"holubi\": we hear b, so we write \"holub\" (pigeon)."
+  - id: "l2b-par-003"
+    topic: "parove-souhlasky"
+    level: 2
+    type: "choice"
+    prompt: "Doplň b/p: V pokoji je bílý stro_."
+    options: ["b", "p"]
+    correct: "p"
+    explanation:
+      cs: "Ověříme: stropy. Slyšíme p, proto píšeme strop."
+      en: "Check with \"stropy\": we hear p, so we write \"strop\" (ceiling)."
+  - id: "l2b-par-004"
+    topic: "parove-souhlasky"
+    level: 2
+    type: "input"
+    prompt: "Doplň b nebo p a napiš celé slovo: U cesty stojí dřevěný slou_."
+    answers: ["sloup"]
+    explanation:
+      cs: "Ověříme: sloupy. Slyšíme p, proto píšeme sloup."
+      en: "Check with \"sloupy\": we hear p, so we write \"sloup\" (pillar)."
+  - id: "l2b-par-005"
+    topic: "parove-souhlasky"
+    level: 2
+    type: "choice"
+    prompt: "Doplň d/t: Za domem máme ovocný sa_."
+    options: ["d", "t"]
+    correct: "d"
+    explanation:
+      cs: "Ověříme: sady. Slyšíme d, proto píšeme sad."
+      en: "Check with \"sady\": we hear d, so we write \"sad\" (orchard)."
+  - id: "l2b-par-006"
+    topic: "parove-souhlasky"
+    level: 2
+    type: "input"
+    prompt: "Doplň d nebo t a napiš celé slovo: Na růži se otevřel krásný kvě_."
+    answers: ["květ"]
+    explanation:
+      cs: "Ověříme: květy. Slyšíme t, proto píšeme květ."
+      en: "Check with \"květy\": we hear t, so we write \"květ\" (flower)."
+  - id: "l2b-par-007"
+    topic: "parove-souhlasky"
+    level: 2
+    type: "choice"
+    prompt: "Doplň d/t: Dnes máme na obě_ guláš."
+    options: ["d", "t"]
+    correct: "d"
+    explanation:
+      cs: "Ověříme: obědy. Slyšíme d, proto píšeme oběd."
+      en: "Check with \"obědy\": we hear d, so we write \"oběd\" (lunch)."
+  - id: "l2b-par-008"
+    topic: "parove-souhlasky"
+    level: 2
+    type: "choice"
+    prompt: "Doplň ž/š: Na stole leží ostrý nů_."
+    options: ["ž", "š"]
+    correct: "ž"
+    explanation:
+      cs: "Ověříme: nože. Slyšíme ž, proto píšeme nůž."
+      en: "Check with \"nože\": we hear ž, so we write \"nůž\" (knife)."
+  - id: "l2b-par-009"
+    topic: "parove-souhlasky"
+    level: 2
+    type: "input"
+    prompt: "Doplň ž nebo š a napiš celé slovo: Na stole stojí ko_ s ovocem."
+    answers: ["koš"]
+    explanation:
+      cs: "Ověříme: koše. Slyšíme š, proto píšeme koš."
+      en: "Check with \"koše\": we hear š, so we write \"koš\" (basket)."
+  - id: "l2b-par-010"
+    topic: "parove-souhlasky"
+    level: 2
+    type: "choice"
+    prompt: "Doplň z/s: Na stěně visí obra_."
+    options: ["z", "s"]
+    correct: "z"
+    explanation:
+      cs: "Ověříme: obrazy. Slyšíme z, proto píšeme obraz."
+      en: "Check with \"obrazy\": we hear z, so we write \"obraz\" (picture)."
+  - id: "l2b-par-011"
+    topic: "parove-souhlasky"
+    level: 2
+    type: "input"
+    prompt: "Doplň z nebo s a napiš celé slovo: Za vesnicí je hluboký le_."
+    answers: ["les"]
+    explanation:
+      cs: "Ověříme: lesy. Slyšíme s, proto píšeme les."
+      en: "Check with \"lesy\": we hear s, so we write \"les\" (forest)."
+  - id: "l2b-par-012"
+    topic: "parove-souhlasky"
+    level: 2
+    type: "choice"
+    prompt: "Doplň v/f: Králík chroupe mrke_."
+    options: ["v", "f"]
+    correct: "v"
+    explanation:
+      cs: "Ověříme: mrkve. Slyšíme v, proto píšeme mrkev."
+      en: "Check with \"mrkve\": we hear v, so we write \"mrkev\" (carrot)."
+  - id: "l2b-par-013"
+    topic: "parove-souhlasky"
+    level: 2
+    type: "input"
+    prompt: "Doplň h nebo ch a napiš celé slovo: Řeka má strmý bře_."
+    answers: ["břeh"]
+    explanation:
+      cs: "Ověříme: břehy. Slyšíme h, proto píšeme břeh."
+      en: "Check with \"břehy\": we hear h, so we write \"břeh\" (river bank)."
+  - id: "l2b-par-014"
+    topic: "parove-souhlasky"
+    level: 2
+    type: "choice"
+    prompt: "Doplň ď/ť: Kolem zahrady stojí vysoká ze_."
+    options: ["ď", "ť"]
+    correct: "ď"
+    explanation:
+      cs: "Ověříme: zdi. Slyšíme d, proto píšeme zeď."
+      en: "Check with \"zdi\": we hear d, so we write \"zeď\" (wall)."
+  - id: "l2b-par-015"
+    topic: "parove-souhlasky"
+    level: 2
+    type: "input"
+    prompt: "Doplň ď nebo ť a napiš celé slovo: Po moři pluje velká lo_."
+    answers: ["loď"]
+    explanation:
+      cs: "Ověříme: lodě. Slyšíme d, proto píšeme loď."
+      en: "Check with \"lodě\": we hear d, so we write \"loď\" (ship)."
+  - id: "l2b-par-016"
+    topic: "parove-souhlasky"
+    level: 2
+    type: "choice"
+    prompt: "Doplň h/ch: V lese roste zelený me_."
+    options: ["h", "ch"]
+    correct: "ch"
+    explanation:
+      cs: "Ověříme: mechy. Slyšíme ch, proto píšeme mech."
+      en: "Check with \"mechy\": we hear ch, so we write \"mech\" (moss)."
+  - id: "l2b-par-017"
+    topic: "parove-souhlasky"
+    level: 2
+    type: "choice"
+    prompt: "Doplň d/t: Babička pěstuje mrkev na malé zahrá_ce."
+    options: ["d", "t"]
+    correct: "d"
+    explanation:
+      cs: "Ověříme slovem zahrada. Slyšíme d, proto píšeme zahrádka."
+      en: "Check with \"zahrada\": we hear d, so we write \"zahrádka\" (small garden)."
+  - id: "l2b-par-018"
+    topic: "parove-souhlasky"
+    level: 2
+    type: "choice"
+    prompt: "Doplň b/p: Na listu sedí malá žá_ka."
+    options: ["b", "p"]
+    correct: "b"
+    explanation:
+      cs: "Ověříme slovem žába. Slyšíme b, proto píšeme žabka."
+      en: "Check with \"žába\": we hear b, so we write \"žabka\" (little frog)."
+  - id: "l2b-par-019"
+    topic: "parove-souhlasky"
+    level: 2
+    type: "input"
+    prompt: "Doplň v nebo f a napiš celé slovo: Kabát má dlouhý ruká_."
+    answers: ["rukáv"]
+    explanation:
+      cs: "Ověříme: rukávy. Slyšíme v, proto píšeme rukáv."
+      en: "Check with \"rukávy\": we hear v, so we write \"rukáv\" (sleeve)."
+  - id: "l2b-par-020"
+    topic: "parove-souhlasky"
+    level: 2
+    type: "input"
+    prompt: "Doplň h nebo ch a napiš celé slovo: Traktor táhne plu_."
+    answers: ["pluh"]
+    explanation:
+      cs: "Ověříme: pluhy. Slyšíme h, proto píšeme pluh."
+      en: "Check with \"pluhy\": we hear h, so we write \"pluh\" (plough)."
+  - id: "l2b-par-021"
+    topic: "parove-souhlasky"
+    level: 2
+    type: "choice"
+    prompt: "Které slovo nám pomůže ověřit písmeno na konci slova zub?"
+    options: ["sup", "zuby", "zpívat"]
+    correct: "zuby"
+    explanation:
+      cs: "Ve slově zuby slyšíme jasně b, proto píšeme zub."
+      en: "In \"zuby\" we clearly hear b, so we write \"zub\" (tooth)."
+  - id: "l2b-par-022"
+    topic: "parove-souhlasky"
+    level: 2
+    type: "choice"
+    prompt: "Které slovo nám pomůže ověřit písmeno na konci slova plod?"
+    options: ["plot", "plody", "plavat"]
+    correct: "plody"
+    explanation:
+      cs: "Ve slově plody slyšíme jasně d, proto píšeme plod. Plot je jiné slovo."
+      en: "In \"plody\" we clearly hear d, so we write \"plod\" (fruit). \"Plot\" (fence) is a different word."

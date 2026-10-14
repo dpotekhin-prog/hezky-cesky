@@ -1,0 +1,539 @@
+# ČJ 3. třída — úroveň 1, dávka B (snadné otázky)
+questions:
+  - id: "l1b-abc-001"
+    topic: "abeceda"
+    level: 1
+    type: "choice"
+    prompt: "Které písmeno je v abecedě hned za písmenem C?"
+    options: ["B", "Č", "D", "Ch"]
+    correct: "Č"
+    explanation:
+      cs: "Abeceda: … B, C, Č, D …"
+      en: "Alphabet order: … B, C, Č, D …"
+  - id: "l1b-abc-002"
+    topic: "abeceda"
+    level: 1
+    type: "input"
+    prompt: "Které písmeno je v abecedě hned před písmenem Ž? Napiš jen písmeno."
+    answers: ["z"]
+    explanation:
+      cs: "Abeceda končí: … Y, Z, Ž."
+      en: "The alphabet ends: … Y, Z, Ž."
+  - id: "l1b-abc-003"
+    topic: "abeceda"
+    level: 1
+    type: "input"
+    prompt: "Které písmeno je v abecedě hned za písmenem S? Napiš jen písmeno."
+    answers: ["š"]
+    explanation:
+      cs: "Abeceda: … R, Ř, S, Š, T …"
+      en: "Alphabet order: … R, Ř, S, Š, T …"
+  - id: "l1b-abc-004"
+    topic: "abeceda"
+    level: 1
+    type: "choice"
+    prompt: "Které písmeno je v abecedě hned před písmenem Ch?"
+    options: ["G", "H", "I", "C"]
+    correct: "H"
+    explanation:
+      cs: "Ch je v abecedě hned za H: … G, H, Ch, I …"
+      en: "Ch comes right after H: … G, H, Ch, I …"
+  - id: "l1b-abc-005"
+    topic: "abeceda"
+    level: 1
+    type: "choice"
+    prompt: "Které písmeno je v abecedě hned za písmenem F?"
+    options: ["E", "G", "H", "Ch"]
+    correct: "G"
+    explanation:
+      cs: "Abeceda: … E, F, G, H …"
+      en: "Alphabet order: … E, F, G, H …"
+  - id: "l1b-abc-006"
+    topic: "abeceda"
+    level: 1
+    type: "input"
+    prompt: "Které písmeno je v abecedě hned za písmenem M? Napiš jen písmeno."
+    answers: ["n"]
+    explanation:
+      cs: "Abeceda: … L, M, N, O …"
+      en: "Alphabet order: … L, M, N, O …"
+  - id: "l1b-abc-007"
+    topic: "abeceda"
+    level: 1
+    type: "choice"
+    prompt: "Které písmeno je v abecedě hned před písmenem T?"
+    options: ["S", "Š", "R", "U"]
+    correct: "Š"
+    explanation:
+      cs: "Abeceda: … S, Š, T, U …"
+      en: "Alphabet order: … S, Š, T, U …"
+  - id: "l1b-abc-008"
+    topic: "abeceda"
+    level: 1
+    type: "input"
+    prompt: "Které písmeno je v abecedě mezi písmeny L a N? Napiš jen písmeno."
+    answers: ["m"]
+    explanation:
+      cs: "Abeceda: … K, L, M, N …"
+      en: "Alphabet order: … K, L, M, N …"
+  - id: "l1b-abc-009"
+    topic: "abeceda"
+    level: 1
+    type: "choice"
+    prompt: "Které slovo je v abecedě první?"
+    options: ["pes", "les", "ryba", "zebra"]
+    correct: "les"
+    explanation:
+      cs: "Porovnáme první písmena: l, p, r, z. Písmeno L je v abecedě nejdříve."
+      en: "Compare the first letters: l, p, r, z. L comes first in the alphabet."
+  - id: "l1b-abc-010"
+    topic: "abeceda"
+    level: 1
+    type: "choice"
+    prompt: "Které slovo je v abecedě poslední?"
+    options: ["zebra", "žába", "slon"]
+    correct: "žába"
+    explanation:
+      cs: "Porovnáme první písmena: s, z, ž. Písmeno Ž je v abecedě úplně poslední."
+      en: "Compare the first letters: s, z, ž. Ž is the very last letter of the alphabet."
+  - id: "l1b-abc-011"
+    topic: "abeceda"
+    level: 1
+    type: "choice"
+    prompt: "Seřaď podle abecedy slova: sova, kos, pes."
+    options: ["kos, pes, sova", "pes, kos, sova", "sova, pes, kos"]
+    correct: "kos, pes, sova"
+    explanation:
+      cs: "Podle prvních písmen: K, P, S."
+      en: "By the first letters: K, P, S."
+  - id: "l1b-abc-012"
+    topic: "abeceda"
+    level: 1
+    type: "choice"
+    prompt: "Ve které řadě jsou slova seřazena podle abecedy?"
+    options: ["dub, jedle, lípa, smrk", "jedle, dub, lípa, smrk", "dub, lípa, jedle, smrk"]
+    correct: "dub, jedle, lípa, smrk"
+    explanation:
+      cs: "Podle prvních písmen: D, J, L, S."
+      en: "By the first letters: D, J, L, S."
+  - id: "l1b-abc-013"
+    topic: "abeceda"
+    level: 1
+    type: "input"
+    prompt: "Seřaď slova podle abecedy a napiš to, které bude první: tráva, jahoda, malina."
+    answers: ["jahoda"]
+    explanation:
+      cs: "Podle prvních písmen: J, M, T. První je jahoda."
+      en: "By the first letters: J, M, T. Jahoda comes first."
+  - id: "l1b-abc-014"
+    topic: "abeceda"
+    level: 1
+    type: "input"
+    prompt: "Seřaď slova podle abecedy a napiš to, které bude poslední: kolo, auto, vlak."
+    answers: ["vlak"]
+    explanation:
+      cs: "Podle prvních písmen: A, K, V. Poslední je vlak."
+      en: "By the first letters: A, K, V. Vlak comes last."
+  - id: "l1b-tm-001"
+    topic: "tvrde-mekke"
+    level: 1
+    type: "choice"
+    prompt: "Která souhláska je obojetná?"
+    options: ["h", "c", "l", "š"]
+    correct: "l"
+    explanation:
+      cs: "Obojetné souhlásky jsou b, f, l, m, p, s, v, z."
+      en: "The ‘ambiguous’ consonants are b, f, l, m, p, s, v, z."
+  - id: "l1b-tm-002"
+    topic: "tvrde-mekke"
+    level: 1
+    type: "choice"
+    prompt: "Která souhláska je měkká?"
+    options: ["k", "c", "d", "n"]
+    correct: "c"
+    explanation:
+      cs: "Měkké souhlásky jsou ž, š, č, ř, c, j, ď, ť, ň."
+      en: "Soft consonants are ž, š, č, ř, c, j, ď, ť, ň."
+  - id: "l1b-tm-003"
+    topic: "tvrde-mekke"
+    level: 1
+    type: "choice"
+    prompt: "Která souhláska je tvrdá?"
+    options: ["ž", "j", "ch", "š"]
+    correct: "ch"
+    explanation:
+      cs: "Tvrdé souhlásky jsou h, ch, k, r, d, t, n."
+      en: "Hard consonants are h, ch, k, r, d, t, n."
+  - id: "l1b-tm-004"
+    topic: "tvrde-mekke"
+    level: 1
+    type: "choice"
+    prompt: "Co píšeme po tvrdých souhláskách?"
+    options: ["i, í", "y, ý"]
+    correct: "y, ý"
+    explanation:
+      cs: "Po tvrdých souhláskách píšeme tvrdé y, ý."
+      en: "After hard consonants we write the hard y, ý."
+  - id: "l1b-tm-005"
+    topic: "tvrde-mekke"
+    level: 1
+    type: "choice"
+    prompt: "Ve které řadě jsou jen měkké souhlásky?"
+    options: ["ž, š, č", "h, k, r", "b, l, m"]
+    correct: "ž, š, č"
+    explanation:
+      cs: "Ž, š, č jsou měkké souhlásky."
+      en: "Ž, š, č are soft consonants."
+  - id: "l1b-tm-006"
+    topic: "tvrde-mekke"
+    level: 1
+    type: "choice"
+    prompt: "Jaká je souhláska j?"
+    options: ["tvrdá", "měkká", "obojetná"]
+    correct: "měkká"
+    explanation:
+      cs: "J patří mezi měkké souhlásky: ž, š, č, ř, c, j, ď, ť, ň."
+      en: "J is a soft consonant: ž, š, č, ř, c, j, ď, ť, ň."
+  - id: "l1b-tm-007"
+    topic: "tvrde-mekke"
+    level: 1
+    type: "choice"
+    prompt: "Jaká je souhláska h?"
+    options: ["tvrdá", "měkká", "obojetná"]
+    correct: "tvrdá"
+    explanation:
+      cs: "H patří mezi tvrdé souhlásky: h, ch, k, r, d, t, n."
+      en: "H is a hard consonant: h, ch, k, r, d, t, n."
+  - id: "l1b-tm-008"
+    topic: "tvrde-mekke"
+    level: 1
+    type: "choice"
+    prompt: "Jaká je souhláska v?"
+    options: ["tvrdá", "měkká", "obojetná"]
+    correct: "obojetná"
+    explanation:
+      cs: "V patří mezi obojetné souhlásky: b, f, l, m, p, s, v, z."
+      en: "V is an ‘ambiguous’ consonant: b, f, l, m, p, s, v, z."
+  - id: "l1b-tm-009"
+    topic: "tvrde-mekke"
+    level: 1
+    type: "choice"
+    prompt: "Doplň i/y: Pod stromem roste hř_b."
+    options: ["i", "y"]
+    correct: "i"
+    explanation:
+      cs: "Ř je měkká souhláska, proto píšeme i: hřib."
+      en: "Ř is a soft consonant, so we write i: hřib."
+  - id: "l1b-tm-010"
+    topic: "tvrde-mekke"
+    level: 1
+    type: "input"
+    prompt: "Doplň i nebo y a napiš celé slovo: k_selý"
+    answers: ["kyselý"]
+    explanation:
+      cs: "K je tvrdá souhláska, proto píšeme y: kyselý."
+      en: "K is a hard consonant, so we write y: kyselý."
+  - id: "l1b-tm-011"
+    topic: "tvrde-mekke"
+    level: 1
+    type: "input"
+    prompt: "Doplň i nebo y a napiš celé slovo: r_chle"
+    answers: ["rychle"]
+    explanation:
+      cs: "R je tvrdá souhláska, proto píšeme y: rychle."
+      en: "R is a hard consonant, so we write y: rychle."
+  - id: "l1b-tm-012"
+    topic: "tvrde-mekke"
+    level: 1
+    type: "input"
+    prompt: "Doplň i nebo y a napiš celé slovo: c_bule"
+    answers: ["cibule"]
+    explanation:
+      cs: "C je měkká souhláska, proto píšeme i: cibule."
+      en: "C is a soft consonant, so we write i: cibule."
+  - id: "l1b-tm-013"
+    topic: "tvrde-mekke"
+    level: 1
+    type: "input"
+    prompt: "Doplň í nebo ý a napiš celé slovo: ř_zek"
+    answers: ["řízek"]
+    explanation:
+      cs: "Ř je měkká souhláska, proto píšeme í: řízek."
+      en: "Ř is a soft consonant, so we write í: řízek."
+  - id: "l1b-tm-014"
+    topic: "tvrde-mekke"
+    level: 1
+    type: "input"
+    prompt: "Doplň i nebo y a napiš celé slovo: š_pka"
+    answers: ["šipka"]
+    explanation:
+      cs: "Š je měkká souhláska, proto píšeme i: šipka."
+      en: "Š is a soft consonant, so we write i: šipka."
+  - id: "l1b-uu-001"
+    topic: "u-u"
+    level: 1
+    type: "input"
+    prompt: "Doplň ú nebo ů a napiš celé slovo: _sta"
+    answers: ["ústa"]
+    explanation:
+      cs: "Na začátku slova píšeme ú: ústa."
+      en: "At the start of a word we write ú: ústa."
+  - id: "l1b-uu-002"
+    topic: "u-u"
+    level: 1
+    type: "input"
+    prompt: "Doplň ú nebo ů a napiš celé slovo: _l (domeček pro včely)"
+    answers: ["úl"]
+    explanation:
+      cs: "Na začátku slova píšeme ú: úl."
+      en: "At the start of a word we write ú: úl (beehive)."
+  - id: "l1b-uu-003"
+    topic: "u-u"
+    level: 1
+    type: "input"
+    prompt: "Doplň ú nebo ů a napiš celé slovo: h_l (dědeček chodí o …)"
+    answers: ["hůl"]
+    explanation:
+      cs: "Uprostřed slova píšeme ů: hůl."
+      en: "In the middle of a word we write ů: hůl (walking stick)."
+  - id: "l1b-uu-004"
+    topic: "u-u"
+    level: 1
+    type: "input"
+    prompt: "Doplň ú nebo ů a napiš celé slovo: k_ra (na kmeni stromu)"
+    answers: ["kůra"]
+    explanation:
+      cs: "Uprostřed slova píšeme ů: kůra."
+      en: "In the middle of a word we write ů: kůra (bark)."
+  - id: "l1b-uu-005"
+    topic: "u-u"
+    level: 1
+    type: "input"
+    prompt: "Doplň ú nebo ů a napiš celé slovo: _dolí"
+    answers: ["údolí"]
+    explanation:
+      cs: "Na začátku slova píšeme ú: údolí."
+      en: "At the start of a word we write ú: údolí (valley)."
+  - id: "l1b-uu-006"
+    topic: "u-u"
+    level: 1
+    type: "input"
+    prompt: "Doplň ú nebo ů a napiš celé slovo: p_da"
+    answers: ["půda"]
+    explanation:
+      cs: "Uprostřed slova píšeme ů: půda."
+      en: "In the middle of a word we write ů: půda."
+  - id: "l1b-uu-007"
+    topic: "u-u"
+    level: 1
+    type: "choice"
+    prompt: "Které slovo je napsané správně?"
+    options: ["úroda", "ůroda"]
+    correct: "úroda"
+    explanation:
+      cs: "Na začátku slova píšeme ú: úroda."
+      en: "At the start of a word we write ú: úroda (harvest)."
+  - id: "l1b-uu-008"
+    topic: "u-u"
+    level: 1
+    type: "choice"
+    prompt: "Doplň ú/ů: Z kuchyně je cítit v_ně koláče."
+    options: ["ú", "ů"]
+    correct: "ů"
+    explanation:
+      cs: "Uprostřed slova píšeme ů: vůně."
+      en: "In the middle of a word we write ů: vůně (smell)."
+  - id: "l1b-uu-009"
+    topic: "u-u"
+    level: 1
+    type: "choice"
+    prompt: "Doplň ú/ů: Na podzim padá listí ze strom_."
+    options: ["ú", "ů"]
+    correct: "ů"
+    explanation:
+      cs: "Na konci slova píšeme ů: stromů."
+      en: "At the end of a word we write ů: stromů."
+  - id: "l1b-uu-010"
+    topic: "u-u"
+    level: 1
+    type: "choice"
+    prompt: "Doplň ú/ů: Prohraný zápas je pro hráče ne_spěch."
+    options: ["ú", "ů"]
+    correct: "ú"
+    explanation:
+      cs: "Ne- je předpona, slovo úspěch začíná na ú, proto neúspěch."
+      en: "Ne- is a prefix and úspěch starts with ú, so we write neúspěch."
+  - id: "l1b-uu-011"
+    topic: "u-u"
+    level: 1
+    type: "choice"
+    prompt: "Které slovo je napsané správně?"
+    options: ["súl", "sůl"]
+    correct: "sůl"
+    explanation:
+      cs: "Uprostřed slova píšeme ů: sůl."
+      en: "In the middle of a word we write ů: sůl (salt)."
+  - id: "l1b-uu-012"
+    topic: "u-u"
+    level: 1
+    type: "choice"
+    prompt: "Doplň ú/ů: Na hřišti jsem si odřel k_ži na koleni."
+    options: ["ú", "ů"]
+    correct: "ů"
+    explanation:
+      cs: "Uprostřed slova píšeme ů: kůže, kůži."
+      en: "In the middle of a word we write ů: kůže, kůži (skin)."
+  - id: "l1b-uu-013"
+    topic: "u-u"
+    level: 1
+    type: "choice"
+    prompt: "Ve kterém slově chybí ú?"
+    options: ["_řad", "m_j", "h_lka"]
+    correct: "_řad"
+    explanation:
+      cs: "Na začátku slova píšeme ú: úřad. Ostatní: můj, hůlka."
+      en: "At the start of a word we write ú: úřad. The others: můj, hůlka."
+  - id: "l1b-uu-014"
+    topic: "u-u"
+    level: 1
+    type: "choice"
+    prompt: "Ve kterém slově chybí ů?"
+    options: ["_tok", "_zký", "p_l"]
+    correct: "p_l"
+    explanation:
+      cs: "Uprostřed slova píšeme ů: půl. Ostatní: útok, úzký."
+      en: "In the middle of a word we write ů: půl. The others: útok, úzký."
+  - id: "l1b-dtn-001"
+    topic: "de-te-ne"
+    level: 1
+    type: "choice"
+    prompt: "Které slovo je napsané správně?"
+    options: ["nebe", "něbe"]
+    correct: "nebe"
+    explanation:
+      cs: "Slyšíme tvrdé ne, proto píšeme nebe."
+      en: "We hear a hard ‘ne’, so we write nebe."
+  - id: "l1b-dtn-002"
+    topic: "de-te-ne"
+    level: 1
+    type: "input"
+    prompt: "Doplň e nebo ě a napiš celé slovo: n_co"
+    answers: ["něco"]
+    explanation:
+      cs: "Slyšíme měkké ňe, proto píšeme ně: něco."
+      en: "We hear a soft ‘ňe’, so we write ně: něco."
+  - id: "l1b-dtn-003"
+    topic: "de-te-ne"
+    level: 1
+    type: "input"
+    prompt: "Doplň i nebo y a napiš celé slovo: t_cho"
+    answers: ["ticho"]
+    explanation:
+      cs: "Slyšíme měkké ťi, proto píšeme ti: ticho."
+      en: "We hear a soft ‘ťi’, so we write ti: ticho."
+  - id: "l1b-dtn-004"
+    topic: "de-te-ne"
+    level: 1
+    type: "input"
+    prompt: "Doplň i nebo y a napiš celé slovo: d_vadlo"
+    answers: ["divadlo"]
+    explanation:
+      cs: "Slyšíme měkké ďi, proto píšeme di: divadlo."
+      en: "We hear a soft ‘ďi’, so we write di: divadlo."
+  - id: "l1b-dtn-005"
+    topic: "de-te-ne"
+    level: 1
+    type: "input"
+    prompt: "Doplň i nebo y a napiš celé slovo: Ve skříni není n_c."
+    answers: ["nic"]
+    explanation:
+      cs: "Slyšíme měkké ňi, proto píšeme ni: nic."
+      en: "We hear a soft ‘ňi’, so we write ni: nic."
+  - id: "l1b-dtn-006"
+    topic: "de-te-ne"
+    level: 1
+    type: "choice"
+    prompt: "Doplň í/ý: Na poli rostou d_ně."
+    options: ["í", "ý"]
+    correct: "ý"
+    explanation:
+      cs: "Slyšíme tvrdé dý, proto píšeme dýně."
+      en: "We hear a hard ‘dý’, so we write dýně (pumpkins)."
+  - id: "l1b-dtn-007"
+    topic: "de-te-ne"
+    level: 1
+    type: "choice"
+    prompt: "Doplň e/ě: Na nádraží jsme čekali celý d_n."
+    options: ["e", "ě"]
+    correct: "e"
+    explanation:
+      cs: "Slyšíme tvrdé de, proto píšeme den."
+      en: "We hear a hard ‘de’, so we write den (day)."
+  - id: "l1b-dtn-008"
+    topic: "de-te-ne"
+    level: 1
+    type: "choice"
+    prompt: "Doplň e/ě: D_deček sedí v křesle a čte noviny."
+    options: ["e", "ě"]
+    correct: "ě"
+    explanation:
+      cs: "Slyšíme měkké ďe, proto píšeme dě: dědeček."
+      en: "We hear a soft ‘ďe’, so we write dě: dědeček."
+  - id: "l1b-dtn-009"
+    topic: "de-te-ne"
+    level: 1
+    type: "choice"
+    prompt: "Doplň í/ý: Vánoce jsou za jeden t_den."
+    options: ["í", "ý"]
+    correct: "ý"
+    explanation:
+      cs: "Slyšíme tvrdé tý, proto píšeme týden."
+      en: "We hear a hard ‘tý’, so we write týden (week)."
+  - id: "l1b-dtn-010"
+    topic: "de-te-ne"
+    level: 1
+    type: "choice"
+    prompt: "Doplň e/ě: Babička dělá buchty z kynutého t_sta."
+    options: ["e", "ě"]
+    correct: "ě"
+    explanation:
+      cs: "Slyšíme měkké ťe, proto píšeme tě: těsto."
+      en: "We hear a soft ‘ťe’, so we write tě: těsto (dough)."
+  - id: "l1b-dtn-011"
+    topic: "de-te-ne"
+    level: 1
+    type: "choice"
+    prompt: "Které slovo je napsané správně?"
+    options: ["nykdo", "nikdo"]
+    correct: "nikdo"
+    explanation:
+      cs: "Slyšíme měkké ňi, proto píšeme ni: nikdo."
+      en: "We hear a soft ‘ňi’, so we write ni: nikdo."
+  - id: "l1b-dtn-012"
+    topic: "de-te-ne"
+    level: 1
+    type: "choice"
+    prompt: "Doplň e/ě: V kuchyni je t_plo, protože se v kamnech topí."
+    options: ["e", "ě"]
+    correct: "e"
+    explanation:
+      cs: "Slyšíme tvrdé te, proto píšeme teplo."
+      en: "We hear a hard ‘te’, so we write teplo (warm)."
+  - id: "l1b-dtn-013"
+    topic: "de-te-ne"
+    level: 1
+    type: "input"
+    prompt: "Doplň i nebo y a napiš celé slovo: t_síc"
+    answers: ["tisíc"]
+    explanation:
+      cs: "Slyšíme měkké ťi, proto píšeme ti: tisíc."
+      en: "We hear a soft ‘ťi’, so we write ti: tisíc (thousand)."
+  - id: "l1b-dtn-014"
+    topic: "de-te-ne"
+    level: 1
+    type: "input"
+    prompt: "Doplň e nebo ě a napiš celé slovo: d_lat (pracovat)"
+    answers: ["dělat"]
+    explanation:
+      cs: "Slyšíme měkké ďe, proto píšeme dě: dělat."
+      en: "We hear a soft ‘ďe’, so we write dě: dělat."

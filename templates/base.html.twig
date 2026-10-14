@@ -1,0 +1,46 @@
+{% set locale = app.request.locale %}
+{% set route = app.request.attributes.get('_route') %}
+{% set route_params = app.request.attributes.get('_route_params') ?? {} %}
+<!DOCTYPE html>
+<html lang="{{ locale }}">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %}{{ 'app.name'|trans }}{% endblock %}</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
+        {% block javascripts %}{{ importmap('app') }}{% endblock %}
+    </head>
+    <body>
+        <header class="topbar">
+            <a class="brand" href="{{ app.user ? path('app_home') : path('app_root') }}">📚 {{ 'app.name'|trans }}</a>
+            <nav>
+                {% if app.user %}
+                    <a href="{{ path('app_home') }}">{{ 'nav.practice'|trans }}</a>
+                    <a href="{{ path('stats_mine') }}">{{ 'nav.stats'|trans }}</a>
+                    {% if is_granted('ROLE_PARENT') %}
+                        <a href="{{ path('parent_overview') }}">{{ 'nav.parent'|trans }}</a>
+                    {% endif %}
+                {% endif %}
+                {% if route %}
+                    <span class="lang">
+                        {% for l in ['cs', 'en'] %}
+                            {% if l == locale %}<strong>{{ l|upper }}</strong>{% else %}<a href="{{ path(route, route_params|merge({_locale: l})) }}">{{ l|upper }}</a>{% endif %}
+                        {% endfor %}
+                    </span>
+                {% endif %}
+                {% if app.user %}
+                    <span class="who">👤 {{ app.user.username }}</span>
+                    <a href="{{ path('app_logout') }}">{{ 'nav.logout'|trans }}</a>
+                {% endif %}
+            </nav>
+        </header>
+        <main class="container">
+            {% for type, messages in app.flashes %}
+                {% for message in messages %}
+                    <div class="flash flash-{{ type }}">{{ message|trans }}</div>
+                {% endfor %}
+            {% endfor %}
+            {% block body %}{% endblock %}
+        </main>
+    </body>
+</html>
