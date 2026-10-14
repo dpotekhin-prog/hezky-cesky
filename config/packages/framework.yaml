@@ -3,10 +3,22 @@ framework:
     secret: '%env(APP_SECRET)%'
 
     # Note that the session will be started ONLY if you read or write from it.
-    session: true
+    session:
+        cookie_secure: auto
+        cookie_samesite: lax
+        cookie_httponly: true
+
+    # Set TRUSTED_PROXIES (e.g. the IP of an outer HTTPS proxy) only when such a proxy exists;
+    # otherwise X-Forwarded-* headers are ignored and cannot be spoofed.
+    trusted_proxies: '%env(TRUSTED_PROXIES)%'
+    trusted_headers: ['x-forwarded-for', 'x-forwarded-proto', 'x-forwarded-host', 'x-forwarded-port']
 
     #esi: true
     #fragments: true
+
+when@prod:
+    framework:
+        secret: '%env(trim:file:resolve:APP_SECRET_FILE)%'
 
 when@test:
     framework:

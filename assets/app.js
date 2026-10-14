@@ -1,5 +1,3 @@
-import './styles/app.css';
-
 // On-screen keyboard for Czech letters with diacritics: inserts the letter at the cursor.
 document.addEventListener('click', (event) => {
     const button = event.target.closest('[data-letter]');

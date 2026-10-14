@@ -187,3 +187,11 @@ table.history tr.bad td { background: #fff5f5; }
 .rank-change-title { font-weight: 700; font-size: 20px; }
 .rank-change.up .rank-change-title { color: var(--ok); }
 .rank-change.down .rank-change-title { color: var(--bad); }
+
+.account-type { display: flex; gap: 16px; flex-wrap: wrap; margin: 6px 0 4px; }
+.account-type label { display: inline; font-weight: 400; margin: 0 0 0 4px; }
+.parent-forms { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
+.parent-forms .btn, .narrow-form .btn { margin-top: 14px; }
+.narrow-form { max-width: 480px; }
+.pairing code { font-size: 22px; letter-spacing: 3px; background: var(--bg); padding: 2px 10px; border-radius: 8px; }
+.flash-success { background: var(--ok-bg); color: var(--ok); }

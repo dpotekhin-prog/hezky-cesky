@@ -5,6 +5,10 @@ nav:
     parent: Pro rodiče
     logout: Odhlásit
 form:
+    account_type: Kdo se registruje?
+    account_child: Jsem žák / žákyně
+    account_parent: Jsem rodič
+    new_password: Nové heslo
     username: Přihlašovací jméno
     password: Heslo
     password_repeat: Heslo znovu
@@ -13,6 +17,7 @@ login:
     submit: Přihlásit se
     no_account: Nemáš účet?
 register:
+    too_many: Z tohoto připojení bylo vytvořeno příliš mnoho účtů. Zkus to prosím později.
     title: Registrace
     submit: Vytvořit účet
     have_account: Už máš účet?
@@ -60,6 +65,8 @@ quiz:
     stale: "Tahle otázka už byla zodpovězená – tady je aktuální otázka."
     empty_answer: Nejdřív napiš odpověď.
 stats:
+    pairing_code: Kód pro rodiče
+    pairing_help: Tento kód dej rodičům – zadají ho ve svém účtu a uvidí tvoje výsledky. Po použití se kód změní.
     passed: "Prošlé otázky"
     passed_short: "prošlo %done% z %total%"
     title: Výsledky
@@ -81,11 +88,25 @@ stats:
     question: Otázka
     answer: Odpověď
 parent:
+    no_children: Zatím nemáte připojené žádné dítě. Přidejte ho níže.
+    add_child: Vytvořit účet dítěte
+    add_child_help: Dítě se pak přihlásí tímto jménem a heslem.
+    add_child_submit: Vytvořit účet
+    child_added: Účet dítěte je vytvořený.
+    link_child: Připojit existující účet dítěte
+    link_child_help: Dítě najde svůj kód v sekci „Moje výsledky“.
+    link_child_submit: Připojit
+    pairing_code: Kód dítěte
+    child_linked: Dítě je připojené.
+    code_invalid: Tento kód neplatí. Zkontrolujte ho prosím.
+    too_many_attempts: Příliš mnoho pokusů. Zkuste to prosím za hodinu.
+    new_password: "Nové heslo pro %name%"
+    new_password_submit: Uložit heslo
+    password_changed: Heslo je změněné.
     title: Přehled dětí
     child: Dítě
     since: od
     detail: Podrobnosti
-    no_children: Zatím se nezaregistrovalo žádné dítě.
 rank:
     label: "Hodnost"
     to_next: "Do dalšího hráče chybí %points% b. (správně +1, chyba −0,5)"

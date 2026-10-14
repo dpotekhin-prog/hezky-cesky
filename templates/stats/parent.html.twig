@@ -20,4 +20,25 @@
 {% else %}
     <p class="muted">{{ 'parent.no_children'|trans }}</p>
 {% endif %}
+
+<div class="parent-forms">
+    <div class="card">
+        <h2>{{ 'parent.add_child'|trans }}</h2>
+        <p class="small muted">{{ 'parent.add_child_help'|trans }}</p>
+        {{ form_start(add_form, {action: path('parent_add_child')}) }}
+            {{ form_row(add_form.username) }}
+            {{ form_row(add_form.plainPassword.first) }}
+            {{ form_row(add_form.plainPassword.second) }}
+            <button class="btn btn-primary" type="submit">{{ 'parent.add_child_submit'|trans }}</button>
+        {{ form_end(add_form) }}
+    </div>
+    <div class="card">
+        <h2>{{ 'parent.link_child'|trans }}</h2>
+        <p class="small muted">{{ 'parent.link_child_help'|trans }}</p>
+        {{ form_start(link_form, {action: path('parent_link_child')}) }}
+            {{ form_row(link_form.code) }}
+            <button class="btn btn-primary" type="submit">{{ 'parent.link_child_submit'|trans }}</button>
+        {{ form_end(link_form) }}
+    </div>
+</div>
 {% endblock %}

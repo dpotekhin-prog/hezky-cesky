@@ -8,7 +8,8 @@ Hezky česky — тренажёр по чешскому языку для уче
 
 - PHP 8.5, Symfony 8.1, Twig, Doctrine ORM 3, SQLite (файл `var/data/app.db`).
 - Фронтенд — серверный рендер на Twig, AssetMapper (`assets/app.js`, `assets/styles/app.css`), без сборщика и без JS-фреймворков.
-- Один Docker-контейнер (`php:8.5-apache`). Локально PHP не нужен: все команды выполняются в Docker.
+- Docker Compose: `app` (php-fpm, `php:8.5-fpm`) + `web` (nginx, `nginx:1.27-alpine`). Оба образа собираются из одного
+  `Dockerfile` (targets `app` и `web`). Локально PHP не нужен: все команды выполняются в Docker.
 - Тестов PHPUnit пока нет, `tests/` пустой. Как проверять изменения — в разделе «Проверка».
 
 ## Структура
@@ -16,7 +17,7 @@ Hezky česky — тренажёр по чешскому языку для уче
 | Путь | Что там |
 |---|---|
 | `src/Entity/` | `User`, `Topic`, `Question`, `QuizSession`, `Answer` |
-| `src/Controller/` | тонкие контроллеры: `Home`, `Quiz`, `Stats` (в т.ч. кабинет родителя), `Security`, `Registration`, `Root` |
+| `src/Controller/` | тонкие контроллеры: `Home`, `Quiz`, `Stats` (свои результаты), `Parent` (кабинет родителя), `Security`, `Registration`, `Root` |
 | `src/Service/QuizFactory.php` | собирает квиз из 10 вопросов: только те, на которые ребёнок ещё не отвечал, или режим ошибок |
 | `src/Service/AnswerChecker.php` | проверка ответа и нормализация ввода |
 | `src/Service/StatsProvider.php` | прогресс, ранги, открытие уровней, статистика; пороги заданы константами |
@@ -28,7 +29,10 @@ Hezky česky — тренажёр по чешскому языку для уче
 | `content/players.yaml` | ранги 0–10 и игроки ФК Барселона |
 | `templates/` | Twig; `base.html.twig` содержит навигацию и переключатель языка |
 | `translations/messages.{cs,en}.yaml` | все тексты интерфейса; `validators.*` — сообщения валидации |
-| `docker/entrypoint.sh` | при старте: cache:warmup → migrations → импорт вопросов |
+| `docker/entrypoint.sh` | при старте `app`: секрет → cache:warmup → migrations → импорт вопросов → php-fpm |
+| `docker/nginx.conf` | nginx: статика, проксирование в `app:9000`, заголовки безопасности (CSP и др.) |
+| `docker/php-fpm.conf`, `docker/php.ini` | пул FPM (`clear_env = no`), `expose_php = Off` |
+| `config/packages/security.yaml`, `rate_limiter.yaml` | вход, ограничение попыток входа, лимиты регистрации и привязки |
 
 ## Правила продукта (не ломать)
 
@@ -40,8 +44,11 @@ Hezky česky — тренажёр по чешскому языку для уче
    Каждому рангу соответствует игрок из `content/players.yaml`: внизу текущий состав, наверху легенды, ранг 10 — Месси.
 5. **Уровни открываются по очереди.** Уровень N+1 открыт, если на уровне N пройдено ≥ 80 % вопросов и правильных ≥ 70 %.
    Начатый уровень (есть хоть один ответ) остаётся открытым, даже если позже добавились вопросы.
-6. **Роли.** Дети регистрируются сами и получают `ROLE_CHILD`. Родитель (`ROLE_PARENT`) создаётся только командой `app:user:parent`
-   и видит статистику всех детей (`/{_locale}/parent`).
+6. **Роли и семьи.** Регистрация открытая: при регистрации выбирается «ребёнок» (`ROLE_CHILD`) или «родитель» (`ROLE_PARENT`).
+   Родитель видит и меняет **только своих** детей (`User::$parents` / `$children`, таблица `parent_child`, у ребёнка до двух и более родителей).
+   Привязка: родитель создаёт ребёнка в кабинете (привязан сразу) или вводит **код привязки** ребёнка (`pairingCode`, виден ребёнку
+   в «Moje výsledky», после использования меняется). Чужой ребёнок → **404** (`ParentController::assertOwnChild`), не 403.
+   `app:user:parent` создаёт родителя или сбрасывает ему пароль из консоли.
 7. **Языки.** Интерфейс на `cs` и `en`, URL с префиксом `/{_locale}`. Тексты вопросов только на чешском, пояснения на cs и en.
    Любой новый текст интерфейса добавлять в **оба** файла `translations/messages.*.yaml`.
 
@@ -81,9 +88,9 @@ questions:
 Всё выполняется из корня репозитория.
 
 ```bash
-# поднять / пересобрать / логи
+# поднять / пересобрать / логи (app = php-fpm + Symfony, web = nginx)
 docker compose up -d --build
-docker compose logs -f app
+docker compose logs -f app web
 
 # консоль Symfony внутри контейнера (от www-data, чтобы SQLite оставалась доступной для записи)
 docker compose exec app su -s /bin/sh www-data -c 'php bin/console <command>'
@@ -113,20 +120,43 @@ $DEV php bin/console doctrine:migrations:diff -n   # генерирует migrat
 
 1. Прогнать линтеры из раздела «Команды», все должны пройти.
 2. `docker compose up -d --build`, затем `docker compose logs app`: нужна строка `[OK] Topics: …, questions: …` и отсутствие `critical`.
+   Сервис `app` должен стать `healthy` (`docker compose ps`).
 3. Пройти затронутый сценарий через HTTP (curl с cookie-jar) или в браузере: регистрация → квиз → ответ → итоги → статистика.
    POST-формы требуют CSRF-токен со страницы. Для регистрации и логина ещё нужен заголовок `Origin: http://localhost:8080`:
    это stateless CSRF Symfony.
 4. Если менялись вопросы: каждый канонический ответ (`correct` / `answers[0]`) должен засчитываться через `AnswerChecker`.
+5. Если менялись доступ, формы или JS: проверить в настоящем браузере (headless Chrome + puppeteer-core), что в консоли нет ошибок CSP,
+   и сценарий «родитель A не видит ребёнка родителя B» (404).
 5. Если тестовые аккаунты больше не нужны, базу сбрасывает `docker compose down -v`. Это удаляет **все** данные, в том числе аккаунт родителя.
+
+## Безопасность (не ослаблять)
+
+- **APP_SECRET** в prod читается из `var/data/.app_secret` (`APP_SECRET_FILE`). Entrypoint пишет туда `$APP_SECRET`, если он задан,
+  иначе один раз генерирует случайный. Не возвращать секрет по умолчанию в `compose.yaml`.
+- **Вход:** `login_throttling` — 5 неудачных попыток / 15 минут. **Регистрация:** 5 аккаунтов / час с IP; **привязка по коду:** 10 / час
+  на родителя (`config/packages/rate_limiter.yaml`). При тестах лимит регистраций быстро кончается — `docker compose up -d --force-recreate`
+  сбрасывает его (хранилище — кеш в контейнере).
+- **CSRF** на всех POST. Логин/формы/выход — stateless-токены (`csrf.yaml`): Symfony проверяет `Origin`/`Referer`, поэтому
+  curl-тестам нужен `-H "Origin: http://localhost:8080"` (для GET-выхода — `Referer`). Выход — только ссылка `logout_path()`.
+- **CSP** в `docker/nginx.conf`: `script-src 'self' 'unsafe-inline'` (inline-importmap), без `data:`. Поэтому CSS подключается
+  `<link>` в `base.html.twig`, а **не** `import` из JS (AssetMapper превратил бы его в `data:`-модуль, CSP заблокирует весь `app.js`).
+  Инлайн-стили разрешены (`style="width: …"` у полос прогресса).
+- **Доступ:** квиз — только владельцу (`QuizController::assertOwner`), кабинет родителя — `#[IsGranted(ROLE_PARENT)]` + проверка родства.
+- **Сессия:** в сессию сериализуются только id/username/roles/crc пароля (`User::__serialize`) — смена пароля разлогинивает другие сессии.
+- **Прокси:** `TRUSTED_PROXIES` задавать только при внешнем HTTPS-прокси перед nginx; иначе `X-Forwarded-*` игнорируются.
+- **Зависимости:** проверять `composer audit` (через Docker-образ `composer:2`).
 
 ## Подводные камни
 
-- **Apache + mod_php не передают env контейнера в `$_SERVER`.** Поэтому в образе выполняется `composer dump-env prod`
-  (`.env.local.php`), а `APP_SECRET`/`DEFAULT_URI` пробрасываются через `PassEnv` в `docker/apache.conf`.
-  Без этого Symfony стартует в dev и падает на отсутствии DebugBundle.
+- **php-fpm по умолчанию не передаёт env контейнера в PHP** — в `docker/php-fpm.conf` стоит `clear_env = no`. Кроме того, в образе
+  выполняется `composer dump-env prod` (`.env.local.php`), иначе Symfony стартует в dev и падает на отсутствии DebugBundle.
+- **Не возвращаться к Apache prefork:** с ним навигации периодически зависали на ~30 с (keep-alive + `RequestReadTimeout`),
+  с nginx + php-fpm проблема ушла. Для замера времени ответа в логе nginx есть `$request_time`.
+- **Страницы квиза** отдаются с `Cache-Control: no-store`, а `app.js` перезагружает страницу, восстановленную из back/forward-кеша:
+  иначе ребёнок отправляет устаревшую форму. Повторный POST уже отвеченного вопроса ведёт на его результат (`QuizController::answer`).
+- **SQLite-миграции пересоздают таблицы** (`DROP TABLE` + копирование). Внешние ключи в DBAL/SQLite выключены, поэтому каскады
+  не срабатывают, но любую миграцию, трогающую `app_user`, проверять на базе **с ответами** (количество строк до/после).
 - **`content/` смонтирован в контейнер read-only.** Код (`src/`, `templates/`, `translations/`) запечён в образ, поэтому после его изменения нужен `--build`.
-- **Stateless CSRF** (`config/packages/csrf.yaml`) для логина и форм проверяет Origin/Referer. Для квиза используются обычные session-токены
-  (`quiz_start`, `quiz{id}`).
 - **Twig-доступ к методам с аргументом:** `topic.title(locale)`, `question.explanation(locale)`.
 
 ## Соглашения

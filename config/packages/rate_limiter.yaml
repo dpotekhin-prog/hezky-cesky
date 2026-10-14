@@ -1,0 +1,12 @@
+framework:
+    rate_limiter:
+        # Open sign-up: at most 5 new accounts per IP per hour.
+        registration:
+            policy: sliding_window
+            limit: 5
+            interval: '1 hour'
+        # Linking a child by pairing code: slows down guessing codes.
+        pairing:
+            policy: sliding_window
+            limit: 10
+            interval: '1 hour'

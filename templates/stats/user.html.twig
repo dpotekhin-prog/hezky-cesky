@@ -4,6 +4,13 @@
 {% set locale = app.request.locale %}
 <h1>{{ 'stats.title'|trans }}{% if child != app.user %}: {{ child.username }}{% endif %}</h1>
 
+{% if child == app.user and not child.parent %}
+    <div class="card pairing">
+        <strong>{{ 'stats.pairing_code'|trans }}:</strong> <code>{{ child.pairingCode }}</code>
+        <p class="small muted">{{ 'stats.pairing_help'|trans }}</p>
+    </div>
+{% endif %}
+
 <div class="tiles">
     <div class="tile"><div class="tile-num">{{ stats.progress.done }} / {{ stats.progress.total }}</div><div class="tile-label">{{ 'stats.passed'|trans }}</div></div>
     <div class="tile"><div class="tile-num">{{ stats.summary.total }}</div><div class="tile-label">{{ 'stats.total'|trans }}</div></div>
@@ -65,6 +72,17 @@
         <p class="muted">{{ 'stats.no_sessions'|trans }}</p>
     {% endif %}
 </div>
+
+{% if password_form is defined %}
+    <div class="card narrow-form">
+        <h2>{{ 'parent.new_password'|trans({'%name%': child.username}) }}</h2>
+        {{ form_start(password_form, {action: path('parent_child_password', {id: child.id})}) }}
+            {{ form_row(password_form.plainPassword.first) }}
+            {{ form_row(password_form.plainPassword.second) }}
+            <button class="btn btn-primary" type="submit">{{ 'parent.new_password_submit'|trans }}</button>
+        {{ form_end(password_form) }}
+    </div>
+{% endif %}
 
 {% if history is not null %}
     <div class="card">

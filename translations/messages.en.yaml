@@ -5,6 +5,10 @@ nav:
     parent: For parents
     logout: Log out
 form:
+    account_type: Who is signing up?
+    account_child: I am a pupil
+    account_parent: I am a parent
+    new_password: New password
     username: Username
     password: Password
     password_repeat: Repeat password
@@ -13,6 +17,7 @@ login:
     submit: Log in
     no_account: No account yet?
 register:
+    too_many: Too many accounts were created from this connection. Please try again later.
     title: Sign up
     submit: Create account
     have_account: Already have an account?
@@ -60,6 +65,8 @@ quiz:
     stale: "That question was already answered – here is the current one."
     empty_answer: Type an answer first.
 stats:
+    pairing_code: Code for parents
+    pairing_help: Give this code to your parents – they enter it in their account to see your results. The code changes after use.
     passed: "Questions done"
     passed_short: "%done% of %total% done"
     title: Results
@@ -81,11 +88,25 @@ stats:
     question: Question
     answer: Answer
 parent:
+    no_children: No child is linked yet. Add one below.
+    add_child: Create a child account
+    add_child_help: The child then logs in with this username and password.
+    add_child_submit: Create account
+    child_added: The child account has been created.
+    link_child: Link an existing child account
+    link_child_help: The child finds the code under “My results”.
+    link_child_submit: Link
+    pairing_code: Child's code
+    child_linked: The child is linked.
+    code_invalid: This code is not valid. Please check it.
+    too_many_attempts: Too many attempts. Please try again in an hour.
+    new_password: "New password for %name%"
+    new_password_submit: Save password
+    password_changed: The password has been changed.
     title: Children overview
     child: Child
     since: since
     detail: Details
-    no_children: No child has signed up yet.
 rank:
     label: "Rank"
     to_next: "%points% more points to the next player (correct +1, mistake −0.5)"

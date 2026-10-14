@@ -6,6 +6,7 @@
 <div class="card narrow">
     <h1>{{ 'register.title'|trans }}</h1>
     {{ form_start(form) }}
+        {{ form_row(form.accountType, {attr: {class: 'account-type'}}) }}
         {{ form_row(form.username) }}
         {{ form_row(form.plainPassword.first) }}
         {{ form_row(form.plainPassword.second) }}
