@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'nav.help'|trans }} – {{ 'app.name'|trans }}{% endblock %}
+
+{% block body %}
+<article class="card help">
+    {{ guide|raw }}
+</article>
+{% endblock %}

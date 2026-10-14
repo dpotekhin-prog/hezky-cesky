@@ -3,6 +3,7 @@ nav:
     practice: Practice
     stats: My results
     parent: For parents
+    help: Help
     logout: Log out
 form:
     account_type: Who is signing up?
@@ -15,6 +16,7 @@ form:
 login:
     title: Log in
     submit: Log in
+    how_it_works: "How does the app work?"
     no_account: No account yet?
 register:
     too_many: Too many accounts were created from this connection. Please try again later.

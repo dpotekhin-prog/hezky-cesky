@@ -23,6 +23,7 @@
                         <a href="{{ path('parent_overview') }}">{{ 'nav.parent'|trans }}</a>
                     {% endif %}
                 {% endif %}
+                <a href="{{ path('app_help') }}">{{ 'nav.help'|trans }}</a>
                 {% if route %}
                     <span class="lang">
                         {% for l in ['cs', 'en'] %}

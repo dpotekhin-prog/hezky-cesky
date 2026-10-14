@@ -8,6 +8,8 @@
 - Статистика для родителя.
 
 Стек: Symfony 8.1, PHP 8.5 (php-fpm), nginx, SQLite. Два контейнера в Docker Compose: `app` и `web`.
+Инструкция для пользователей (родителей и детей): [čeština](docs/USER_GUIDE.cs.md) · [English](docs/USER_GUIDE.en.md).
+В приложении это раздел **Nápověda / Help** (`/cs/help`, `/en/help`), он открывается и без входа.
 Для AI-агентов есть отдельный документ: [AGENTS.md](AGENTS.md).
 
 ## Как поднять приложение

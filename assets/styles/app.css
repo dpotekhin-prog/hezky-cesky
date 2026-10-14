@@ -195,3 +195,22 @@ table.history tr.bad td { background: #fff5f5; }
 .narrow-form { max-width: 480px; }
 .pairing code { font-size: 22px; letter-spacing: 3px; background: var(--bg); padding: 2px 10px; border-radius: 8px; }
 .flash-success { background: var(--ok-bg); color: var(--ok); }
+
+/* User guide (rendered Markdown) */
+.help { line-height: 1.6; }
+.help h1 { font-size: 30px; }
+.help h2 { font-size: 24px; margin-top: 28px; border-bottom: 2px solid var(--border); padding-bottom: 4px; }
+.help h3 { font-size: 19px; margin: 22px 0 6px; }
+.help hr { border: 0; border-top: 1px solid var(--border); margin: 28px 0; }
+.help ul, .help ol { padding-left: 24px; }
+.help li { margin: 3px 0; }
+.help code { background: var(--bg); padding: 1px 6px; border-radius: 6px; }
+.help table { border-collapse: collapse; margin: 10px 0; }
+.help th, .help td { border: 1px solid var(--border); padding: 6px 12px; text-align: left; }
+.help th { background: var(--bg); }
+/* Wide tables scroll inside the card instead of widening the page. */
+.help table { display: block; max-width: 100%; overflow-x: auto; }
+@media (max-width: 600px) {
+    .help th, .help td { padding: 5px 7px; }
+    .help h1 { font-size: 24px; }
+}

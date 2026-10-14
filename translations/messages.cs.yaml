@@ -3,6 +3,7 @@ nav:
     practice: Procvičování
     stats: Moje výsledky
     parent: Pro rodiče
+    help: Nápověda
     logout: Odhlásit
 form:
     account_type: Kdo se registruje?
@@ -15,6 +16,7 @@ form:
 login:
     title: Přihlášení
     submit: Přihlásit se
+    how_it_works: "Jak aplikace funguje?"
     no_account: Nemáš účet?
 register:
     too_many: Z tohoto připojení bylo vytvořeno příliš mnoho účtů. Zkus to prosím později.
